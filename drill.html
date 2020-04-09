@@ -1,0 +1,263 @@
+<!DOCTYPE HTML>
+<html manifest="cache.appcache">
+<head>
+<meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no">
+<meta http-equiv=Content-Type content="text/html;charset=utf-8">
+<meta charset="utf-8">
+<style type="text/css">
+* { margin: 0; padding: 0; }   
+html, body { height: 100%; width: 100%; }
+.disable-selection {
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer */
+    -khtml-user-select: none; /* KHTML browsers (e.g. Konqueror) */
+    -webkit-user-select: none; /* Chrome, Safari, and Opera */
+    -webkit-touch-callout: none; /* Disable Android and iOS callouts*/
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    border-radius: 0;
+    -webkit-border-radius:0px;
+    }
+
+.outer {
+    display: table;
+    position: relative;
+    height: 60%;
+    width: 100%;
+    background-color: #FF0000;
+    border-top:thin solid #808A87;
+    border-bottom:thin solid #808A87;
+}
+
+.middle {
+    display: table-row;
+    vertical-align: middle;
+    background-color: rgb(251,246,227);
+}
+
+.bottom {
+    display: table-row;
+    vertical-align: bottom;
+    background-color: rgb(251,246,227);
+}
+
+.inner {
+    margin-left: auto;
+    margin-right: auto; 
+    width: /*whatever width you want*/;
+    background-color: rgb(250,0,255);
+    font-size:60px;
+    text-align:center;
+    color: #FFD700; 
+}
+.inner1 {
+    margin-left: auto;
+    margin-right: auto; 
+    width: /*whatever width you want*/;
+    background-color: rgb(128,128,128);
+    font-size:30px;
+    text-align:center;
+    color: #FFD700; 
+}
+
+</style>
+</head>
+<body onload=";">
+
+<div style="height:20%;position: relative;">
+    <form name="myForm" onclick="saveRadioIndex(getRadioValue());" >
+        <input type="radio" name="number" value="pinyin" checked="checked"/> pinyin
+        <input type="radio" name="number" value="2" /> 2
+        <input type="radio" name="number" value="3" /> 3
+        <input type="radio" name="number" value="4" /> 4
+        <input type="radio" name="number" value="5" /> 5
+        <input type="radio" name="number" value="6" /> 6
+        <input type="radio" name="number" value="7" /> 7
+        <input type="radio" name="number" value="8" /> 8
+        <input type="radio" name="number" value="9" /> 9
+        <input type="radio" name="number" value="r" /> random
+        <input type="radio" name="number" value="f" /> french
+        <input type="radio" name="number" value="c" /> conjugate
+        <br />
+        <input type="radio" name="number" value="d" /> Date
+        <input type="radio" name="number" value="w" /> Week
+        <input type="radio" name="number" value="t" /> Time
+    </form>
+</div>
+
+<div class="outer" id="myDivOuter" onclick="doIt();">
+    <div class="middle" id="myDivMiddle">
+        <div class="inner" id="myDivInner">
+            <p id="myText" style="border:thin solid #808A87">
+            </p>
+        </div>
+    </div>
+    <div class="bottom" id="myDivMiddle1">
+        <div class="inner1" id="myDivInner1">
+            <p id="myText1" style="border:thin solid #808A87">
+            <p id="myText2" style="border:thin solid #808A87">
+            </p>
+        </div>
+    </div>
+</div>
+<!--
+<button type="button" onclick="doIt();" style="position: relative;background-color: #ffffff;height:20%;width: 100%">Click Me!</button>
+-->
+<script type="text/javascript" defer="defer">
+var _gIndex = -1;
+var _gConjugates = 0;
+/**
+ * Returns a random integer between min (inclusive) and max (inclusive)
+ * Using Math.round() will give you a non-uniform distribution!
+ */
+function getRandomInt(min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
+/**
+ * Get the number with delimiter
+ */
+function getNumberText(val) {
+    var min = 0;
+    var max = 0;
+    if (val >= 2 && val <= 9) {
+        min = Math.pow(10, val-1);
+        max = Math.pow(10, val) - 1;
+    } else {
+        min = 0;
+        max = Math.pow(10, val) - 1;
+    }
+    n = getRandomInt(min, max);
+    n = n.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+    return n;
+}
+
+function getRadioValue() {
+    var rad_val = 2;
+    for (var i=0; i < document.myForm.number.length; i++)
+    {
+        if (document.myForm.number[i].checked)
+        {
+            rad_val = document.myForm.number[i].value;
+        }
+    }
+    return rad_val;
+}
+
+function setRadioValue(val) {
+    for (var i=0; i < document.myForm.number.length; i++)
+    {
+        if (document.myForm.number[i].value == val)
+        {
+            document.myForm.number[i].checked = true;
+        }
+    }
+}
+
+function buildDrillText() {
+    var n;
+    var val = getRadioValue();
+    if (val == 'r') {
+        val = getRandomInt(2, 9);
+    } else if (val == 'f') {
+        var a = ['mon', 'ma', 'mes','ton','ta', 'tes', 'son', 'sa', 'tes','notre', 'nos', 'votre', 'vos', 'leur','leurs'];
+        var b = ['mien','mienne','tien','tienne', 'sien','siens','sienne','siennes','nôtre','vôtre']
+        var c = ['moi', 'toi', 'soi', 'eux', 'on']
+        var d = ['celui-ci', 'celui-là','au-dessus','au-dessous','sur','sous','à','en','dans']
+        var e = ['celui','celle','ceux','celles']
+        var words = a.concat(b).concat(c).concat(d).concat(e)
+
+        val = words[Math.floor(Math.random()*words.length)];
+    } else if (val == 'c') {
+        _words = JSON.parse(_french);
+        if (_gIndex < 0) {
+            i = getRandomInt(0, _words.length-1);
+            _gIndex = i;
+        } else {
+            _gIndex += 1;
+            _gIndex %= _words.length;
+            i = _gIndex;
+        }
+        j = getRandomInt(0, 5);
+        val = _words[i].p[j];
+
+        _gConjugates = _words[i];
+        
+        var dd=document.getElementById("myText1");
+        dd.innerHTML = _words[i].pi[j] + ' <br />' +  _words[i].w + ' : ' + _words[i].wi;
+        
+        var s = '<button type="button" onclick="event.stopPropagation();all_conjugates();"> ALL </button>';
+        var dd=document.getElementById("myText2");
+        dd.innerHTML = s;
+    } else if (val == 'pinyin') {
+        _words = JSON.parse(_pinyin);
+        var keys = Object.keys(_words);
+        key = keys[ keys.length * Math.random() << 0];
+        
+        var dd=document.getElementById("myText1");
+        val = key
+        dd.innerHTML = _words[key];
+    }
+
+    if (isNaN(val) == false) {
+         n = getNumberText(val);
+    } else if (val == 'd') {
+        n = "DMY: " + getRandomInt(1,31) + "." + getRandomInt(1,12) + "." + getRandomInt(1000,2050);
+    } else if (val == 'w') {
+        n = getRandomInt(1,7);
+    } else if (val == 't') {
+        n = getRandomInt(1,12) + "." + getRandomInt(1,59)
+    } else {
+        n = val;
+    }
+    return n;
+}
+
+function all_conjugates(n) {
+    n = n || 0;
+    var s = '';
+    for (var i =0; i < 6; i++) {
+        s += _gConjugates.p[i] + '<br />'
+    }
+    var dd=document.getElementById("myText2");
+    dd.innerHTML = s;
+}
+
+function doIt() {
+    var dd=document.getElementById("myText");
+    dd.innerHTML =  buildDrillText();
+}
+
+function saveRadioIndex(val) {
+    if (window.localStorage) {
+        index = window.localStorage.setItem("radio_index", val);
+    }
+}
+
+function loadRadioIndex() {
+    var index = 0;
+    if (window.localStorage) {
+        index = window.localStorage.getItem("radio_index");
+    }
+    return index;
+}
+setRadioValue(loadRadioIndex());
+window.onload = doIt;
+</script>
+<script>
+_french = `
+[{"w": "être", "wi": "ˈɛtʁ", "p": ["je suis", "tu es", "il est", "nous sommes", "vous êtes", "ils sont"], "pi": ["ʒə- syˈi", "ty ˈɛ", "il ˈɛ", "nu sˈɔm", "vuz ˈɛt", "il sˈɔ̃"]}, {"w": "aller", "wi": "alˈe", "p": ["je vais", "tu vas", "il va", "nous allons", "vous allez", "ils vont"], "pi": ["ʒə- vˈɛ", "ty vˈa", "il vˈa", "nuz alˈɔ̃", "vuz alˈe", "il vˈɔ̃"]}, {"w": "avoir", "wi": "avwˈaʁ", "p": ["j'ai", "tu as", "il a", "nous avons", "vous avez", "ils ont"], "pi": ["ʒˈe", "ty ˈa", "il ˈa", "nuz avˈɔ̃", "vuz avˈe", "ilz ˈɔ̃"]}, {"w": "faire", "wi": "fˈɛʁ", "p": ["je fais", "tu fais", "il fait", "nous faisons", "vous faites", "ils font"], "pi": ["ʒə- fˈɛ", "ty fˈɛ", "il fˈɛ", "nu fəzˈɔ̃", "vu fˈɛt", "il fˈɔ̃"]}, {"w": "dire", "wi": "dˈiʁ", "p": ["je dis", "tu dis", "il dit", "nous disons", "vous dites", "ils disent"], "pi": ["ʒə- dˈi", "ty dˈi", "il dˈi", "nu dizˈɔ̃", "vu dˈit", "il dˈiz"]}, {"w": "pouvoir", "wi": "puvwˈaʁ", "p": ["je peux", "tu peux", "il peut", "nous pouvons", "vous pouvez", "ils peuvent"], "pi": ["ʒə- pˈø", "ty pˈø", "il pˈø", "nu puvˈɔ̃", "vu puvˈe", "il pˈøv"]}, {"w": "voir", "wi": "vwˈaʁ", "p": ["je vois", "tu vois", "il voit", "nous voyons", "vous voyez", "ils voient"], "pi": ["ʒə- vwˈa", "ty vwˈa", "il vwˈa", "nu vwajˈɔ̃", "vu vwajˈe", "il vwˈa"]}, {"w": "savoir", "wi": "savwˈaʁ", "p": ["je sais", "tu sais", "il sait", "nous savons", "vous savez", "ils savent"], "pi": ["ʒə- sˈɛ", "ty sˈɛ", "il sˈɛ", "nu savˈɔ̃", "vu savˈe", "il sˈav"]}, {"w": "vouloir", "wi": "vulwˈaʁ", "p": ["je veux", "tu veux", "il veut", "nous voulons", "vous voulez", "ils veulent"], "pi": ["ʒə- vˈø", "ty vˈø", "il vˈø", "nu vulˈɔ̃", "vu vulˈe", "il vˈœl"]}, {"w": "venir", "wi": "vənˈiʁ", "p": ["je viens", "tu viens", "il vient", "nous venons", "vous venez", "ils viennent"], "pi": ["ʒə- vjˈɛ̃", "ty vjˈɛ̃", "il vjˈɛ̃", "nu vənˈɔ̃", "vu vənˈe", "il vjˈɛn"]}, {"w": "devoir", "wi": "dəvwˈaʁ", "p": ["je dois", "tu dois", "il doit", "nous devons", "vous devez", "ils doivent"], "pi": ["ʒə- dwˈa", "ty dwˈa", "il dwˈa", "nu dəvˈɔ̃", "vu dəvˈe", "il dwˈav"]}, {"w": "croire", "wi": "kʁwˈaʁ", "p": ["je crois", "tu crois", "il croit", "nous croyons", "vous croyez", "ils croient"], "pi": ["ʒə- kʁwˈa", "ty kʁwˈa", "il kʁwˈa", "nu kʁwajˈɔ̃", "vu kʁwajˈe", "il kʁwˈa"]}, {"w": "trouver", "wi": "tʁuvˈe", "p": ["je trouve", "tu trouves", "il trouve", "nous trouvons", "vous trouvez", "ils trouvent"], "pi": ["ʒə- tʁˈuv", "ty tʁˈuv", "il tʁˈuv", "nu tʁuvˈɔ̃", "vu tʁuvˈe", "il tʁˈuv"]}, {"w": "donner", "wi": "dɔnˈe", "p": ["je donne", "tu donnes", "il donne", "nous donnons", "vous donnez", "ils donnent"], "pi": ["ʒə- dˈɔn", "ty dˈɔn", "il dˈɔn", "nu dɔnˈɔ̃", "vu dɔnˈe", "il dˈɔn"]}, {"w": "prendre", "wi": "pʁˈɑ̃dʁ", "p": ["je prends", "tu prends", "il prend", "nous prenons", "vous prenez", "ils prennent"], "pi": ["ʒə- pʁˈɑ̃", "ty pʁˈɑ̃", "il pʁˈɑ̃", "nu pʁənˈɔ̃", "vu pʁənˈe", "il pʁˈɛn"]}, {"w": "parler", "wi": "paʁlˈe", "p": ["je parle", "tu parles", "il parle", "nous parlons", "vous parlez", "ils parlent"], "pi": ["ʒə- pˈaʁl", "ty pˈaʁl", "il pˈaʁl", "nu paʁlˈɔ̃", "vu paʁlˈe", "il pˈaʁl"]}, {"w": "aimer", "wi": "ɛmˈe", "p": ["j'aime", "tu aimes", "il aime", "nous aimons", "vous aimez", "ils aiment"], "pi": ["ʒˈɛm", "ty ˈɛm", "il ˈɛm", "nuz ɛmˈɔ̃", "vuz ɛmˈe", "ilz ˈɛm"]}, {"w": "passer", "wi": "pasˈe", "p": ["je passe", "tu passes", "il passe", "nous passons", "vous passez", "ils passent"], "pi": ["ʒə- pˈas", "ty pˈas", "il pˈas", "nu pasˈɔ̃", "vu pasˈe", "il pˈas"]}, {"w": "mettre", "wi": "mˈɛtʁ", "p": ["je mets", "tu mets", "il met", "nous mettons", "vous mettez", "ils mettent"], "pi": ["ʒə- mˈɛ", "ty mˈɛ", "il mˈɛ", "nu mɛtˈɔ̃", "vu mɛtˈe", "il mˈɛt"]}, {"w": "demander", "wi": "dəmɑ̃dˈe", "p": ["je demande", "tu demandes", "il demande", "nous demandons", "vous demandez", "ils demandent"], "pi": ["ʒə- dəmˈɑ̃d", "ty dəmˈɑ̃d", "il dəmˈɑ̃d", "nu dəmɑ̃dˈɔ̃", "vu dəmɑ̃dˈe", "il dəmˈɑ̃d"]}, {"w": "tenir", "wi": "tənˈiʁ", "p": ["je tiens", "tu tiens", "il tient", "nous tenons", "vous tenez", "ils tiennent"], "pi": ["ʒə- tjˈɛ̃", "ty tjˈɛ̃", "il tjˈɛ̃", "nu tənˈɔ̃", "vu tənˈe", "il tjˈɛn"]}, {"w": "sembler", "wi": "sɑ̃blˈe", "p": ["je semble", "tu sembles", "il semble", "nous semblons", "vous semblez", "ils semblent"], "pi": ["ʒə- sˈɑ̃bl", "ty sˈɑ̃bl", "il sˈɑ̃bl", "nu sɑ̃blˈɔ̃", "vu sɑ̃blˈe", "il sˈɑ̃bl"]}, {"w": "laisser", "wi": "lɛsˈe", "p": ["je laisse", "tu laisses", "il laisse", "nous laissons", "vous laissez", "ils laissent"], "pi": ["ʒə- lˈɛs", "ty lˈɛs", "il lˈɛs", "nu lɛsˈɔ̃", "vu lɛsˈe", "il lˈɛs"]}, {"w": "rester", "wi": "ʁɛstˈe", "p": ["je reste", "tu restes", "il reste", "nous restons", "vous restez", "ils restent"], "pi": ["ʒə- ʁˈɛst", "ty ʁˈɛst", "il ʁˈɛst", "nu ʁɛstˈɔ̃", "vu ʁɛstˈe", "il ʁˈɛst"]}, {"w": "penser", "wi": "pɑ̃sˈe", "p": ["je pense", "tu penses", "il pense", "nous pensons", "vous pensez", "ils pensent"], "pi": ["ʒə- pˈɑ̃s", "ty pˈɑ̃s", "il pˈɑ̃s", "nu pɑ̃sˈɔ̃", "vu pɑ̃sˈe", "il pˈɑ̃s"]}, {"w": "regarder", "wi": "ʁəɡaʁdˈe", "p": ["je regarde", "tu regardes", "il regarde", "nous regardons", "vous regardez", "ils regardent"], "pi": ["ʒə- ʁəɡˈaʁd", "ty ʁəɡˈaʁd", "il ʁəɡˈaʁd", "nu ʁəɡaʁdˈɔ̃", "vu ʁəɡaʁdˈe", "il ʁəɡˈaʁd"]}, {"w": "répondre", "wi": "ʁepˈɔ̃dʁ", "p": ["je réponds", "tu réponds", "il répond", "nous répondons", "vous répondez", "ils répondent"], "pi": ["ʒə- ʁepˈɔ̃", "ty ʁepˈɔ̃", "il ʁepˈɔ̃", "nu ʁepɔ̃dˈɔ̃", "vu ʁepɔ̃dˈe", "il ʁepˈɔ̃d"]}, {"w": "rendre", "wi": "ʁˈɑ̃dʁ", "p": ["je rends", "tu rends", "il rend", "nous rendons", "vous rendez", "ils rendent"], "pi": ["ʒə- ʁˈɑ̃", "ty ʁˈɑ̃", "il ʁˈɑ̃", "nu ʁɑ̃dˈɔ̃", "vu ʁɑ̃dˈe", "il ʁˈɑ̃d"]}, {"w": "connaître", "wi": "kɔnˈɛtʁ", "p": ["je connais", "tu connais", "il connaît", "nous connaissons", "vous connaissez", "ils connaissent"], "pi": ["ʒə- kɔnˈɛ", "ty kɔnˈɛ", "il kɔnˈɛ", "nu kɔnɛsˈɔ̃", "vu kɔnɛsˈe", "il kɔnˈɛs"]}, {"w": "paraître", "wi": "paʁˈɛtʁ", "p": ["je parais", "tu parais", "il paraît", "nous paraissons", "vous paraissez", "ils paraissent"], "pi": ["ʒə- paʁˈɛ", "ty paʁˈɛ", "il paʁˈɛ", "nu paʁɛsˈɔ̃", "vu paʁɛsˈe", "il paʁˈɛs"]}, {"w": "arriver", "wi": "aʁivˈe", "p": ["j'arrive", "tu arrives", "il arrive", "nous arrivons", "vous arrivez", "ils arrivent"], "pi": ["ʒaʁˈiv", "ty aʁˈiv", "il aʁˈiv", "nuz aʁivˈɔ̃", "vuz aʁivˈe", "ilz aʁˈiv"]}, {"w": "sentir", "wi": "sɑ̃tˈiʁ", "p": ["je sens", "tu sens", "il sent", "nous sentons", "vous sentez", "ils sentent"], "pi": ["ʒə- sˈɑ̃", "ty sˈɑ̃", "il sˈɑ̃", "nu sɑ̃tˈɔ̃", "vu sɑ̃tˈe", "il sˈɑ̃t"]}, {"w": "attendre", "wi": "atˈɑ̃dʁ", "p": ["j'attends", "tu attends", "il attend", "nous attendons", "vous attendez", "ils attendent"], "pi": ["ʒatˈɑ̃", "ty atˈɑ̃", "il atˈɑ̃", "nuz atɑ̃dˈɔ̃", "vuz atɑ̃dˈe", "ilz atˈɑ̃d"]}, {"w": "vivre", "wi": "vˈivʁ", "p": ["je vis", "tu vis", "il vit", "nous vivons", "vous vivez", "ils vivent"], "pi": ["ʒə- vˈi", "ty vˈi", "il vˈi", "nu vivˈɔ̃", "vu vivˈe", "il vˈiv"]}, {"w": "chercher", "wi": "ʃɛʁʃˈe", "p": ["je cherche", "tu cherches", "il cherche", "nous cherchons", "vous cherchez", "ils cherchent"], "pi": ["ʒə- ʃˈɛʁʃ", "ty ʃˈɛʁʃ", "il ʃˈɛʁʃ", "nu ʃɛʁʃˈɔ̃", "vu ʃɛʁʃˈe", "il ʃˈɛʁʃ"]}, {"w": "comprendre", "wi": "kɔ̃pʁˈɑ̃dʁ", "p": ["je comprends", "tu comprends", "il comprend", "nous comprenons", "vous comprenez", "ils comprennent"], "pi": ["ʒə- kɔ̃pʁˈɑ̃", "ty kɔ̃pʁˈɑ̃", "il kɔ̃pʁˈɑ̃", "nu kɔ̃pʁənˈɔ̃", "vu kɔ̃pʁənˈe", "il kɔ̃pʁˈɛn"]}, {"w": "porter", "wi": "pɔʁtˈe", "p": ["je porte", "tu portes", "il porte", "nous portons", "vous portez", "ils portent"], "pi": ["ʒə- pˈɔʁt", "ty pˈɔʁt", "il pˈɔʁt", "nu pɔʁtˈɔ̃", "vu pɔʁtˈe", "il pˈɔʁt"]}, {"w": "devenir", "wi": "dəvnˈiʁ", "p": ["je deviens", "tu deviens", "il devient", "nous devenons", "vous devenez", "ils deviennent"], "pi": ["ʒə- dəvjˈɛ̃", "ty dəvjˈɛ̃", "il dəvjˈɛ̃", "nu dəvnˈɔ̃", "vu dəvnˈe", "il dəvjˈɛn"]}, {"w": "entrer", "wi": "ɑ̃tʁˈe", "p": ["j'entre", "tu entres", "il entre", "nous entrons", "vous entrez", "ils entrent"], "pi": ["ʒˈɑ̃tʁ", "ty ˈɑ̃tʁ", "il ˈɑ̃tʁ", "nuz ɑ̃tʁˈɔ̃", "vuz ɑ̃tʁˈe", "ilz ˈɑ̃tʁ"]}, {"w": "retenir", "wi": "ʁətnˈiʁ", "p": ["je retiens", "tu retiens", "il retient", "nous retenons", "vous retenez", "ils retiennent"], "pi": ["ʒə- ʁətjˈɛ̃", "ty ʁətjˈɛ̃", "il ʁətjˈɛ̃", "nu ʁətnˈɔ̃", "vu ʁətnˈe", "il ʁətjˈɛn"]}, {"w": "écrire", "wi": "ekʁˈiʁ", "p": ["j'écris", "tu écris", "il écrit", "nous écrivons", "vous écrivez", "ils écrivent"], "pi": ["ʒekʁˈi", "ty ekʁˈi", "il ekʁˈi", "nuz ekʁivˈɔ̃", "vuz ekʁivˈe", "ilz ekʁˈiv"]}, {"w": "appeler", "wi": "aplˈe", "p": ["j'appelle", "tu appelles", "il appelle", "nous appelons", "vous appelez", "ils appellent"], "pi": ["ʒapˈɛl", "ty apˈɛl", "il apˈɛl", "nuz aplˈɔ̃", "vuz aplˈe", "ilz apˈɛl"]}, {"w": "tomber", "wi": "tɔ̃bˈe", "p": ["je tombe", "tu tombes", "il tombe", "nous tombons", "vous tombez", "ils tombent"], "pi": ["ʒə- tˈɔ̃b", "ty tˈɔ̃b", "il tˈɔ̃b", "nu tɔ̃bˈɔ̃", "vu tɔ̃bˈe", "il tˈɔ̃b"]}, {"w": "reprendre", "wi": "ʁəpʁˈɑ̃dʁ", "p": ["je reprends", "tu reprends", "il reprend", "nous reprenons", "vous reprenez", "ils reprennent"], "pi": ["ʒə- ʁəpʁˈɑ̃", "ty ʁəpʁˈɑ̃", "il ʁəpʁˈɑ̃", "nu ʁəpʁənˈɔ̃", "vu ʁəpʁənˈe", "il ʁəpʁˈɛn"]}, {"w": "commencer", "wi": "kɔmɑ̃sˈe", "p": ["je commence", "tu commences", "il commence", "nous commençons", "vous commencez", "ils commencent"], "pi": ["ʒə- kɔmˈɑ̃s", "ty kɔmˈɑ̃s", "il kɔmˈɑ̃s", "nu kɔmɑ̃sˈɔ̃", "vu kɔmɑ̃sˈe", "il kɔmˈɑ̃s"]}, {"w": "suivre", "wi": "syˈivʁ", "p": ["je suis", "tu suis", "il suit", "nous suivons", "vous suivez", "ils suivent"], "pi": ["ʒə- syˈi", "ty syˈi", "il syˈi", "nu syivˈɔ̃", "vu syivˈe", "il syˈiv"]}, {"w": "montrer", "wi": "mɔ̃tʁˈe", "p": ["je montre", "tu montres", "il montre", "nous montrons", "vous montrez", "ils montrent"], "pi": ["ʒə- mˈɔ̃tʁ", "ty mˈɔ̃tʁ", "il mˈɔ̃tʁ", "nu mɔ̃tʁˈɔ̃", "vu mɔ̃tʁˈe", "il mˈɔ̃tʁ"]}, {"w": "partir", "wi": "paʁtˈiʁ", "p": ["je pars", "tu pars", "il part", "nous partons", "vous partez", "ils partent"], "pi": ["ʒə- pˈaʁ", "ty pˈaʁ", "il pˈaʁ", "nu paʁtˈɔ̃", "vu paʁtˈe", "il pˈaʁt"]}, {"w": "mourir", "wi": "muʁˈiʁ", "p": ["je meurs", "tu meurs", "il meurt", "nous mourons", "vous mourez", "ils meurent"], "pi": ["ʒə- mˈœʁ", "ty mˈœʁ", "il mˈœʁ", "nu muʁˈɔ̃", "vu muʁˈe", "il mˈœʁ"]}, {"w": "ouvrir", "wi": "uvʁˈiʁ", "p": ["j'ouvre", "tu ouvres", "il ouvre", "nous ouvrons", "vous ouvrez", "ils ouvrent"], "pi": ["ʒˈuvʁ", "ty ˈuvʁ", "il ˈuvʁ", "nuz uvʁˈɔ̃", "vuz uvʁˈe", "ilz ˈuvʁ"]}, {"w": "lire", "wi": "lˈiʁ", "p": ["je lis", "tu lis", "il lit", "nous lisons", "vous lisez", "ils lisent"], "pi": ["ʒə- lˈi", "ty lˈi", "il lˈi", "nu lizˈɔ̃", "vu lizˈe", "il lˈiz"]}, {"w": "arrêter", "wi": "aʁɛtˈe", "p": ["j'arrête", "tu arrêtes", "il arrête", "nous arrêtons", "vous arrêtez", "ils arrêtent"], "pi": ["ʒaʁˈɛt", "ty aʁˈɛt", "il aʁˈɛt", "nuz aʁɛtˈɔ̃", "vuz aʁɛtˈe", "ilz aʁˈɛt"]}, {"w": "servir", "wi": "sɛʁvˈiʁ", "p": ["je sers", "tu sers", "il sert", "nous servons", "vous servez", "ils servent"], "pi": ["ʒə- sˈɛʁ", "ty sˈɛʁ", "il sˈɛʁ", "nu sɛʁvˈɔ̃", "vu sɛʁvˈe", "il sˈɛʁv"]}, {"w": "jeter", "wi": "ʒətˈe", "p": ["je jette", "tu jettes", "il jette", "nous jetons", "vous jetez", "ils jettent"], "pi": ["ʒə- ʒˈɛt", "ty ʒˈɛt", "il ʒˈɛt", "nu ʒətˈɔ̃", "vu ʒətˈe", "il ʒˈɛt"]}, {"w": "recevoir", "wi": "ʁəsəvwˈaʁ", "p": ["je reçois", "tu reçois", "il reçoit", "nous recevons", "vous recevez", "ils reçoivent"], "pi": ["ʒə- ʁəswˈa", "ty ʁəswˈa", "il ʁəswˈa", "nu ʁəsəvˈɔ̃", "vu ʁəsəvˈe", "il ʁəswˈav"]}, {"w": "monter", "wi": "mɔ̃tˈe", "p": ["je monte", "tu montes", "il monte", "nous montons", "vous montez", "ils montent"], "pi": ["ʒə- mˈɔ̃t", "ty mˈɔ̃t", "il mˈɔ̃t", "nu mɔ̃tˈɔ̃", "vu mɔ̃tˈe", "il mˈɔ̃t"]}, {"w": "lever", "wi": "ləvˈe", "p": ["je lève", "tu lèves", "il lève", "nous levons", "vous levez", "ils lèvent"], "pi": ["ʒə- lˈɛv", "ty lˈɛv", "il lˈɛv", "nu ləvˈɔ̃", "vu ləvˈe", "il lˈɛv"]}, {"w": "agir", "wi": "aʒˈiʁ", "p": ["j'agis", "tu agis", "il agit", "nous agissons", "vous agissez", "ils agissent"], "pi": ["ʒaʒˈi", "ty aʒˈi", "il aʒˈi", "nuz aʒisˈɔ̃", "vuz aʒisˈe", "ilz aʒˈis"]}, {"w": "perdre", "wi": "pˈɛʁdʁ", "p": ["je perds", "tu perds", "il perd", "nous perdons", "vous perdez", "ils perdent"], "pi": ["ʒə- pˈɛʁ", "ty pˈɛʁ", "il pˈɛʁ", "nu pɛʁdˈɔ̃", "vu pɛʁdˈe", "il pˈɛʁd"]}, {"w": "écouter", "wi": "ekutˈe", "p": ["j'écoute", "tu écoutes", "il écoute", "nous écoutons", "vous écoutez", "ils écoutent"], "pi": ["ʒekˈut", "ty ekˈut", "il ekˈut", "nuz ekutˈɔ̃", "vuz ekutˈe", "ilz ekˈut"]}, {"w": "continuer", "wi": "kɔ̃tinyˈe", "p": ["je continue", "tu continues", "il continue", "nous continuons", "vous continuez", "ils continuent"], "pi": ["ʒə- kɔ̃tinˈy", "ty kɔ̃tinˈy", "il kɔ̃tinˈy", "nu kɔ̃tinyˈɔ̃", "vu kɔ̃tinyˈe", "il kɔ̃tinˈy"]}, {"w": "sourire", "wi": "suʁˈiʁ", "p": ["je souris", "tu souris", "il sourit", "nous sourions", "vous souriez", "ils sourient"], "pi": ["ʒə- suʁˈi", "ty suʁˈi", "il suʁˈi", "nu suʁjˈɔ̃", "vu suʁjˈe", "il suʁˈi"]}, {"w": "apercevoir", "wi": "apɛʁsəvwˈaʁ", "p": ["j'aperçois", "tu aperçois", "il aperçoit", "nous apercevons", "vous apercevez", "ils aperçoivent"], "pi": ["ʒapɛʁswˈa", "ty apɛʁswˈa", "il apɛʁswˈa", "nuz apɛʁsəvˈɔ̃", "vuz apɛʁsəvˈe", "ilz apɛʁswˈav"]}, {"w": "reconnaître", "wi": "ʁəkɔnˈɛtʁ", "p": ["je reconnais", "tu reconnais", "il reconnaît", "nous reconnaissons", "vous reconnaissez", "ils reconnaissent"], "pi": ["ʒə- ʁəkɔnˈɛ", "ty ʁəkɔnˈɛ", "il ʁəkɔnˈɛ", "nu ʁəkɔnɛsˈɔ̃", "vu ʁəkɔnɛsˈe", "il ʁəkɔnˈɛs"]}, {"w": "ajouter", "wi": "aʒutˈe", "p": ["j'ajoute", "tu ajoutes", "il ajoute", "nous ajoutons", "vous ajoutez", "ils ajoutent"], "pi": ["ʒaʒˈut", "ty aʒˈut", "il aʒˈut", "nuz aʒutˈɔ̃", "vuz aʒutˈe", "ilz aʒˈut"]}, {"w": "jouer", "wi": "ʒuˈe", "p": ["je joue", "tu joues", "il joue", "nous jouons", "vous jouez", "ils jouent"], "pi": ["ʒə- ʒˈu", "ty ʒˈu", "il ʒˈu", "nu ʒuˈɔ̃", "vu ʒuˈe", "il ʒˈu"]}, {"w": "marcher", "wi": "maʁʃˈe", "p": ["je marche", "tu marches", "il marche", "nous marchons", "vous marchez", "ils marchent"], "pi": ["ʒə- mˈaʁʃ", "ty mˈaʁʃ", "il mˈaʁʃ", "nu maʁʃˈɔ̃", "vu maʁʃˈe", "il mˈaʁʃ"]}, {"w": "garder", "wi": "ɡaʁdˈe", "p": ["je garde", "tu gardes", "il garde", "nous gardons", "vous gardez", "ils gardent"], "pi": ["ʒə- ɡˈaʁd", "ty ɡˈaʁd", "il ɡˈaʁd", "nu ɡaʁdˈɔ̃", "vu ɡaʁdˈe", "il ɡˈaʁd"]}, {"w": "manquer", "wi": "mɑ̃kˈe", "p": ["je manque", "tu manques", "il manque", "nous manquons", "vous manquez", "ils manquent"], "pi": ["ʒə- mˈɑ̃k", "ty mˈɑ̃k", "il mˈɑ̃k", "nu mɑ̃kˈɔ̃", "vu mɑ̃kˈe", "il mˈɑ̃k"]}, {"w": "retrouver", "wi": "ʁətʁuvˈe", "p": ["je retrouve", "tu retrouves", "il retrouve", "nous retrouvons", "vous retrouvez", "ils retrouvent"], "pi": ["ʒə- ʁətʁˈuv", "ty ʁətʁˈuv", "il ʁətʁˈuv", "nu ʁətʁuvˈɔ̃", "vu ʁətʁuvˈe", "il ʁətʁˈuv"]}, {"w": "descendre", "wi": "dɛsˈɑ̃dʁ", "p": ["je descends", "tu descends", "il descend", "nous descendons", "vous descendez", "ils descendent"], "pi": ["ʒə- dɛsˈɑ̃", "ty dɛsˈɑ̃", "il dɛsˈɑ̃", "nu dɛsɑ̃dˈɔ̃", "vu dɛsɑ̃dˈe", "il dɛsˈɑ̃d"]}, {"w": "rappeler", "wi": "ʁaplˈe", "p": ["je rappelle", "tu rappelles", "il rappelle", "nous rappelons", "vous rappelez", "ils rappellent"], "pi": ["ʒə- ʁapˈɛl", "ty ʁapˈɛl", "il ʁapˈɛl", "nu ʁaplˈɔ̃", "vu ʁaplˈe", "il ʁapˈɛl"]}, {"w": "quitter", "wi": "kitˈe", "p": ["je quitte", "tu quittes", "il quitte", "nous quittons", "vous quittez", "ils quittent"], "pi": ["ʒə- kˈit", "ty kˈit", "il kˈit", "nu kitˈɔ̃", "vu kitˈe", "il kˈit"]}, {"w": "tourner", "wi": "tuʁnˈe", "p": ["je tourne", "tu tournes", "il tourne", "nous tournons", "vous tournez", "ils tournent"], "pi": ["ʒə- tˈuʁn", "ty tˈuʁn", "il tˈuʁn", "nu tuʁnˈɔ̃", "vu tuʁnˈe", "il tˈuʁn"]}, {"w": "finir", "wi": "finˈiʁ", "p": ["je finis", "tu finis", "il finit", "nous finissons", "vous finissez", "ils finissent"], "pi": ["ʒə- finˈi", "ty finˈi", "il finˈi", "nu finisˈɔ̃", "vu finisˈe", "il finˈis"]}, {"w": "crier", "wi": "kʁiˈe", "p": ["je crie", "tu cries", "il crie", "nous crions", "vous criez", "ils crient"], "pi": ["ʒə- kʁˈi", "ty kʁˈi", "il kʁˈi", "nu kʁiˈɔ̃", "vu kʁiˈe", "il kʁˈi"]}, {"w": "courir", "wi": "kuʁˈiʁ", "p": ["je cours", "tu cours", "il court", "nous courons", "vous courez", "ils courent"], "pi": ["ʒə- kˈuʁ", "ty kˈuʁ", "il kˈuʁ", "nu kuʁˈɔ̃", "vu kuʁˈe", "il kˈuʁ"]}, {"w": "permettre", "wi": "pɛʁmˈɛtʁ", "p": ["je permets", "tu permets", "il permet", "nous permettons", "vous permettez", "ils permettent"], "pi": ["ʒə- pɛʁmˈɛ", "ty pɛʁmˈɛ", "il pɛʁmˈɛ", "nu pɛʁmɛtˈɔ̃", "vu pɛʁmɛtˈe", "il pɛʁmˈɛt"]}, {"w": "songer", "wi": "sɔ̃ʒˈe", "p": ["je songe", "tu songes", "il songe", "nous songeons", "vous songez", "ils songent"], "pi": ["ʒə- sˈɔ̃ʒ", "ty sˈɔ̃ʒ", "il sˈɔ̃ʒ", "nu sɔ̃ʒˈɔ̃", "vu sɔ̃ʒˈe", "il sˈɔ̃ʒ"]}, {"w": "offrir", "wi": "ɔfʁˈiʁ", "p": ["j'offre", "tu offres", "il offre", "nous offrons", "vous offrez", "ils offrent"], "pi": ["ʒˈɔfʁ", "ty ˈɔfʁ", "il ˈɔfʁ", "nuz ɔfʁˈɔ̃", "vuz ɔfʁˈe", "ilz ˈɔfʁ"]}, {"w": "présenter", "wi": "pʁezɑ̃tˈe", "p": ["je présente", "tu présentes", "il présente", "nous présentons", "vous présentez", "ils présentent"], "pi": ["ʒə- pʁezˈɑ̃t", "ty pʁezˈɑ̃t", "il pʁezˈɑ̃t", "nu pʁezɑ̃tˈɔ̃", "vu pʁezɑ̃tˈe", "il pʁezˈɑ̃t"]}, {"w": "apprendre", "wi": "apʁˈɑ̃dʁ", "p": ["j'apprends", "tu apprends", "il apprend", "nous apprenons", "vous apprenez", "ils apprennent"], "pi": ["ʒapʁˈɑ̃", "ty apʁˈɑ̃", "il apʁˈɑ̃", "nuz apʁənˈɔ̃", "vuz apʁənˈe", "ilz apʁˈɛn"]}, {"w": "souffrir", "wi": "sufʁˈiʁ", "p": ["je souffre", "tu souffres", "il souffre", "nous souffrons", "vous souffrez", "ils souffrent"], "pi": ["ʒə- sˈufʁ", "ty sˈufʁ", "il sˈufʁ", "nu sufʁˈɔ̃", "vu sufʁˈe", "il sˈufʁ"]}, {"w": "exister", "wi": "ɛɡzistˈe", "p": ["j'existe", "tu existes", "il existe", "nous existons", "vous existez", "ils existent"], "pi": ["ʒɛɡzˈist", "ty ɛɡzˈist", "il ɛɡzˈist", "nuz ɛɡzistˈɔ̃", "vuz ɛɡzistˈe", "ilz ɛɡzˈist"]}, {"w": "envoyer", "wi": "ɑ̃vwajˈe", "p": ["j'envoie", "tu envoies", "il envoie", "nous envoyons", "vous envoyez", "ils envoient"], "pi": ["ʒɑ̃vwˈa", "ty ɑ̃vwˈa", "il ɑ̃vwˈa", "nuz ɑ̃vwajˈɔ̃", "vuz ɑ̃vwajˈe", "ilz ɑ̃vwˈa"]}, {"w": "expliquer", "wi": "ɛksplikˈe", "p": ["j'explique", "tu expliques", "il explique", "nous expliquons", "vous expliquez", "ils expliquent"], "pi": ["ʒɛksplˈik", "ty ɛksplˈik", "il ɛksplˈik", "nuz ɛksplikˈɔ̃", "vuz ɛksplikˈe", "ilz ɛksplˈik"]}, {"w": "manger", "wi": "mɑ̃ʒˈe", "p": ["je mange", "tu manges", "il mange", "nous mangeons", "vous mangez", "ils mangent"], "pi": ["ʒə- mˈɑ̃ʒ", "ty mˈɑ̃ʒ", "il mˈɑ̃ʒ", "nu mɑ̃ʒˈɔ̃", "vu mɑ̃ʒˈe", "il mˈɑ̃ʒ"]}, {"w": "valoir", "wi": "valwˈaʁ", "p": ["je vaux", "tu vaux", "il vaut", "nous valons", "vous valez", "ils valent"], "pi": ["ʒə- vˈo", "ty vˈo", "il vˈo", "nu valˈɔ̃", "vu valˈe", "il vˈal"]}, {"w": "oublier", "wi": "ubliˈe", "p": ["j'oublie", "tu oublies", "il oublie", "nous oublions", "vous oubliez", "ils oublient"], "pi": ["ʒublˈi", "ty ublˈi", "il ublˈi", "nuz ubliˈɔ̃", "vuz ubliˈe", "ilz ublˈi"]}, {"w": "rentrer", "wi": "ʁɑ̃tʁˈe", "p": ["je rentre", "tu rentres", "il rentre", "nous rentrons", "vous rentrez", "ils rentrent"], "pi": ["ʒə- ʁˈɑ̃tʁ", "ty ʁˈɑ̃tʁ", "il ʁˈɑ̃tʁ", "nu ʁɑ̃tʁˈɔ̃", "vu ʁɑ̃tʁˈe", "il ʁˈɑ̃tʁ"]}, {"w": "pousser", "wi": "pusˈe", "p": ["je pousse", "tu pousses", "il pousse", "nous poussons", "vous poussez", "ils poussent"], "pi": ["ʒə- pˈus", "ty pˈus", "il pˈus", "nu pusˈɔ̃", "vu pusˈe", "il pˈus"]}, {"w": "occuper", "wi": "ɔkypˈe", "p": ["j'occupe", "tu occupes", "il occupe", "nous occupons", "vous occupez", "ils occupent"], "pi": ["ʒɔkˈyp", "ty ɔkˈyp", "il ɔkˈyp", "nuz ɔkypˈɔ̃", "vuz ɔkypˈe", "ilz ɔkˈyp"]}, {"w": "compter", "wi": "kɔ̃tˈe", "p": ["je compte", "tu comptes", "il compte", "nous comptons", "vous comptez", "ils comptent"], "pi": ["ʒə- kˈɔ̃t", "ty kˈɔ̃t", "il kˈɔ̃t", "nu kɔ̃tˈɔ̃", "vu kɔ̃tˈe", "il kˈɔ̃t"]}, {"w": "empêcher", "wi": "ɑ̃pɛʃˈe", "p": ["j'empêche", "tu empêches", "il empêche", "nous empêchons", "vous empêchez", "ils empêchent"], "pi": ["ʒɑ̃pˈɛʃ", "ty ɑ̃pˈɛʃ", "il ɑ̃pˈɛʃ", "nuz ɑ̃pɛʃˈɔ̃", "vuz ɑ̃pɛʃˈe", "ilz ɑ̃pˈɛʃ"]}, {"w": "plaire", "wi": "plˈɛʁ", "p": ["je plais", "tu plais", "il plaît", "nous plaisons", "vous plaisez", "ils plaisent"], "pi": ["ʒə- plˈɛ", "ty plˈɛ", "il plˈɛ", "nu plɛzˈɔ̃", "vu plɛzˈe", "il plˈɛz"]}, {"w": "travailler", "wi": "tʁavajˈe", "p": ["je travaille", "tu travailles", "il travaille", "nous travaillons", "vous travaillez", "ils travaillent"], "pi": ["ʒə- tʁavˈaj", "ty tʁavˈaj", "il tʁavˈaj", "nu tʁavajˈɔ̃", "vu tʁavajˈe", "il tʁavˈaj"]}, {"w": "écrier", "wi": "ekʁiˈe", "p": ["Je m'écrie", "Tu t'écries", "Il s'écrie", "Nous nous écrions", "Vous vous écriez", "Ils s'écrient"], "pi": ["ʒə- mekʁˈi", "ty tekʁˈi", "il sekʁˈi", "nu nuz ekʁiˈɔ̃", "vu vuz ekʁiˈe", "il sekʁˈi"]}]
+`;
+_pinyin = `
+{"ài": ["爱", "碍", "暧", "隘"], "bā": ["八", "巴", "扒", "疤", "叭"], "bà": ["爸", "罢", "霸", "坝"], "bēi": ["杯", "悲", "卑", "碑"], "zi": ["子"], "běi": ["北"], "jīng": ["京", "睛", "经", "惊", "精", "晶", "茎", "兢"], "běn": ["本"], "bù": ["不", "步", "部", "布", "怖"], "kè": ["客", "课", "刻", "克"], "qì": ["气", "汽", "弃", "器", "泣", "迄"], "cài": ["菜"], "chá": ["茶", "查", "察"], "chī": ["吃"], "chū": ["出", "初"], "zū": ["租"], "chē": ["车"], "dǎ": ["打"], "diàn": ["电", "店", "淀", "垫", "惦", "奠", "殿"], "huà": ["话", "化", "画", "划"], "dà": ["大"], "de": ["的", "地"], "diǎn": ["点", "典"], "nǎo": ["脑", "恼"], "shì": ["视", "是", "室", "试", "事", "市", "世", "示", "士", "适", "释", "柿", "式", "势", "似", "饰", "誓", "氏", "逝"], "yǐng": ["影", "颖"], "dōng": ["东", "冬"], "xī": ["西", "希", "息", "惜", "悉", "吸", "夕", "析", "晰", "昔", "牺", "溪", "熄", "膝", "稀"], "dōu": ["都", "兜"], "dú": ["读", "毒", "独"], "duì": ["对", "队", "兑"], "qǐ": ["起", "企", "启", "乞", "岂"], "duō": ["多", "哆"], "shǎo": ["少"], "ér": ["儿", "而"], "èr": ["二"], "fàn": ["饭", "范", "泛", "犯", "贩"], "fēi": ["飞", "非", "啡"], "jī": ["机", "鸡", "绩", "积", "基", "激", "圾", "肌", "击", "讥", "饥", "缉"], "fēn": ["分", "纷", "氛", "吩"], "zhōng": ["钟", "中", "终", "衷", "忠"], "gāo": ["高", "糕", "膏"], "xìng": ["兴", "姓", "幸", "性"], "gè": ["个", "各"], "gōng": ["工", "公", "功", "供", "恭", "攻", "宫", "躬"], "zuò": ["作", "坐", "做", "座"], "gǒu": ["狗", "苟"], "hàn": ["汉", "汗", "憾", "旱", "捍", "撼"], "yǔ": ["语", "雨", "与", "羽", "屿", "予", "宇"], "hǎo": ["好"], "hào": ["号", "耗"], "hē": ["喝", "呵"], "hé": ["和", "河", "合", "盒", "何", "核", "阂"], "hěn": ["很", "狠"], "hòu": ["后", "候", "厚"], "miàn": ["面"], "huí": ["回"], "huì": ["会", "汇", "惠", "慧", "贿", "讳", "绘"], "jǐ": ["几", "己", "挤"], "jiā": ["家", "加", "夹", "嘉", "佳"], "jiào": ["叫", "教", "较"], "jīn": ["今", "斤", "金", "巾", "津", "筋"], "tiān": ["天", "添"], "jiǔ": ["九", "久", "酒"], "kāi": ["开"], "kàn": ["看"], "jiàn": ["见", "件", "健", "键", "建", "践", "荐", "渐", "箭", "剑", "舰", "溅", "鉴"], "kuài": ["块", "快", "筷"], "lái": ["来"], "lǎo": ["老", "姥"], "shī": ["师", "失", "湿", "施", "诗", "狮", "尸"], "le": ["了"], "lěng": ["冷"], "lǐ": ["里", "理", "礼", "李"], "liù": ["六"], "mā": ["妈"], "ma": ["吗", "嘛"], "mǎi": ["买"], "māo": ["猫"], "méi": ["没", "霉", "眉", "媒", "煤", "枚"], "guān": ["关", "观", "官", "冠"], "xì": ["系", "戏", "细", "隙"], "yǒu": ["有", "友"], "mǐ": ["米"], "míng": ["名", "明", "鸣", "铭"], "zì": ["字", "自"], "nǎ": ["哪"], "nà": ["那", "纳"], "ne": ["呢"], "néng": ["能"], "nǐ": ["你", "拟"], "nián": ["年"], "nǚ": ["女"], "péng": ["朋", "膨", "篷", "蓬"], "piào": ["漂", "票"], "liàng": ["亮", "辆", "量", "谅", "晾"], "píng": ["苹", "瓶", "平", "评", "凭", "屏"], "guǒ": ["果", "裹"], "qī": ["七", "期", "妻", "戚", "凄", "欺", "漆"], "qián": ["前", "钱", "潜"], "qǐng": ["请"], "qù": ["去", "趣"], "rè": ["热"], "rén": ["人", "仁"], "rèn": ["认", "任", "韧", "饪"], "shí": ["识", "十", "时", "实", "拾", "食", "石", "蚀"], "sān": ["三"], "shāng": ["商", "伤"], "shàng": ["上", "尚"], "wǔ": ["午", "五", "舞", "武", "伍", "侮"], "shéi": ["谁"], "shén": ["什", "甚", "神"], "me": ["么"], "shū": ["书", "叔", "舒", "输", "梳", "蔬", "殊", "抒", "疏"], "shuǐ": ["水"], "shuì": ["睡", "税"], "jué": ["觉", "决", "绝", "嚼", "倔", "掘"], "shuō": ["说"], "sì": ["四", "肆", "寺", "饲"], "suì": ["岁", "碎", "隧"], "tā": ["他", "她", "它", "塌"], "tài": ["太", "态", "泰", "汰"], "tīng": ["听", "厅"], "tóng": ["同", "童", "铜"], "xué": ["学", "穴"], "wèi": ["喂", "为", "位", "卫", "味", "慰", "未", "胃", "谓", "畏", "蔚"], "wǒ": ["我"], "men": ["们"], "xǐ": ["喜", "洗", "徙"], "huān": ["欢"], "xià": ["下", "夏", "吓"], "xiān": ["先", "鲜", "仙", "纤", "掀"], "shēng": ["生", "声", "升", "牲"], "xiàn": ["现", "羡", "线", "献", "县", "限", "陷", "宪", "馅"], "zài": ["在", "再", "载"], "xiǎng": ["想", "响", "享"], "xiǎo": ["小", "晓"], "jiě": ["姐", "解"], "xiē": ["些", "歇"], "xiě": ["写"], "xiè": ["谢", "屑", "泻", "械", "泄", "卸"], "xīng": ["星", "腥"], "xí": ["习", "席", "袭", "媳"], "xiào": ["校", "笑", "效", "孝", "啸", "肖"], "yī": ["一", "衣", "医", "依"], "fú": ["服", "符", "福", "佛", "扶", "幅", "袱", "俘", "辐", "伏", "浮"], "yuàn": ["院", "愿", "怨"], "yǐ": ["椅", "以", "已", "乙", "蚁"], "yuè": ["月", "越", "阅", "跃", "悦", "岳"], "zěn": ["怎"], "yàng": ["样"], "zhè": ["这"], "guó": ["国"], "zhù": ["住", "助", "注", "祝", "著", "筑", "柱", "驻", "铸"], "zhuō": ["桌", "拙", "捉"], "zuó": ["昨", "琢"], "ba": ["吧"], "bái": ["白"], "bǎi": ["百", "摆"], "bāng": ["帮"], "bào": ["报", "抱", "暴", "爆"], "zhǐ": ["纸", "只", "址", "止", "指", "旨"], "bǐ": ["比", "笔", "彼", "鄙"], "bié": ["别"], "bīn": ["宾", "濒", "滨"], "guǎn": ["馆", "管"], "zhǎng": ["长", "掌", "涨"], "chàng": ["唱", "倡", "畅"], "gē": ["歌", "哥", "胳", "疙", "鸽", "搁", "割"], "chuān": ["穿", "川"], "cì": ["次", "刺", "伺"], "cóng": ["从", "丛"], "cuò": ["错", "措", "挫"], "lán": ["篮", "蓝", "拦", "栏", "婪"], "qiú": ["球", "求"], "dào": ["到", "道", "倒", "盗", "稻", "悼"], "dé": ["得", "德"], "děng": ["等"], "dì": ["弟", "第", "递", "蒂", "帝", "缔"], "dǒng": ["懂", "董"], "fáng": ["房", "妨", "防", "肪"], "jiān": ["间", "坚", "肩", "艰", "兼", "尖", "监", "煎"], "cháng": ["常", "尝", "偿", "肠"], "wù": ["务", "物", "误", "勿", "雾", "悟", "晤"], "yuán": ["员", "园", "元", "原", "源", "圆", "缘", "辕", "援"], "gào": ["告"], "sù": ["诉", "速", "塑", "宿", "肃", "素"], "gěi": ["给"], "gòng": ["共", "贡"], "sī": ["司", "思", "丝", "私", "撕", "斯"], "guì": ["贵", "柜", "跪"], "guò": ["过"], "hái": ["还", "孩"], "hēi": ["黑", "嘿"], "hóng": ["红", "虹", "宏", "洪"], "huǒ": ["火", "伙"], "zhàn": ["站", "占", "战"], "chǎng": ["场", "厂", "敞"], "dàn": ["蛋", "但", "弹", "淡", "旦", "诞", "惮"], "jiè": ["介", "借", "界", "戒", "届", "诫"], "shào": ["绍", "哨"], "jìn": ["进", "近", "禁", "劲", "晋", "浸"], "jiù": ["就", "旧", "救", "舅"], "kā": ["咖"], "shǐ": ["始", "史", "使", "驶"], "kǎo": ["考", "烤"], "kě": ["可", "渴"], "lè": ["乐"], "lèi": ["累", "类", "泪"], "lí": ["离", "璃", "厘", "梨", "黎"], "liǎng": ["两"], "líng": ["零", "龄", "凌", "灵", "铃", "伶", "陵"], "lù": ["路", "录", "陆", "露", "赂", "碌"], "lǚ": ["旅", "侣", "屡", "履"], "yóu": ["游", "邮", "油", "尤", "由", "犹"], "mài": ["卖", "麦", "脉", "迈"], "màn": ["慢", "漫", "蔓"], "máng": ["忙", "芒", "氓", "盲", "茫"], "měi": ["每", "美"], "mèi": ["妹", "魅", "昧"], "mén": ["门"], "tiáo": ["条"], "nán": ["男", "南", "难"], "nín": ["您"], "niú": ["牛"], "nǎi": ["奶"], "páng": ["旁", "庞"], "biān": ["边", "编", "鞭"], "pǎo": ["跑"], "biàn": ["便", "变", "遍", "辩", "辨", "辫"], "yí": ["宜", "姨", "疑", "移", "遗", "仪"], "chuáng": ["床", "幢"], "qiān": ["千", "铅", "签", "谦", "迁", "牵"], "qíng": ["晴", "情", "擎"], "ràng": ["让"], "rì": ["日"], "bān": ["班", "搬", "般", "颁", "斑"], "shēn": ["身", "申", "深", "伸", "呻", "绅"], "tǐ": ["体"], "bìng": ["病", "并"], "shǒu": ["手", "首", "守"], "biǎo": ["表"], "sòng": ["送", "诵", "颂", "讼"], "suī": ["虽"], "rán": ["然", "燃"], "tī": ["踢", "梯", "剔"], "zú": ["足", "族"], "tí": ["题", "提"], "tiào": ["跳"], "wài": ["外"], "wán": ["完", "玩", "丸", "顽"], "wǎn": ["晚", "碗", "挽", "惋"], "wǎng": ["往", "网", "枉"], "wèn": ["问"], "guā": ["瓜", "刮"], "wàng": ["望", "忘", "妄", "旺"], "xīn": ["新", "心", "辛", "欣", "薪"], "xiū": ["休", "羞", "修"], "xuě": ["雪"], "yán": ["颜", "严", "研", "盐", "言", "延", "炎", "岩", "沿"], "sè": ["色", "涩", "啬"], "yǎn": ["眼", "演", "衍", "掩"], "yáng": ["羊", "阳", "扬", "洋"], "ròu": ["肉"], "yào": ["药", "要", "钥", "耀"], "yě": ["也", "野"], "yì": ["意", "议", "易", "译", "忆", "艺", "谊", "裔", "益", "亿", "义", "异", "绎", "疫", "翼", "抑", "亦", "毅", "役"], "yīn": ["因", "阴", "音", "姻"], "suǒ": ["所", "索", "锁"], "yǒng": ["泳", "永", "勇", "涌", "踊"], "yòu": ["右", "又", "幼", "诱"], "yú": ["鱼", "于", "愉", "余", "娱", "渔", "愚", "舆"], "yuǎn": ["远"], "yùn": ["运", "孕", "酝", "蕴", "熨"], "dòng": ["动", "冻", "洞", "栋"], "zǎo": ["早", "澡"], "zhàng": ["丈", "账", "障", "仗", "杖", "胀", "帐"], "fū": ["夫", "肤", "敷"], "zhǎo": ["找", "沼"], "zhe": ["着"], "zhēn": ["真", "针", "珍", "侦", "斟"], "zhèng": ["正", "证", "政", "症", "郑"], "zhī": ["知", "之", "汁", "支", "织", "肢", "枝", "脂"], "zhǔn": ["准"], "bèi": ["备", "被", "倍", "贝", "背", "辈", "狈", "惫"], "zǒu": ["走"], "zuì": ["最", "醉", "罪"], "zuǒ": ["左"], "ā": ["阿"], "a": ["啊"], "ǎi": ["矮", "蔼"], "ān": ["安"], "jìng": ["静", "净", "境", "竞", "竟", "镜", "敬", "径"], "bǎ": ["把"], "bàn": ["办", "半", "扮", "伴", "瓣", "拌"], "fǎ": ["法"], "bāo": ["包", "胞"], "bǎo": ["饱", "保", "宝", "堡"], "fāng": ["方"], "bí": ["鼻"], "sài": ["赛"], "jì": ["记", "季", "计", "际", "技", "既", "继", "寄", "济", "纪", "寂", "迹", "忌", "剂"], "bì": ["必", "毕", "避", "壁", "闭", "币", "庇", "弊", "臂", "痹", "蔽"], "xū": ["须", "需", "虚", "墟", "吁"], "bīng": ["冰", "兵"], "xiāng": ["箱", "相", "香", "厢", "乡", "镶"], "qiě": ["且"], "dān": ["单", "担", "耽"], "cān": ["参", "餐"], "cǎo": ["草"], "céng": ["层", "曾"], "chà": ["差", "岔", "诧"], "chāo": ["超", "抄", "钞"], "chèn": ["衬", "趁"], "shān": ["衫", "山", "删"], "chéng": ["成", "城", "诚", "乘", "程", "承", "呈", "惩", "澄", "橙"], "chí": ["迟", "持", "池", "驰"], "chú": ["除", "厨"], "chuán": ["船", "传"], "chūn": ["春"], "cí": ["词", "辞", "慈", "磁", "雌", "瓷"], "cōng": ["聪", "匆"], "sǎo": ["扫", "嫂"], "suàn": ["算"], "dài": ["带", "戴", "袋", "代", "贷", "待", "怠"], "dāng": ["当"], "dēng": ["灯", "登", "蹬"], "tiě": ["铁"], "tú": ["图", "途", "涂", "徒"], "duǎn": ["短"], "duàn": ["段", "锻", "断"], "liàn": ["炼", "练", "恋", "链"], "è": ["饿", "恶", "遏"], "ěr": ["耳", "尔"], "duǒ": ["朵", "躲"], "fā": ["发"], "shāo": ["烧", "稍", "捎", "梢"], "fàng": ["放"], "fù": ["附", "复", "富", "父", "付", "负", "傅", "妇", "咐", "副", "赋", "腹", "覆", "赴", "缚"], "gàn": ["干"], "gǎn": ["感", "赶", "敢"], "mào": ["冒", "帽", "貌", "贸", "茂"], "gāng": ["刚", "钢", "纲", "杠"], "cái": ["才", "材", "财", "裁"], "gēn": ["根", "跟"], "jù": ["据", "句", "具", "剧", "拒", "距", "聚", "巨", "俱", "惧"], "gèng": ["更"], "gù": ["故", "顾", "固", "雇"], "fēng": ["风", "丰", "封", "疯", "蜂", "锋", "峰"], "hài": ["害"], "pà": ["怕"], "bǎn": ["板", "版"], "hù": ["护", "户", "互"], "zhào": ["照", "召", "罩", "兆"], "huā": ["花", "哗"], "huài": ["坏"], "yíng": ["迎", "赢", "营", "盈"], "huán": ["环"], "huàn": ["换", "幻", "唤", "患", "痪"], "huáng": ["黄", "皇", "煌"], "dá": ["答", "达"], "huò": ["或", "获", "货", "霍", "惑", "祸"], "zhě": ["者"], "hū": ["乎", "呼", "忽"], "jí": ["极", "级", "急", "籍", "及", "即", "辑", "集", "疾", "吉", "嫉"], "jié": ["节", "结", "洁", "杰", "截", "竭", "捷", "劫"], "jiǎn": ["检", "简", "减", "捡", "剪", "拣", "俭", "柬"], "kāng": ["康", "慷"], "jiǎng": ["讲", "奖", "桨"], "jiǎo": ["角", "脚", "饺", "狡", "侥", "搅", "缴"], "jiē": ["接", "街", "阶", "皆", "揭"], "mù": ["目", "慕", "幕", "木", "墓", "睦", "沐", "牧"], "hūn": ["婚", "昏", "荤"], "shù": ["束", "树", "数", "术", "述", "墅", "恕", "竖"], "dìng": ["定", "订"], "kōng": ["空"], "diào": ["调", "掉", "钓", "吊"], "kǒu": ["口"], "kū": ["哭", "枯"], "kù": ["裤", "库", "酷"], "lì": ["历", "力", "励", "厉", "例", "利", "丽", "立", "粒", "俐", "隶"], "liǎn": ["脸"], "liáo": ["聊", "疗", "辽"], "lín": ["邻", "林", "临", "淋"], "jū": ["居", "拘", "鞠"], "liú": ["留", "流", "浏", "瘤"], "lóu": ["楼"], "lǜ": ["绿", "律", "虑", "率", "滤"], "mǎ": ["马", "码", "蚂"], "mǎn": ["满"], "ná": ["拿"], "qīng": ["轻", "清", "青", "倾"], "niǎo": ["鸟"], "nǔ": ["努"], "pá": ["爬"], "pán": ["盘"], "pàng": ["胖"], "pí": ["皮", "啤", "脾", "疲"], "xié": ["鞋", "胁", "斜", "谐", "协", "携"], "qí": ["其", "奇", "骑", "棋", "齐", "歧", "旗"], "guài": ["怪"], "chǔ": ["楚", "础", "储"], "jiǎ": ["假", "甲"], "qiū": ["秋", "丘"], "qún": ["裙", "群"], "róng": ["容", "荣", "融", "溶", "绒"], "rú": ["如", "儒"], "sǎn": ["伞"], "shòu": ["瘦", "授", "受", "售", "寿", "兽"], "shuā": ["刷"], "yá": ["牙", "芽", "崖"], "shuāng": ["双", "霜"], "tè": ["特"], "téng": ["疼", "腾"], "yù": ["育", "遇", "预", "寓", "域", "豫", "玉", "喻", "御", "裕", "狱", "誉", "浴", "郁", "欲", "愈"], "tián": ["甜", "填", "田"], "tóu": ["头", "投"], "tū": ["突", "凸", "秃"], "tuǐ": ["腿"], "wàn": ["万"], "wén": ["文", "闻", "纹"], "guàn": ["惯", "贯", "灌", "罐"], "xìn": ["信", "衅"], "jiāo": ["蕉", "交", "郊", "骄", "浇", "胶", "椒", "娇", "焦"], "xiàng": ["向", "像", "橡", "象", "项", "巷"], "yòng": ["用"], "kǎ": ["卡"], "xíng": ["行", "型", "形", "刑"], "xióng": ["熊", "雄"], "xuǎn": ["选"], "zé": ["择", "则", "责", "泽"], "yé": ["爷"], "zhí": ["直", "值", "职", "植", "执", "殖", "侄"], "yín": ["银", "吟"], "yǐn": ["饮", "引", "瘾", "隐"], "liào": ["料"], "yīng": ["应", "英", "婴"], "gāi": ["该"], "zhāng": ["张", "章", "彰"], "piàn": ["片", "骗"], "zhǒng": ["种", "肿"], "zhòng": ["重", "众"], "zhōu": ["周", "洲", "舟", "州", "粥"], "mò": ["末", "默", "寞", "陌", "漠", "莫", "墨", "沫"], "zhǔ": ["主", "煮", "嘱", "瞩", "拄"], "zǒng": ["总"], "zuǐ": ["嘴"], "yè": ["业", "叶", "页", "夜", "液"], "pái": ["排", "牌", "徘"], "quán": ["全", "泉", "权", "拳"], "àn": ["按", "案", "岸", "暗"], "bàng": ["棒", "傍", "磅", "谤"], "qiàn": ["歉", "欠", "嵌"], "bèn": ["笨"], "biāo": ["标"], "gé": ["格", "革", "隔"], "bǐng": ["饼", "丙"], "bó": ["博", "膊", "脖", "伯", "搏", "舶", "驳", "勃"], "jǐn": ["仅", "尽", "紧", "谨", "锦"], "cā": ["擦"], "cāi": ["猜"], "cè": ["厕", "册", "测", "策", "侧"], "jiāng": ["江", "将", "疆", "僵"], "chōu": ["抽"], "yān": ["烟", "淹"], "chuāng": ["窗"], "cū": ["粗"], "cún": ["存"], "rǎo": ["扰"], "yìn": ["印"], "zhāo": ["招"], "zhé": ["折", "哲", "辙"], "gài": ["概", "盖", "钙", "溉", "丐"], "yuē": ["约"], "dāo": ["刀", "叨"], "dǎo": ["导", "岛", "捣", "蹈"], "chù": ["处", "触", "畜"], "dǐ": ["底", "抵"], "dī": ["低", "滴", "堤"], "diū": ["丢"], "dǔ": ["堵", "赌", "睹"], "dù": ["肚", "度", "杜", "渡", "妒"], "zhǎn": ["展", "斩", "崭"], "fān": ["翻", "番", "帆"], "fán": ["烦", "繁", "凡"], "fǎn": ["反", "返"], "shǔ": ["暑", "属", "鼠", "署"], "sōng": ["松"], "fèn": ["份", "奋", "愤"], "fǒu": ["否"], "qīn": ["亲", "钦", "侵"], "kuǎn": ["款"], "zá": ["杂", "砸"], "gǎi": ["改"], "zī": ["资", "咨", "姿", "滋"], "gòu": ["购", "够", "构"], "gū": ["估", "姑", "孤", "辜"], "gǔ": ["鼓", "古", "股", "骨", "谷"], "guà": ["挂"], "guāng": ["光"], "guǎng": ["广"], "bō": ["播", "玻", "波", "拨", "剥"], "guàng": ["逛"], "guī": ["规", "归"], "hǎi": ["海"], "hán": ["寒", "含", "涵"], "háng": ["航"], "huǐ": ["悔", "毁"], "lián": ["联", "怜", "连", "帘", "廉"], "huái": ["怀", "徊"], "huó": ["活"], "pō": ["泼", "泊", "坡"], "xù": ["续", "序", "绪", "叙", "蓄", "酗"], "jià": ["价", "架", "驾", "嫁", "稼"], "féi": ["肥"], "jiàng": ["降", "酱"], "luò": ["落", "络"], "tōng": ["通"], "qū": ["区", "趋", "屈", "曲", "驱"], "ào": ["傲", "奥"], "yàn": ["验", "厌", "艳", "宴", "焰", "咽"], "cǎi": ["彩", "采", "踩", "睬"], "jǐng": ["景", "警", "井", "颈", "阱"], "zhēng": ["争", "征", "睁", "挣", "蒸"], "jiū": ["究", "纠"], "jǔ": ["举", "矩", "咀", "沮"], "yā": ["鸭", "压", "押", "鸦"], "kē": ["科", "棵", "颗", "磕"], "hāi": ["咳", "嗨"], "sòu": ["嗽"], "kěn": ["肯", "恳", "啃"], "kǒng": ["恐", "孔"], "kǔ": ["苦"], "kuàng": ["矿", "况", "旷", "眶"], "kùn": ["困"], "lā": ["垃", "拉"], "tǒng": ["桶", "统", "筒"], "là": ["辣", "蜡"], "lǎn": ["懒", "览"], "làng": ["浪"], "fèi": ["费", "废", "肺", "沸"], "hǔ": ["虎"], "bài": ["拜", "败"], "liǎ": ["俩"], "liáng": ["凉", "良", "粮", "梁"], "lìng": ["另", "令"], "luàn": ["乱"], "má": ["麻"], "máo": ["毛", "矛", "髦"], "mèng": ["梦"], "mí": ["迷", "弥", "谜"], "mì": ["密", "秘", "蜜", "泌", "觅"], "miǎn": ["免", "勉"], "miǎo": ["秒", "渺", "藐"], "mín": ["民"], "mǔ": ["母", "姆"], "nài": ["耐", "奈"], "nèi": ["内"], "nòng": ["弄"], "nuǎn": ["暖"], "ǒu": ["偶", "呕"], "liè": ["列", "劣", "烈", "猎", "裂"], "pàn": ["判", "盼", "叛", "畔"], "péi": ["陪", "培", "赔"], "pī": ["批", "披", "劈"], "piān": ["篇", "偏"], "pīng": ["乒"], "pāng": ["乓"], "pò": ["破", "迫", "魄"], "pú": ["葡"], "táo": ["萄", "逃", "桃", "淘", "陶"], "pǔ": ["普", "朴", "谱"], "qiāo": ["敲", "悄"], "qiáo": ["桥", "瞧", "侨"], "qiǎo": ["巧"], "qióng": ["穷"], "qǔ": ["取", "娶"], "quē": ["缺"], "què": ["却", "确", "雀"], "nào": ["闹"], "rēng": ["扔"], "réng": ["仍"], "rù": ["入"], "sàn": ["散"], "sēn": ["森"], "shā": ["沙", "杀", "刹"], "wēi": ["微", "危", "威", "萎"], "sháo": ["勺"], "shè": ["社", "设", "射", "摄", "涉"], "zhì": ["至", "志", "质", "致", "制", "置", "治", "秩", "智", "挚", "帜", "滞", "掷", "稚"], "mìng": ["命"], "shěng": ["省"], "shèng": ["剩", "胜", "盛", "圣"], "shōu": ["收"], "shú": ["熟"], "shuài": ["帅"], "shùn": ["顺", "瞬"], "shuò": ["硕", "烁"], "sǐ": ["死"], "suān": ["酸"], "suí": ["随"], "sūn": ["孙"], "tái": ["台", "抬"], "tán": ["谈", "坛"], "qín": ["琴", "勤", "禽"], "tāng": ["汤"], "táng": ["糖", "塘", "唐", "堂", "膛"], "tǎng": ["躺", "倘"], "tàng": ["趟", "烫"], "tǎo": ["讨"], "lùn": ["论"], "xǐng": ["醒"], "tíng": ["停", "庭", "亭"], "tǐng": ["挺", "艇"], "tuī": ["推"], "tuō": ["脱", "托", "拖"], "wà": ["袜"], "xiǎn": ["险", "显"], "wēn": ["温"], "wū": ["污", "屋", "乌", "诬"], "rǎn": ["染"], "wú": ["无"], "xián": ["咸", "闲", "贤", "弦", "衔", "嫌"], "xiáng": ["详", "祥", "翔"], "xiāo": ["消", "销", "潇", "宵"], "xǔ": ["许"], "ya": ["呀"], "yà": ["亚", "讶"], "yǎng": ["养", "痒", "氧", "仰"], "yāo": ["邀", "腰"], "shi": ["匙"], "qiè": ["切", "怯", "窃", "锲"], "cǐ": ["此"], "pìn": ["聘"], "yōu": ["优", "幽", "悠", "忧"], "xiù": ["秀", "袖", "锈", "绣", "嗅"], "jú": ["局", "桔"], "yún": ["云", "匀"], "yǔn": ["允"], "zán": ["咱"], "zàn": ["暂", "赞"], "zàng": ["脏", "葬"], "zēng": ["增"], "zhěng": ["整"], "wéi": ["围", "违", "唯", "维"], "hè": ["贺"], "zhuān": ["专", "砖"], "zhuǎn": ["转"], "zhuàn": ["赚"], "zǎi": ["仔", "宰"], "zūn": ["尊", "遵"], "āi": ["哎", "唉", "挨", "哀"], "zhuāng": ["装", "妆", "庄"], "áo": ["熬"], "wò": ["握", "卧", "沃"], "kuò": ["括", "扩", "阔", "廓"], "báo": ["薄", "雹"], "lǐng": ["领"], "pào": ["炮", "泡"], "bǔ": ["补", "捕", "哺"], "chōng": ["充", "冲"], "zhòu": ["骤", "宙", "昼", "皱"], "chǎn": ["产", "阐"], "fǎng": ["访", "仿", "纺"], "cán": ["惭", "残"], "kuì": ["愧", "溃", "馈"], "cāo": ["操", "糙"], "chā": ["叉", "插"], "chāi": ["拆"], "pǐn": ["品"], "cháo": ["朝", "潮", "巢", "嘲"], "chǎo": ["吵", "炒"], "chè": ["彻", "撤", "澈"], "chén": ["沉", "尘", "陈", "臣", "辰", "晨"], "chēng": ["称", "撑"], "kuī": ["亏"], "chǐ": ["尺", "齿", "侈", "耻"], "chì": ["翅", "赤", "斥"], "bǎng": ["膀", "绑", "榜"], "chǒng": ["宠"], "tì": ["屉", "嚏", "替", "涕", "惕"], "chǒu": ["丑"], "chòu": ["臭"], "chuǎng": ["闯"], "chuàng": ["创"], "zào": ["造", "皂", "燥", "躁", "灶", "噪"], "chuī": ["吹", "炊"], "cù": ["促", "醋"], "cuī": ["催", "摧"], "pēn": ["喷"], "shà": ["厦"], "dāi": ["呆"], "chún": ["纯", "唇"], "dǎn": ["胆"], "guǐ": ["鬼", "轨"], "dǎng": ["挡", "党"], "dí": ["敌"], "tǎn": ["毯", "坦"], "zhèn": ["震", "阵", "振", "镇"], "dǐng": ["顶"], "dòu": ["豆", "逗", "斗"], "fǔ": ["腐", "辅", "府", "抚", "俯"], "duī": ["堆"], "dūn": ["吨", "蹲"], "dùn": ["顿", "盾", "钝"], "cáng": ["藏"], "chóu": ["愁", "绸", "仇", "酬", "稠", "筹", "畴"], "dǒu": ["抖", "陡"], "huī": ["挥", "灰", "恢", "辉"], "fá": ["罚", "乏", "伐"], "yìng": ["映", "硬"], "pèi": ["配", "佩", "沛"], "sú": ["俗"], "kuáng": ["狂"], "fěng": ["讽"], "shàn": ["善", "扇", "擅"], "niàn": ["念"], "cuì": ["脆", "粹"], "dàng": ["档", "荡"], "gǎo": ["搞", "稿"], "gōu": ["沟", "勾", "钩"], "niáng": ["娘"], "guāi": ["乖"], "guǎi": ["拐"], "wān": ["弯", "湾"], "jūn": ["军", "均", "君", "菌"], "huá": ["滑", "华", "猾"], "mó": ["模", "摩", "膜", "磨", "魔"], "gǔn": ["滚"], "guō": ["锅"], "qìng": ["庆"], "wáng": ["王", "亡"], "mǐn": ["敏"], "hā": ["哈"], "hǎn": ["喊", "罕"], "háo": ["豪", "毫"], "hèn": ["恨"], "hóu": ["猴", "喉"], "hú": ["胡", "壶", "蝴", "糊", "湖"], "dié": ["蝶", "叠", "谍"], "huǎn": ["缓"], "huāng": ["慌", "荒"], "chái": ["柴"], "zhěn": ["诊", "枕"], "qiáng": ["强", "墙"], "xùn": ["训", "迅", "逊", "讯"], "shèn": ["慎", "渗"], "juān": ["捐"], "kǎn": ["砍", "侃"], "kào": ["靠"], "kòng": ["控"], "kuā": ["夸"], "kuān": ["宽"], "kūn": ["昆"], "chóng": ["虫", "崇"], "làn": ["烂", "滥"], "lǎng": ["朗"], "láo": ["劳", "牢", "唠"], "pó": ["婆"], "léi": ["雷"], "rùn": ["润"], "lóng": ["龙", "笼", "咙", "聋", "隆"], "lòu": ["漏", "陋"], "lún": ["轮", "伦"], "luó": ["逻"], "mà": ["骂"], "mán": ["馒", "蛮", "瞒"], "tàn": ["炭", "碳", "探", "叹"], "miáo": ["苗", "描", "瞄"], "mō": ["摸"], "mǒu": ["某"], "nèn": ["嫩"], "ń": ["嗯"], "níng": ["宁", "凝", "拧"], "nóng": ["农", "浓"], "cūn": ["村"], "ōu": ["欧", "殴"], "pāi": ["拍"], "pài": ["派"], "pén": ["盆"], "pèng": ["碰"], "pǐ": ["匹"], "piāo": ["飘"], "pīn": ["拼"], "pín": ["频", "贫"], "héng": ["衡", "横", "恒"], "qiǎn": ["浅", "遣", "谴"], "qiāng": ["枪", "腔"], "qiǎng": ["抢"], "miào": ["妙", "庙"], "quān": ["圈"], "quàn": ["劝", "券"], "rào": ["绕"], "rěn": ["忍"], "ruǎn": ["软"], "ruò": ["弱", "若"], "sǎ": ["洒"], "sǎng": ["嗓"], "tān": ["滩", "贪", "摊", "瘫"], "shǎ": ["傻"], "shài": ["晒"], "shǎn": ["闪"], "shé": ["蛇", "舌"], "shě": ["舍"], "shéng": ["绳"], "lüè": ["略", "掠"], "mián": ["眠", "棉"], "juǎn": ["卷"], "tào": ["套"], "shuāi": ["摔", "衰"], "shuǎi": ["甩"], "sōu": ["搜", "艘"], "sǔn": ["损"], "suō": ["缩", "唆"], "tiē": ["贴", "帖"], "tiāo": ["挑"], "tòng": ["痛"], "tōu": ["偷"], "tòu": ["透"], "tǔ": ["土", "吐"], "tù": ["兔"], "tuán": ["团"], "tuì": ["退"], "wāi": ["歪"], "wěi": ["伟", "尾", "委", "纬", "伪"], "róu": ["柔", "揉"], "wěn": ["吻", "稳", "紊"], "xiā": ["瞎"], "xuè": ["血"], "shǎng": ["赏"], "zhuàng": ["状", "撞", "壮"], "xiōng": ["兄", "胸", "凶", "汹"], "xuān": ["宣", "暄", "喧"], "xún": ["寻", "询", "旬", "巡", "循"], "yáo": ["摇", "肴", "谣", "遥"], "yǎo": ["咬"], "jùn": ["俊", "峻"], "yōng": ["拥", "佣", "庸"], "zhà": ["炸", "榨", "诈"], "yūn": ["晕"], "zāi": ["灾", "栽"], "zāo": ["糟", "遭"], "zhāi": ["摘"], "zhǎi": ["窄"], "zhān": ["粘", "沾", "瞻"], "zhū": ["猪", "珠", "株", "诸"], "zhú": ["竹", "逐", "烛"], "zhuā": ["抓"], "zhuī": ["追"], "zǐ": ["紫"], "zōng": ["综", "踪", "宗", "棕"], "zǔ": ["阻", "组", "祖"], "ái": ["癌"], "áng": ["昂"], "āo": ["凹"], "bá": ["拔"], "bāi": ["掰"], "cāng": ["沧", "仓", "苍", "舱"], "sāng": ["桑"], "pù": ["曝", "铺", "瀑"], "cǎn": ["惨"], "ké": ["壳"], "bēn": ["奔"], "bēng": ["崩"], "béng": ["甭"], "bèng": ["迸", "蹦"], "bī": ["逼"], "sāi": ["塞"], "duān": ["端"], "biǎn": ["贬", "扁"], "biē": ["憋"], "niǔ": ["扭", "纽"], "tāo": ["涛", "掏", "滔"], "xuē": ["削"], "rǔ": ["乳", "辱"], "kān": ["堪", "刊", "勘"], "fèng": ["缝", "奉"], "móu": ["谋"], "càn": ["灿"], "zòng": ["纵"], "cáo": ["嘈"], "chān": ["搀"], "chán": ["馋", "缠"], "chàn": ["颤"], "chāng": ["昌"], "mèn": ["闷"], "nuò": ["诺"], "chèng": ["秤"], "chuǎn": ["喘"], "chuàn": ["串"], "pěng": ["捧"], "chuí": ["垂", "锤", "椎"], "còu": ["凑"], "lǔ": ["鲁", "虏"], "cuàn": ["窜"], "cuō": ["搓", "磋"], "dā": ["搭"], "dǎi": ["歹", "逮"], "dèng": ["瞪"], "kàng": ["抗"], "diān": ["颠"], "bǒ": ["簸"], "zhuì": ["缀", "坠"], "diāo": ["叼", "雕"], "diē": ["跌"], "dīng": ["丁", "叮", "盯", "钉"], "qiào": ["峭", "窍", "翘"], "dū": ["督"], "suo": ["嗦"], "duò": ["堕", "惰"], "é": ["额"], "ēn": ["恩"], "fěi": ["诽"], "qǐn": ["寝"], "cùn": ["寸"], "fén": ["坟"], "fěn": ["粉"], "nù": ["怒"], "féng": ["逢"], "xiǔ": ["朽"], "gān": ["尴", "杆", "甘"], "gà": ["尬"], "kǎi": ["慨"], "gǎng": ["岗", "港"], "da": ["瘩"], "gēng": ["耕"], "gǒng": ["巩"], "xiá": ["辖", "侠", "峡", "狭", "霞"], "gùn": ["棍"], "hén": ["痕"], "hēng": ["哼"], "hōng": ["轰", "烘", "哄"], "hǒu": ["吼"], "lěi": ["蕾"], "miù": ["谬"], "huǎng": ["恍", "晃", "谎"], "miè": ["灭", "蔑"], "hún": ["浑", "魂"], "hùn": ["混"], "xiáo": ["淆"], "zhuó": ["浊", "酌", "卓"], "ruì": ["锐"], "tà": ["踏", "拓", "蹋"], "zòu": ["奏", "揍"], "pōu": ["剖"], "sàng": ["丧"], "pì": ["辟", "屁", "譬", "僻"], "káng": ["扛"], "lǒng": ["拢", "垄"], "kēng": ["坑"], "kòu": ["扣"], "kuà": ["挎", "跨"], "kuāng": ["筐", "框"], "kǔn": ["捆"], "lǎ": ["喇"], "la": ["啦"], "láng": ["狼", "郎", "廊"], "tūn": ["吞"], "lāo": ["捞"], "sāo": ["骚"], "lèng": ["愣"], "méng": ["盟", "萌", "蒙"], "lìn": ["吝", "赁"], "liū": ["溜"], "yǎ": ["哑", "雅"], "lǒu": ["搂"], "lú": ["炉"], "duó": ["夺"], "tāi": ["胎"], "luō": ["啰"], "mái": ["埋"], "měng": ["猛"], "mī": ["眯"], "mǒ": ["抹"], "nì": ["逆", "腻"], "niē": ["捏"], "nú": ["奴"], "nüè": ["虐"], "nuó": ["挪"], "ó": ["哦"], "pā": ["趴"], "pān": ["攀"], "xuán": ["旋", "悬"], "pāo": ["抛"], "pēng": ["烹"], "juàn": ["倦"], "piē": ["撇"], "pǒ": ["颇"], "pū": ["扑"], "páo": ["袍"], "qiā": ["掐"], "qià": ["洽", "恰"], "chě": ["扯"], "qú": ["渠"], "quǎn": ["犬"], "qué": ["瘸"], "rǎng": ["嚷", "壤"], "ráo": ["饶"], "rě": ["惹"], "sā": ["撒"], "shá": ["啥"], "shāi": ["筛"], "shē": ["奢"], "shěn": ["审"], "shuǎ": ["耍"], "shuàn": ["涮"], "shuǎng": ["爽"], "ní": ["泥"], "sǒng": ["耸"], "sū": ["苏"], "tǎ": ["塔"], "tiǎn": ["舔"], "tuǒ": ["妥", "椭"], "tuò": ["唾"], "wā": ["挖"], "wa": ["哇"], "wá": ["娃"], "wǎ": ["瓦"], "wō": ["窝"], "lài": ["赖"], "xuàn": ["炫"], "xūn": ["熏"], "shang": ["裳"], "chǔn": ["蠢"], "yuān": ["冤"], "niàng": ["酿"], "zǎ": ["咋"], "zǎn": ["攒"], "yāng": ["殃", "央"], "zéi": ["贼"], "zèng": ["赠"], "zhā": ["扎", "渣"], "zhǎ": ["眨"], "zhài": ["债"], "zhē": ["遮"], "zhái": ["宅"], "zhuāi": ["拽"], "náo": ["挠"], "zuān": ["钻"]}
+`;
+//_words = JSON.parse(s);
+</script>
+</body>
+</html>
