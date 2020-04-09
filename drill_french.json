@@ -1,0 +1,1942 @@
+[
+  {
+    "w":"être",
+    "wi":"ˈɛtʁ",
+    "p":[
+      "je suis",
+      "tu es",
+      "il est",
+      "nous sommes",
+      "vous êtes",
+      "ils sont"
+    ],
+    "pi":[
+      "ʒə- syˈi",
+      "ty ˈɛ",
+      "il ˈɛ",
+      "nu sˈɔm",
+      "vuz ˈɛt",
+      "il sˈɔ̃"
+    ]
+  },
+  {
+    "w":"aller",
+    "wi":"alˈe",
+    "p":[
+      "je vais",
+      "tu vas",
+      "il va",
+      "nous allons",
+      "vous allez",
+      "ils vont"
+    ],
+    "pi":[
+      "ʒə- vˈɛ",
+      "ty vˈa",
+      "il vˈa",
+      "nuz alˈɔ̃",
+      "vuz alˈe",
+      "il vˈɔ̃"
+    ]
+  },
+  {
+    "w":"avoir",
+    "wi":"avwˈaʁ",
+    "p":[
+      "j'ai",
+      "tu as",
+      "il a",
+      "nous avons",
+      "vous avez",
+      "ils ont"
+    ],
+    "pi":[
+      "ʒˈe",
+      "ty ˈa",
+      "il ˈa",
+      "nuz avˈɔ̃",
+      "vuz avˈe",
+      "ilz ˈɔ̃"
+    ]
+  },
+  {
+    "w":"faire",
+    "wi":"fˈɛʁ",
+    "p":[
+      "je fais",
+      "tu fais",
+      "il fait",
+      "nous faisons",
+      "vous faites",
+      "ils font"
+    ],
+    "pi":[
+      "ʒə- fˈɛ",
+      "ty fˈɛ",
+      "il fˈɛ",
+      "nu fəzˈɔ̃",
+      "vu fˈɛt",
+      "il fˈɔ̃"
+    ]
+  },
+  {
+    "w":"dire",
+    "wi":"dˈiʁ",
+    "p":[
+      "je dis",
+      "tu dis",
+      "il dit",
+      "nous disons",
+      "vous dites",
+      "ils disent"
+    ],
+    "pi":[
+      "ʒə- dˈi",
+      "ty dˈi",
+      "il dˈi",
+      "nu dizˈɔ̃",
+      "vu dˈit",
+      "il dˈiz"
+    ]
+  },
+  {
+    "w":"pouvoir",
+    "wi":"puvwˈaʁ",
+    "p":[
+      "je peux",
+      "tu peux",
+      "il peut",
+      "nous pouvons",
+      "vous pouvez",
+      "ils peuvent"
+    ],
+    "pi":[
+      "ʒə- pˈø",
+      "ty pˈø",
+      "il pˈø",
+      "nu puvˈɔ̃",
+      "vu puvˈe",
+      "il pˈøv"
+    ]
+  },
+  {
+    "w":"voir",
+    "wi":"vwˈaʁ",
+    "p":[
+      "je vois",
+      "tu vois",
+      "il voit",
+      "nous voyons",
+      "vous voyez",
+      "ils voient"
+    ],
+    "pi":[
+      "ʒə- vwˈa",
+      "ty vwˈa",
+      "il vwˈa",
+      "nu vwajˈɔ̃",
+      "vu vwajˈe",
+      "il vwˈa"
+    ]
+  },
+  {
+    "w":"savoir",
+    "wi":"savwˈaʁ",
+    "p":[
+      "je sais",
+      "tu sais",
+      "il sait",
+      "nous savons",
+      "vous savez",
+      "ils savent"
+    ],
+    "pi":[
+      "ʒə- sˈɛ",
+      "ty sˈɛ",
+      "il sˈɛ",
+      "nu savˈɔ̃",
+      "vu savˈe",
+      "il sˈav"
+    ]
+  },
+  {
+    "w":"vouloir",
+    "wi":"vulwˈaʁ",
+    "p":[
+      "je veux",
+      "tu veux",
+      "il veut",
+      "nous voulons",
+      "vous voulez",
+      "ils veulent"
+    ],
+    "pi":[
+      "ʒə- vˈø",
+      "ty vˈø",
+      "il vˈø",
+      "nu vulˈɔ̃",
+      "vu vulˈe",
+      "il vˈœl"
+    ]
+  },
+  {
+    "w":"venir",
+    "wi":"vənˈiʁ",
+    "p":[
+      "je viens",
+      "tu viens",
+      "il vient",
+      "nous venons",
+      "vous venez",
+      "ils viennent"
+    ],
+    "pi":[
+      "ʒə- vjˈɛ̃",
+      "ty vjˈɛ̃",
+      "il vjˈɛ̃",
+      "nu vənˈɔ̃",
+      "vu vənˈe",
+      "il vjˈɛn"
+    ]
+  },
+  {
+    "w":"devoir",
+    "wi":"dəvwˈaʁ",
+    "p":[
+      "je dois",
+      "tu dois",
+      "il doit",
+      "nous devons",
+      "vous devez",
+      "ils doivent"
+    ],
+    "pi":[
+      "ʒə- dwˈa",
+      "ty dwˈa",
+      "il dwˈa",
+      "nu dəvˈɔ̃",
+      "vu dəvˈe",
+      "il dwˈav"
+    ]
+  },
+  {
+    "w":"croire",
+    "wi":"kʁwˈaʁ",
+    "p":[
+      "je crois",
+      "tu crois",
+      "il croit",
+      "nous croyons",
+      "vous croyez",
+      "ils croient"
+    ],
+    "pi":[
+      "ʒə- kʁwˈa",
+      "ty kʁwˈa",
+      "il kʁwˈa",
+      "nu kʁwajˈɔ̃",
+      "vu kʁwajˈe",
+      "il kʁwˈa"
+    ]
+  },
+  {
+    "w":"trouver",
+    "wi":"tʁuvˈe",
+    "p":[
+      "je trouve",
+      "tu trouves",
+      "il trouve",
+      "nous trouvons",
+      "vous trouvez",
+      "ils trouvent"
+    ],
+    "pi":[
+      "ʒə- tʁˈuv",
+      "ty tʁˈuv",
+      "il tʁˈuv",
+      "nu tʁuvˈɔ̃",
+      "vu tʁuvˈe",
+      "il tʁˈuv"
+    ]
+  },
+  {
+    "w":"donner",
+    "wi":"dɔnˈe",
+    "p":[
+      "je donne",
+      "tu donnes",
+      "il donne",
+      "nous donnons",
+      "vous donnez",
+      "ils donnent"
+    ],
+    "pi":[
+      "ʒə- dˈɔn",
+      "ty dˈɔn",
+      "il dˈɔn",
+      "nu dɔnˈɔ̃",
+      "vu dɔnˈe",
+      "il dˈɔn"
+    ]
+  },
+  {
+    "w":"prendre",
+    "wi":"pʁˈɑ̃dʁ",
+    "p":[
+      "je prends",
+      "tu prends",
+      "il prend",
+      "nous prenons",
+      "vous prenez",
+      "ils prennent"
+    ],
+    "pi":[
+      "ʒə- pʁˈɑ̃",
+      "ty pʁˈɑ̃",
+      "il pʁˈɑ̃",
+      "nu pʁənˈɔ̃",
+      "vu pʁənˈe",
+      "il pʁˈɛn"
+    ]
+  },
+  {
+    "w":"parler",
+    "wi":"paʁlˈe",
+    "p":[
+      "je parle",
+      "tu parles",
+      "il parle",
+      "nous parlons",
+      "vous parlez",
+      "ils parlent"
+    ],
+    "pi":[
+      "ʒə- pˈaʁl",
+      "ty pˈaʁl",
+      "il pˈaʁl",
+      "nu paʁlˈɔ̃",
+      "vu paʁlˈe",
+      "il pˈaʁl"
+    ]
+  },
+  {
+    "w":"aimer",
+    "wi":"ɛmˈe",
+    "p":[
+      "j'aime",
+      "tu aimes",
+      "il aime",
+      "nous aimons",
+      "vous aimez",
+      "ils aiment"
+    ],
+    "pi":[
+      "ʒˈɛm",
+      "ty ˈɛm",
+      "il ˈɛm",
+      "nuz ɛmˈɔ̃",
+      "vuz ɛmˈe",
+      "ilz ˈɛm"
+    ]
+  },
+  {
+    "w":"passer",
+    "wi":"pasˈe",
+    "p":[
+      "je passe",
+      "tu passes",
+      "il passe",
+      "nous passons",
+      "vous passez",
+      "ils passent"
+    ],
+    "pi":[
+      "ʒə- pˈas",
+      "ty pˈas",
+      "il pˈas",
+      "nu pasˈɔ̃",
+      "vu pasˈe",
+      "il pˈas"
+    ]
+  },
+  {
+    "w":"mettre",
+    "wi":"mˈɛtʁ",
+    "p":[
+      "je mets",
+      "tu mets",
+      "il met",
+      "nous mettons",
+      "vous mettez",
+      "ils mettent"
+    ],
+    "pi":[
+      "ʒə- mˈɛ",
+      "ty mˈɛ",
+      "il mˈɛ",
+      "nu mɛtˈɔ̃",
+      "vu mɛtˈe",
+      "il mˈɛt"
+    ]
+  },
+  {
+    "w":"demander",
+    "wi":"dəmɑ̃dˈe",
+    "p":[
+      "je demande",
+      "tu demandes",
+      "il demande",
+      "nous demandons",
+      "vous demandez",
+      "ils demandent"
+    ],
+    "pi":[
+      "ʒə- dəmˈɑ̃d",
+      "ty dəmˈɑ̃d",
+      "il dəmˈɑ̃d",
+      "nu dəmɑ̃dˈɔ̃",
+      "vu dəmɑ̃dˈe",
+      "il dəmˈɑ̃d"
+    ]
+  },
+  {
+    "w":"tenir",
+    "wi":"tənˈiʁ",
+    "p":[
+      "je tiens",
+      "tu tiens",
+      "il tient",
+      "nous tenons",
+      "vous tenez",
+      "ils tiennent"
+    ],
+    "pi":[
+      "ʒə- tjˈɛ̃",
+      "ty tjˈɛ̃",
+      "il tjˈɛ̃",
+      "nu tənˈɔ̃",
+      "vu tənˈe",
+      "il tjˈɛn"
+    ]
+  },
+  {
+    "w":"sembler",
+    "wi":"sɑ̃blˈe",
+    "p":[
+      "je semble",
+      "tu sembles",
+      "il semble",
+      "nous semblons",
+      "vous semblez",
+      "ils semblent"
+    ],
+    "pi":[
+      "ʒə- sˈɑ̃bl",
+      "ty sˈɑ̃bl",
+      "il sˈɑ̃bl",
+      "nu sɑ̃blˈɔ̃",
+      "vu sɑ̃blˈe",
+      "il sˈɑ̃bl"
+    ]
+  },
+  {
+    "w":"laisser",
+    "wi":"lɛsˈe",
+    "p":[
+      "je laisse",
+      "tu laisses",
+      "il laisse",
+      "nous laissons",
+      "vous laissez",
+      "ils laissent"
+    ],
+    "pi":[
+      "ʒə- lˈɛs",
+      "ty lˈɛs",
+      "il lˈɛs",
+      "nu lɛsˈɔ̃",
+      "vu lɛsˈe",
+      "il lˈɛs"
+    ]
+  },
+  {
+    "w":"rester",
+    "wi":"ʁɛstˈe",
+    "p":[
+      "je reste",
+      "tu restes",
+      "il reste",
+      "nous restons",
+      "vous restez",
+      "ils restent"
+    ],
+    "pi":[
+      "ʒə- ʁˈɛst",
+      "ty ʁˈɛst",
+      "il ʁˈɛst",
+      "nu ʁɛstˈɔ̃",
+      "vu ʁɛstˈe",
+      "il ʁˈɛst"
+    ]
+  },
+  {
+    "w":"penser",
+    "wi":"pɑ̃sˈe",
+    "p":[
+      "je pense",
+      "tu penses",
+      "il pense",
+      "nous pensons",
+      "vous pensez",
+      "ils pensent"
+    ],
+    "pi":[
+      "ʒə- pˈɑ̃s",
+      "ty pˈɑ̃s",
+      "il pˈɑ̃s",
+      "nu pɑ̃sˈɔ̃",
+      "vu pɑ̃sˈe",
+      "il pˈɑ̃s"
+    ]
+  },
+  {
+    "w":"regarder",
+    "wi":"ʁəɡaʁdˈe",
+    "p":[
+      "je regarde",
+      "tu regardes",
+      "il regarde",
+      "nous regardons",
+      "vous regardez",
+      "ils regardent"
+    ],
+    "pi":[
+      "ʒə- ʁəɡˈaʁd",
+      "ty ʁəɡˈaʁd",
+      "il ʁəɡˈaʁd",
+      "nu ʁəɡaʁdˈɔ̃",
+      "vu ʁəɡaʁdˈe",
+      "il ʁəɡˈaʁd"
+    ]
+  },
+  {
+    "w":"répondre",
+    "wi":"ʁepˈɔ̃dʁ",
+    "p":[
+      "je réponds",
+      "tu réponds",
+      "il répond",
+      "nous répondons",
+      "vous répondez",
+      "ils répondent"
+    ],
+    "pi":[
+      "ʒə- ʁepˈɔ̃",
+      "ty ʁepˈɔ̃",
+      "il ʁepˈɔ̃",
+      "nu ʁepɔ̃dˈɔ̃",
+      "vu ʁepɔ̃dˈe",
+      "il ʁepˈɔ̃d"
+    ]
+  },
+  {
+    "w":"rendre",
+    "wi":"ʁˈɑ̃dʁ",
+    "p":[
+      "je rends",
+      "tu rends",
+      "il rend",
+      "nous rendons",
+      "vous rendez",
+      "ils rendent"
+    ],
+    "pi":[
+      "ʒə- ʁˈɑ̃",
+      "ty ʁˈɑ̃",
+      "il ʁˈɑ̃",
+      "nu ʁɑ̃dˈɔ̃",
+      "vu ʁɑ̃dˈe",
+      "il ʁˈɑ̃d"
+    ]
+  },
+  {
+    "w":"connaître",
+    "wi":"kɔnˈɛtʁ",
+    "p":[
+      "je connais",
+      "tu connais",
+      "il connaît",
+      "nous connaissons",
+      "vous connaissez",
+      "ils connaissent"
+    ],
+    "pi":[
+      "ʒə- kɔnˈɛ",
+      "ty kɔnˈɛ",
+      "il kɔnˈɛ",
+      "nu kɔnɛsˈɔ̃",
+      "vu kɔnɛsˈe",
+      "il kɔnˈɛs"
+    ]
+  },
+  {
+    "w":"paraître",
+    "wi":"paʁˈɛtʁ",
+    "p":[
+      "je parais",
+      "tu parais",
+      "il paraît",
+      "nous paraissons",
+      "vous paraissez",
+      "ils paraissent"
+    ],
+    "pi":[
+      "ʒə- paʁˈɛ",
+      "ty paʁˈɛ",
+      "il paʁˈɛ",
+      "nu paʁɛsˈɔ̃",
+      "vu paʁɛsˈe",
+      "il paʁˈɛs"
+    ]
+  },
+  {
+    "w":"arriver",
+    "wi":"aʁivˈe",
+    "p":[
+      "j'arrive",
+      "tu arrives",
+      "il arrive",
+      "nous arrivons",
+      "vous arrivez",
+      "ils arrivent"
+    ],
+    "pi":[
+      "ʒaʁˈiv",
+      "ty aʁˈiv",
+      "il aʁˈiv",
+      "nuz aʁivˈɔ̃",
+      "vuz aʁivˈe",
+      "ilz aʁˈiv"
+    ]
+  },
+  {
+    "w":"sentir",
+    "wi":"sɑ̃tˈiʁ",
+    "p":[
+      "je sens",
+      "tu sens",
+      "il sent",
+      "nous sentons",
+      "vous sentez",
+      "ils sentent"
+    ],
+    "pi":[
+      "ʒə- sˈɑ̃",
+      "ty sˈɑ̃",
+      "il sˈɑ̃",
+      "nu sɑ̃tˈɔ̃",
+      "vu sɑ̃tˈe",
+      "il sˈɑ̃t"
+    ]
+  },
+  {
+    "w":"attendre",
+    "wi":"atˈɑ̃dʁ",
+    "p":[
+      "j'attends",
+      "tu attends",
+      "il attend",
+      "nous attendons",
+      "vous attendez",
+      "ils attendent"
+    ],
+    "pi":[
+      "ʒatˈɑ̃",
+      "ty atˈɑ̃",
+      "il atˈɑ̃",
+      "nuz atɑ̃dˈɔ̃",
+      "vuz atɑ̃dˈe",
+      "ilz atˈɑ̃d"
+    ]
+  },
+  {
+    "w":"vivre",
+    "wi":"vˈivʁ",
+    "p":[
+      "je vis",
+      "tu vis",
+      "il vit",
+      "nous vivons",
+      "vous vivez",
+      "ils vivent"
+    ],
+    "pi":[
+      "ʒə- vˈi",
+      "ty vˈi",
+      "il vˈi",
+      "nu vivˈɔ̃",
+      "vu vivˈe",
+      "il vˈiv"
+    ]
+  },
+  {
+    "w":"chercher",
+    "wi":"ʃɛʁʃˈe",
+    "p":[
+      "je cherche",
+      "tu cherches",
+      "il cherche",
+      "nous cherchons",
+      "vous cherchez",
+      "ils cherchent"
+    ],
+    "pi":[
+      "ʒə- ʃˈɛʁʃ",
+      "ty ʃˈɛʁʃ",
+      "il ʃˈɛʁʃ",
+      "nu ʃɛʁʃˈɔ̃",
+      "vu ʃɛʁʃˈe",
+      "il ʃˈɛʁʃ"
+    ]
+  },
+  {
+    "w":"comprendre",
+    "wi":"kɔ̃pʁˈɑ̃dʁ",
+    "p":[
+      "je comprends",
+      "tu comprends",
+      "il comprend",
+      "nous comprenons",
+      "vous comprenez",
+      "ils comprennent"
+    ],
+    "pi":[
+      "ʒə- kɔ̃pʁˈɑ̃",
+      "ty kɔ̃pʁˈɑ̃",
+      "il kɔ̃pʁˈɑ̃",
+      "nu kɔ̃pʁənˈɔ̃",
+      "vu kɔ̃pʁənˈe",
+      "il kɔ̃pʁˈɛn"
+    ]
+  },
+  {
+    "w":"porter",
+    "wi":"pɔʁtˈe",
+    "p":[
+      "je porte",
+      "tu portes",
+      "il porte",
+      "nous portons",
+      "vous portez",
+      "ils portent"
+    ],
+    "pi":[
+      "ʒə- pˈɔʁt",
+      "ty pˈɔʁt",
+      "il pˈɔʁt",
+      "nu pɔʁtˈɔ̃",
+      "vu pɔʁtˈe",
+      "il pˈɔʁt"
+    ]
+  },
+  {
+    "w":"devenir",
+    "wi":"dəvnˈiʁ",
+    "p":[
+      "je deviens",
+      "tu deviens",
+      "il devient",
+      "nous devenons",
+      "vous devenez",
+      "ils deviennent"
+    ],
+    "pi":[
+      "ʒə- dəvjˈɛ̃",
+      "ty dəvjˈɛ̃",
+      "il dəvjˈɛ̃",
+      "nu dəvnˈɔ̃",
+      "vu dəvnˈe",
+      "il dəvjˈɛn"
+    ]
+  },
+  {
+    "w":"entrer",
+    "wi":"ɑ̃tʁˈe",
+    "p":[
+      "j'entre",
+      "tu entres",
+      "il entre",
+      "nous entrons",
+      "vous entrez",
+      "ils entrent"
+    ],
+    "pi":[
+      "ʒˈɑ̃tʁ",
+      "ty ˈɑ̃tʁ",
+      "il ˈɑ̃tʁ",
+      "nuz ɑ̃tʁˈɔ̃",
+      "vuz ɑ̃tʁˈe",
+      "ilz ˈɑ̃tʁ"
+    ]
+  },
+  {
+    "w":"retenir",
+    "wi":"ʁətnˈiʁ",
+    "p":[
+      "je retiens",
+      "tu retiens",
+      "il retient",
+      "nous retenons",
+      "vous retenez",
+      "ils retiennent"
+    ],
+    "pi":[
+      "ʒə- ʁətjˈɛ̃",
+      "ty ʁətjˈɛ̃",
+      "il ʁətjˈɛ̃",
+      "nu ʁətnˈɔ̃",
+      "vu ʁətnˈe",
+      "il ʁətjˈɛn"
+    ]
+  },
+  {
+    "w":"écrire",
+    "wi":"ekʁˈiʁ",
+    "p":[
+      "j'écris",
+      "tu écris",
+      "il écrit",
+      "nous écrivons",
+      "vous écrivez",
+      "ils écrivent"
+    ],
+    "pi":[
+      "ʒekʁˈi",
+      "ty ekʁˈi",
+      "il ekʁˈi",
+      "nuz ekʁivˈɔ̃",
+      "vuz ekʁivˈe",
+      "ilz ekʁˈiv"
+    ]
+  },
+  {
+    "w":"appeler",
+    "wi":"aplˈe",
+    "p":[
+      "j'appelle",
+      "tu appelles",
+      "il appelle",
+      "nous appelons",
+      "vous appelez",
+      "ils appellent"
+    ],
+    "pi":[
+      "ʒapˈɛl",
+      "ty apˈɛl",
+      "il apˈɛl",
+      "nuz aplˈɔ̃",
+      "vuz aplˈe",
+      "ilz apˈɛl"
+    ]
+  },
+  {
+    "w":"tomber",
+    "wi":"tɔ̃bˈe",
+    "p":[
+      "je tombe",
+      "tu tombes",
+      "il tombe",
+      "nous tombons",
+      "vous tombez",
+      "ils tombent"
+    ],
+    "pi":[
+      "ʒə- tˈɔ̃b",
+      "ty tˈɔ̃b",
+      "il tˈɔ̃b",
+      "nu tɔ̃bˈɔ̃",
+      "vu tɔ̃bˈe",
+      "il tˈɔ̃b"
+    ]
+  },
+  {
+    "w":"reprendre",
+    "wi":"ʁəpʁˈɑ̃dʁ",
+    "p":[
+      "je reprends",
+      "tu reprends",
+      "il reprend",
+      "nous reprenons",
+      "vous reprenez",
+      "ils reprennent"
+    ],
+    "pi":[
+      "ʒə- ʁəpʁˈɑ̃",
+      "ty ʁəpʁˈɑ̃",
+      "il ʁəpʁˈɑ̃",
+      "nu ʁəpʁənˈɔ̃",
+      "vu ʁəpʁənˈe",
+      "il ʁəpʁˈɛn"
+    ]
+  },
+  {
+    "w":"commencer",
+    "wi":"kɔmɑ̃sˈe",
+    "p":[
+      "je commence",
+      "tu commences",
+      "il commence",
+      "nous commençons",
+      "vous commencez",
+      "ils commencent"
+    ],
+    "pi":[
+      "ʒə- kɔmˈɑ̃s",
+      "ty kɔmˈɑ̃s",
+      "il kɔmˈɑ̃s",
+      "nu kɔmɑ̃sˈɔ̃",
+      "vu kɔmɑ̃sˈe",
+      "il kɔmˈɑ̃s"
+    ]
+  },
+  {
+    "w":"suivre",
+    "wi":"syˈivʁ",
+    "p":[
+      "je suis",
+      "tu suis",
+      "il suit",
+      "nous suivons",
+      "vous suivez",
+      "ils suivent"
+    ],
+    "pi":[
+      "ʒə- syˈi",
+      "ty syˈi",
+      "il syˈi",
+      "nu syivˈɔ̃",
+      "vu syivˈe",
+      "il syˈiv"
+    ]
+  },
+  {
+    "w":"montrer",
+    "wi":"mɔ̃tʁˈe",
+    "p":[
+      "je montre",
+      "tu montres",
+      "il montre",
+      "nous montrons",
+      "vous montrez",
+      "ils montrent"
+    ],
+    "pi":[
+      "ʒə- mˈɔ̃tʁ",
+      "ty mˈɔ̃tʁ",
+      "il mˈɔ̃tʁ",
+      "nu mɔ̃tʁˈɔ̃",
+      "vu mɔ̃tʁˈe",
+      "il mˈɔ̃tʁ"
+    ]
+  },
+  {
+    "w":"partir",
+    "wi":"paʁtˈiʁ",
+    "p":[
+      "je pars",
+      "tu pars",
+      "il part",
+      "nous partons",
+      "vous partez",
+      "ils partent"
+    ],
+    "pi":[
+      "ʒə- pˈaʁ",
+      "ty pˈaʁ",
+      "il pˈaʁ",
+      "nu paʁtˈɔ̃",
+      "vu paʁtˈe",
+      "il pˈaʁt"
+    ]
+  },
+  {
+    "w":"mourir",
+    "wi":"muʁˈiʁ",
+    "p":[
+      "je meurs",
+      "tu meurs",
+      "il meurt",
+      "nous mourons",
+      "vous mourez",
+      "ils meurent"
+    ],
+    "pi":[
+      "ʒə- mˈœʁ",
+      "ty mˈœʁ",
+      "il mˈœʁ",
+      "nu muʁˈɔ̃",
+      "vu muʁˈe",
+      "il mˈœʁ"
+    ]
+  },
+  {
+    "w":"ouvrir",
+    "wi":"uvʁˈiʁ",
+    "p":[
+      "j'ouvre",
+      "tu ouvres",
+      "il ouvre",
+      "nous ouvrons",
+      "vous ouvrez",
+      "ils ouvrent"
+    ],
+    "pi":[
+      "ʒˈuvʁ",
+      "ty ˈuvʁ",
+      "il ˈuvʁ",
+      "nuz uvʁˈɔ̃",
+      "vuz uvʁˈe",
+      "ilz ˈuvʁ"
+    ]
+  },
+  {
+    "w":"lire",
+    "wi":"lˈiʁ",
+    "p":[
+      "je lis",
+      "tu lis",
+      "il lit",
+      "nous lisons",
+      "vous lisez",
+      "ils lisent"
+    ],
+    "pi":[
+      "ʒə- lˈi",
+      "ty lˈi",
+      "il lˈi",
+      "nu lizˈɔ̃",
+      "vu lizˈe",
+      "il lˈiz"
+    ]
+  },
+  {
+    "w":"arrêter",
+    "wi":"aʁɛtˈe",
+    "p":[
+      "j'arrête",
+      "tu arrêtes",
+      "il arrête",
+      "nous arrêtons",
+      "vous arrêtez",
+      "ils arrêtent"
+    ],
+    "pi":[
+      "ʒaʁˈɛt",
+      "ty aʁˈɛt",
+      "il aʁˈɛt",
+      "nuz aʁɛtˈɔ̃",
+      "vuz aʁɛtˈe",
+      "ilz aʁˈɛt"
+    ]
+  },
+  {
+    "w":"servir",
+    "wi":"sɛʁvˈiʁ",
+    "p":[
+      "je sers",
+      "tu sers",
+      "il sert",
+      "nous servons",
+      "vous servez",
+      "ils servent"
+    ],
+    "pi":[
+      "ʒə- sˈɛʁ",
+      "ty sˈɛʁ",
+      "il sˈɛʁ",
+      "nu sɛʁvˈɔ̃",
+      "vu sɛʁvˈe",
+      "il sˈɛʁv"
+    ]
+  },
+  {
+    "w":"jeter",
+    "wi":"ʒətˈe",
+    "p":[
+      "je jette",
+      "tu jettes",
+      "il jette",
+      "nous jetons",
+      "vous jetez",
+      "ils jettent"
+    ],
+    "pi":[
+      "ʒə- ʒˈɛt",
+      "ty ʒˈɛt",
+      "il ʒˈɛt",
+      "nu ʒətˈɔ̃",
+      "vu ʒətˈe",
+      "il ʒˈɛt"
+    ]
+  },
+  {
+    "w":"recevoir",
+    "wi":"ʁəsəvwˈaʁ",
+    "p":[
+      "je reçois",
+      "tu reçois",
+      "il reçoit",
+      "nous recevons",
+      "vous recevez",
+      "ils reçoivent"
+    ],
+    "pi":[
+      "ʒə- ʁəswˈa",
+      "ty ʁəswˈa",
+      "il ʁəswˈa",
+      "nu ʁəsəvˈɔ̃",
+      "vu ʁəsəvˈe",
+      "il ʁəswˈav"
+    ]
+  },
+  {
+    "w":"monter",
+    "wi":"mɔ̃tˈe",
+    "p":[
+      "je monte",
+      "tu montes",
+      "il monte",
+      "nous montons",
+      "vous montez",
+      "ils montent"
+    ],
+    "pi":[
+      "ʒə- mˈɔ̃t",
+      "ty mˈɔ̃t",
+      "il mˈɔ̃t",
+      "nu mɔ̃tˈɔ̃",
+      "vu mɔ̃tˈe",
+      "il mˈɔ̃t"
+    ]
+  },
+  {
+    "w":"lever",
+    "wi":"ləvˈe",
+    "p":[
+      "je lève",
+      "tu lèves",
+      "il lève",
+      "nous levons",
+      "vous levez",
+      "ils lèvent"
+    ],
+    "pi":[
+      "ʒə- lˈɛv",
+      "ty lˈɛv",
+      "il lˈɛv",
+      "nu ləvˈɔ̃",
+      "vu ləvˈe",
+      "il lˈɛv"
+    ]
+  },
+  {
+    "w":"agir",
+    "wi":"aʒˈiʁ",
+    "p":[
+      "j'agis",
+      "tu agis",
+      "il agit",
+      "nous agissons",
+      "vous agissez",
+      "ils agissent"
+    ],
+    "pi":[
+      "ʒaʒˈi",
+      "ty aʒˈi",
+      "il aʒˈi",
+      "nuz aʒisˈɔ̃",
+      "vuz aʒisˈe",
+      "ilz aʒˈis"
+    ]
+  },
+  {
+    "w":"perdre",
+    "wi":"pˈɛʁdʁ",
+    "p":[
+      "je perds",
+      "tu perds",
+      "il perd",
+      "nous perdons",
+      "vous perdez",
+      "ils perdent"
+    ],
+    "pi":[
+      "ʒə- pˈɛʁ",
+      "ty pˈɛʁ",
+      "il pˈɛʁ",
+      "nu pɛʁdˈɔ̃",
+      "vu pɛʁdˈe",
+      "il pˈɛʁd"
+    ]
+  },
+  {
+    "w":"écouter",
+    "wi":"ekutˈe",
+    "p":[
+      "j'écoute",
+      "tu écoutes",
+      "il écoute",
+      "nous écoutons",
+      "vous écoutez",
+      "ils écoutent"
+    ],
+    "pi":[
+      "ʒekˈut",
+      "ty ekˈut",
+      "il ekˈut",
+      "nuz ekutˈɔ̃",
+      "vuz ekutˈe",
+      "ilz ekˈut"
+    ]
+  },
+  {
+    "w":"continuer",
+    "wi":"kɔ̃tinyˈe",
+    "p":[
+      "je continue",
+      "tu continues",
+      "il continue",
+      "nous continuons",
+      "vous continuez",
+      "ils continuent"
+    ],
+    "pi":[
+      "ʒə- kɔ̃tinˈy",
+      "ty kɔ̃tinˈy",
+      "il kɔ̃tinˈy",
+      "nu kɔ̃tinyˈɔ̃",
+      "vu kɔ̃tinyˈe",
+      "il kɔ̃tinˈy"
+    ]
+  },
+  {
+    "w":"sourire",
+    "wi":"suʁˈiʁ",
+    "p":[
+      "je souris",
+      "tu souris",
+      "il sourit",
+      "nous sourions",
+      "vous souriez",
+      "ils sourient"
+    ],
+    "pi":[
+      "ʒə- suʁˈi",
+      "ty suʁˈi",
+      "il suʁˈi",
+      "nu suʁjˈɔ̃",
+      "vu suʁjˈe",
+      "il suʁˈi"
+    ]
+  },
+  {
+    "w":"apercevoir",
+    "wi":"apɛʁsəvwˈaʁ",
+    "p":[
+      "j'aperçois",
+      "tu aperçois",
+      "il aperçoit",
+      "nous apercevons",
+      "vous apercevez",
+      "ils aperçoivent"
+    ],
+    "pi":[
+      "ʒapɛʁswˈa",
+      "ty apɛʁswˈa",
+      "il apɛʁswˈa",
+      "nuz apɛʁsəvˈɔ̃",
+      "vuz apɛʁsəvˈe",
+      "ilz apɛʁswˈav"
+    ]
+  },
+  {
+    "w":"reconnaître",
+    "wi":"ʁəkɔnˈɛtʁ",
+    "p":[
+      "je reconnais",
+      "tu reconnais",
+      "il reconnaît",
+      "nous reconnaissons",
+      "vous reconnaissez",
+      "ils reconnaissent"
+    ],
+    "pi":[
+      "ʒə- ʁəkɔnˈɛ",
+      "ty ʁəkɔnˈɛ",
+      "il ʁəkɔnˈɛ",
+      "nu ʁəkɔnɛsˈɔ̃",
+      "vu ʁəkɔnɛsˈe",
+      "il ʁəkɔnˈɛs"
+    ]
+  },
+  {
+    "w":"ajouter",
+    "wi":"aʒutˈe",
+    "p":[
+      "j'ajoute",
+      "tu ajoutes",
+      "il ajoute",
+      "nous ajoutons",
+      "vous ajoutez",
+      "ils ajoutent"
+    ],
+    "pi":[
+      "ʒaʒˈut",
+      "ty aʒˈut",
+      "il aʒˈut",
+      "nuz aʒutˈɔ̃",
+      "vuz aʒutˈe",
+      "ilz aʒˈut"
+    ]
+  },
+  {
+    "w":"jouer",
+    "wi":"ʒuˈe",
+    "p":[
+      "je joue",
+      "tu joues",
+      "il joue",
+      "nous jouons",
+      "vous jouez",
+      "ils jouent"
+    ],
+    "pi":[
+      "ʒə- ʒˈu",
+      "ty ʒˈu",
+      "il ʒˈu",
+      "nu ʒuˈɔ̃",
+      "vu ʒuˈe",
+      "il ʒˈu"
+    ]
+  },
+  {
+    "w":"marcher",
+    "wi":"maʁʃˈe",
+    "p":[
+      "je marche",
+      "tu marches",
+      "il marche",
+      "nous marchons",
+      "vous marchez",
+      "ils marchent"
+    ],
+    "pi":[
+      "ʒə- mˈaʁʃ",
+      "ty mˈaʁʃ",
+      "il mˈaʁʃ",
+      "nu maʁʃˈɔ̃",
+      "vu maʁʃˈe",
+      "il mˈaʁʃ"
+    ]
+  },
+  {
+    "w":"garder",
+    "wi":"ɡaʁdˈe",
+    "p":[
+      "je garde",
+      "tu gardes",
+      "il garde",
+      "nous gardons",
+      "vous gardez",
+      "ils gardent"
+    ],
+    "pi":[
+      "ʒə- ɡˈaʁd",
+      "ty ɡˈaʁd",
+      "il ɡˈaʁd",
+      "nu ɡaʁdˈɔ̃",
+      "vu ɡaʁdˈe",
+      "il ɡˈaʁd"
+    ]
+  },
+  {
+    "w":"manquer",
+    "wi":"mɑ̃kˈe",
+    "p":[
+      "je manque",
+      "tu manques",
+      "il manque",
+      "nous manquons",
+      "vous manquez",
+      "ils manquent"
+    ],
+    "pi":[
+      "ʒə- mˈɑ̃k",
+      "ty mˈɑ̃k",
+      "il mˈɑ̃k",
+      "nu mɑ̃kˈɔ̃",
+      "vu mɑ̃kˈe",
+      "il mˈɑ̃k"
+    ]
+  },
+  {
+    "w":"retrouver",
+    "wi":"ʁətʁuvˈe",
+    "p":[
+      "je retrouve",
+      "tu retrouves",
+      "il retrouve",
+      "nous retrouvons",
+      "vous retrouvez",
+      "ils retrouvent"
+    ],
+    "pi":[
+      "ʒə- ʁətʁˈuv",
+      "ty ʁətʁˈuv",
+      "il ʁətʁˈuv",
+      "nu ʁətʁuvˈɔ̃",
+      "vu ʁətʁuvˈe",
+      "il ʁətʁˈuv"
+    ]
+  },
+  {
+    "w":"descendre",
+    "wi":"dɛsˈɑ̃dʁ",
+    "p":[
+      "je descends",
+      "tu descends",
+      "il descend",
+      "nous descendons",
+      "vous descendez",
+      "ils descendent"
+    ],
+    "pi":[
+      "ʒə- dɛsˈɑ̃",
+      "ty dɛsˈɑ̃",
+      "il dɛsˈɑ̃",
+      "nu dɛsɑ̃dˈɔ̃",
+      "vu dɛsɑ̃dˈe",
+      "il dɛsˈɑ̃d"
+    ]
+  },
+  {
+    "w":"rappeler",
+    "wi":"ʁaplˈe",
+    "p":[
+      "je rappelle",
+      "tu rappelles",
+      "il rappelle",
+      "nous rappelons",
+      "vous rappelez",
+      "ils rappellent"
+    ],
+    "pi":[
+      "ʒə- ʁapˈɛl",
+      "ty ʁapˈɛl",
+      "il ʁapˈɛl",
+      "nu ʁaplˈɔ̃",
+      "vu ʁaplˈe",
+      "il ʁapˈɛl"
+    ]
+  },
+  {
+    "w":"quitter",
+    "wi":"kitˈe",
+    "p":[
+      "je quitte",
+      "tu quittes",
+      "il quitte",
+      "nous quittons",
+      "vous quittez",
+      "ils quittent"
+    ],
+    "pi":[
+      "ʒə- kˈit",
+      "ty kˈit",
+      "il kˈit",
+      "nu kitˈɔ̃",
+      "vu kitˈe",
+      "il kˈit"
+    ]
+  },
+  {
+    "w":"tourner",
+    "wi":"tuʁnˈe",
+    "p":[
+      "je tourne",
+      "tu tournes",
+      "il tourne",
+      "nous tournons",
+      "vous tournez",
+      "ils tournent"
+    ],
+    "pi":[
+      "ʒə- tˈuʁn",
+      "ty tˈuʁn",
+      "il tˈuʁn",
+      "nu tuʁnˈɔ̃",
+      "vu tuʁnˈe",
+      "il tˈuʁn"
+    ]
+  },
+  {
+    "w":"finir",
+    "wi":"finˈiʁ",
+    "p":[
+      "je finis",
+      "tu finis",
+      "il finit",
+      "nous finissons",
+      "vous finissez",
+      "ils finissent"
+    ],
+    "pi":[
+      "ʒə- finˈi",
+      "ty finˈi",
+      "il finˈi",
+      "nu finisˈɔ̃",
+      "vu finisˈe",
+      "il finˈis"
+    ]
+  },
+  {
+    "w":"crier",
+    "wi":"kʁiˈe",
+    "p":[
+      "je crie",
+      "tu cries",
+      "il crie",
+      "nous crions",
+      "vous criez",
+      "ils crient"
+    ],
+    "pi":[
+      "ʒə- kʁˈi",
+      "ty kʁˈi",
+      "il kʁˈi",
+      "nu kʁiˈɔ̃",
+      "vu kʁiˈe",
+      "il kʁˈi"
+    ]
+  },
+  {
+    "w":"courir",
+    "wi":"kuʁˈiʁ",
+    "p":[
+      "je cours",
+      "tu cours",
+      "il court",
+      "nous courons",
+      "vous courez",
+      "ils courent"
+    ],
+    "pi":[
+      "ʒə- kˈuʁ",
+      "ty kˈuʁ",
+      "il kˈuʁ",
+      "nu kuʁˈɔ̃",
+      "vu kuʁˈe",
+      "il kˈuʁ"
+    ]
+  },
+  {
+    "w":"permettre",
+    "wi":"pɛʁmˈɛtʁ",
+    "p":[
+      "je permets",
+      "tu permets",
+      "il permet",
+      "nous permettons",
+      "vous permettez",
+      "ils permettent"
+    ],
+    "pi":[
+      "ʒə- pɛʁmˈɛ",
+      "ty pɛʁmˈɛ",
+      "il pɛʁmˈɛ",
+      "nu pɛʁmɛtˈɔ̃",
+      "vu pɛʁmɛtˈe",
+      "il pɛʁmˈɛt"
+    ]
+  },
+  {
+    "w":"songer",
+    "wi":"sɔ̃ʒˈe",
+    "p":[
+      "je songe",
+      "tu songes",
+      "il songe",
+      "nous songeons",
+      "vous songez",
+      "ils songent"
+    ],
+    "pi":[
+      "ʒə- sˈɔ̃ʒ",
+      "ty sˈɔ̃ʒ",
+      "il sˈɔ̃ʒ",
+      "nu sɔ̃ʒˈɔ̃",
+      "vu sɔ̃ʒˈe",
+      "il sˈɔ̃ʒ"
+    ]
+  },
+  {
+    "w":"offrir",
+    "wi":"ɔfʁˈiʁ",
+    "p":[
+      "j'offre",
+      "tu offres",
+      "il offre",
+      "nous offrons",
+      "vous offrez",
+      "ils offrent"
+    ],
+    "pi":[
+      "ʒˈɔfʁ",
+      "ty ˈɔfʁ",
+      "il ˈɔfʁ",
+      "nuz ɔfʁˈɔ̃",
+      "vuz ɔfʁˈe",
+      "ilz ˈɔfʁ"
+    ]
+  },
+  {
+    "w":"présenter",
+    "wi":"pʁezɑ̃tˈe",
+    "p":[
+      "je présente",
+      "tu présentes",
+      "il présente",
+      "nous présentons",
+      "vous présentez",
+      "ils présentent"
+    ],
+    "pi":[
+      "ʒə- pʁezˈɑ̃t",
+      "ty pʁezˈɑ̃t",
+      "il pʁezˈɑ̃t",
+      "nu pʁezɑ̃tˈɔ̃",
+      "vu pʁezɑ̃tˈe",
+      "il pʁezˈɑ̃t"
+    ]
+  },
+  {
+    "w":"apprendre",
+    "wi":"apʁˈɑ̃dʁ",
+    "p":[
+      "j'apprends",
+      "tu apprends",
+      "il apprend",
+      "nous apprenons",
+      "vous apprenez",
+      "ils apprennent"
+    ],
+    "pi":[
+      "ʒapʁˈɑ̃",
+      "ty apʁˈɑ̃",
+      "il apʁˈɑ̃",
+      "nuz apʁənˈɔ̃",
+      "vuz apʁənˈe",
+      "ilz apʁˈɛn"
+    ]
+  },
+  {
+    "w":"souffrir",
+    "wi":"sufʁˈiʁ",
+    "p":[
+      "je souffre",
+      "tu souffres",
+      "il souffre",
+      "nous souffrons",
+      "vous souffrez",
+      "ils souffrent"
+    ],
+    "pi":[
+      "ʒə- sˈufʁ",
+      "ty sˈufʁ",
+      "il sˈufʁ",
+      "nu sufʁˈɔ̃",
+      "vu sufʁˈe",
+      "il sˈufʁ"
+    ]
+  },
+  {
+    "w":"exister",
+    "wi":"ɛɡzistˈe",
+    "p":[
+      "j'existe",
+      "tu existes",
+      "il existe",
+      "nous existons",
+      "vous existez",
+      "ils existent"
+    ],
+    "pi":[
+      "ʒɛɡzˈist",
+      "ty ɛɡzˈist",
+      "il ɛɡzˈist",
+      "nuz ɛɡzistˈɔ̃",
+      "vuz ɛɡzistˈe",
+      "ilz ɛɡzˈist"
+    ]
+  },
+  {
+    "w":"envoyer",
+    "wi":"ɑ̃vwajˈe",
+    "p":[
+      "j'envoie",
+      "tu envoies",
+      "il envoie",
+      "nous envoyons",
+      "vous envoyez",
+      "ils envoient"
+    ],
+    "pi":[
+      "ʒɑ̃vwˈa",
+      "ty ɑ̃vwˈa",
+      "il ɑ̃vwˈa",
+      "nuz ɑ̃vwajˈɔ̃",
+      "vuz ɑ̃vwajˈe",
+      "ilz ɑ̃vwˈa"
+    ]
+  },
+  {
+    "w":"expliquer",
+    "wi":"ɛksplikˈe",
+    "p":[
+      "j'explique",
+      "tu expliques",
+      "il explique",
+      "nous expliquons",
+      "vous expliquez",
+      "ils expliquent"
+    ],
+    "pi":[
+      "ʒɛksplˈik",
+      "ty ɛksplˈik",
+      "il ɛksplˈik",
+      "nuz ɛksplikˈɔ̃",
+      "vuz ɛksplikˈe",
+      "ilz ɛksplˈik"
+    ]
+  },
+  {
+    "w":"manger",
+    "wi":"mɑ̃ʒˈe",
+    "p":[
+      "je mange",
+      "tu manges",
+      "il mange",
+      "nous mangeons",
+      "vous mangez",
+      "ils mangent"
+    ],
+    "pi":[
+      "ʒə- mˈɑ̃ʒ",
+      "ty mˈɑ̃ʒ",
+      "il mˈɑ̃ʒ",
+      "nu mɑ̃ʒˈɔ̃",
+      "vu mɑ̃ʒˈe",
+      "il mˈɑ̃ʒ"
+    ]
+  },
+  {
+    "w":"valoir",
+    "wi":"valwˈaʁ",
+    "p":[
+      "je vaux",
+      "tu vaux",
+      "il vaut",
+      "nous valons",
+      "vous valez",
+      "ils valent"
+    ],
+    "pi":[
+      "ʒə- vˈo",
+      "ty vˈo",
+      "il vˈo",
+      "nu valˈɔ̃",
+      "vu valˈe",
+      "il vˈal"
+    ]
+  },
+  {
+    "w":"oublier",
+    "wi":"ubliˈe",
+    "p":[
+      "j'oublie",
+      "tu oublies",
+      "il oublie",
+      "nous oublions",
+      "vous oubliez",
+      "ils oublient"
+    ],
+    "pi":[
+      "ʒublˈi",
+      "ty ublˈi",
+      "il ublˈi",
+      "nuz ubliˈɔ̃",
+      "vuz ubliˈe",
+      "ilz ublˈi"
+    ]
+  },
+  {
+    "w":"rentrer",
+    "wi":"ʁɑ̃tʁˈe",
+    "p":[
+      "je rentre",
+      "tu rentres",
+      "il rentre",
+      "nous rentrons",
+      "vous rentrez",
+      "ils rentrent"
+    ],
+    "pi":[
+      "ʒə- ʁˈɑ̃tʁ",
+      "ty ʁˈɑ̃tʁ",
+      "il ʁˈɑ̃tʁ",
+      "nu ʁɑ̃tʁˈɔ̃",
+      "vu ʁɑ̃tʁˈe",
+      "il ʁˈɑ̃tʁ"
+    ]
+  },
+  {
+    "w":"pousser",
+    "wi":"pusˈe",
+    "p":[
+      "je pousse",
+      "tu pousses",
+      "il pousse",
+      "nous poussons",
+      "vous poussez",
+      "ils poussent"
+    ],
+    "pi":[
+      "ʒə- pˈus",
+      "ty pˈus",
+      "il pˈus",
+      "nu pusˈɔ̃",
+      "vu pusˈe",
+      "il pˈus"
+    ]
+  },
+  {
+    "w":"occuper",
+    "wi":"ɔkypˈe",
+    "p":[
+      "j'occupe",
+      "tu occupes",
+      "il occupe",
+      "nous occupons",
+      "vous occupez",
+      "ils occupent"
+    ],
+    "pi":[
+      "ʒɔkˈyp",
+      "ty ɔkˈyp",
+      "il ɔkˈyp",
+      "nuz ɔkypˈɔ̃",
+      "vuz ɔkypˈe",
+      "ilz ɔkˈyp"
+    ]
+  },
+  {
+    "w":"compter",
+    "wi":"kɔ̃tˈe",
+    "p":[
+      "je compte",
+      "tu comptes",
+      "il compte",
+      "nous comptons",
+      "vous comptez",
+      "ils comptent"
+    ],
+    "pi":[
+      "ʒə- kˈɔ̃t",
+      "ty kˈɔ̃t",
+      "il kˈɔ̃t",
+      "nu kɔ̃tˈɔ̃",
+      "vu kɔ̃tˈe",
+      "il kˈɔ̃t"
+    ]
+  },
+  {
+    "w":"empêcher",
+    "wi":"ɑ̃pɛʃˈe",
+    "p":[
+      "j'empêche",
+      "tu empêches",
+      "il empêche",
+      "nous empêchons",
+      "vous empêchez",
+      "ils empêchent"
+    ],
+    "pi":[
+      "ʒɑ̃pˈɛʃ",
+      "ty ɑ̃pˈɛʃ",
+      "il ɑ̃pˈɛʃ",
+      "nuz ɑ̃pɛʃˈɔ̃",
+      "vuz ɑ̃pɛʃˈe",
+      "ilz ɑ̃pˈɛʃ"
+    ]
+  },
+  {
+    "w":"plaire",
+    "wi":"plˈɛʁ",
+    "p":[
+      "je plais",
+      "tu plais",
+      "il plaît",
+      "nous plaisons",
+      "vous plaisez",
+      "ils plaisent"
+    ],
+    "pi":[
+      "ʒə- plˈɛ",
+      "ty plˈɛ",
+      "il plˈɛ",
+      "nu plɛzˈɔ̃",
+      "vu plɛzˈe",
+      "il plˈɛz"
+    ]
+  },
+  {
+    "w":"travailler",
+    "wi":"tʁavajˈe",
+    "p":[
+      "je travaille",
+      "tu travailles",
+      "il travaille",
+      "nous travaillons",
+      "vous travaillez",
+      "ils travaillent"
+    ],
+    "pi":[
+      "ʒə- tʁavˈaj",
+      "ty tʁavˈaj",
+      "il tʁavˈaj",
+      "nu tʁavajˈɔ̃",
+      "vu tʁavajˈe",
+      "il tʁavˈaj"
+    ]
+  },
+  {
+    "w":"écrier",
+    "wi":"ekʁiˈe",
+    "p":[
+      "Je m'écrie",
+      "Tu t'écries",
+      "Il s'écrie",
+      "Nous nous écrions",
+      "Vous vous écriez",
+      "Ils s'écrient"
+    ],
+    "pi":[
+      "ʒə- mekʁˈi",
+      "ty tekʁˈi",
+      "il sekʁˈi",
+      "nu nuz ekʁiˈɔ̃",
+      "vu vuz ekʁiˈe",
+      "il sekʁˈi"
+    ]
+  }
+]
