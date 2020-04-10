@@ -73,7 +73,8 @@ html, body { height: 100%; width: 100%; }
 <div style="height:20%;position: relative;">
     <form name="myForm" onclick="saveRadioIndex(getRadioValue());" >
         <input type="radio" name="number" value="pinyin" checked="checked"/> pinyin
-        <input type="radio" name="number" value="pinyin_ln"/> pinyin lv
+        <input type="radio" name="number" value="pinyin_ln"/> pinyin ln
+        <input type="radio" name="number" value="pinyin_zcs"/> pinyin zcs
         <input type="radio" name="number" value="2" /> 2
         <input type="radio" name="number" value="3" /> 3
         <input type="radio" name="number" value="4" /> 4
@@ -95,14 +96,14 @@ html, body { height: 100%; width: 100%; }
 <div class="outer" id="myDivOuter" onclick="doIt();">
     <div class="middle" id="myDivMiddle">
         <div class="inner" id="myDivInner">
-            <p id="myText" style="border:thin solid #808A87">
+            <p id="myText1" style="border:thin solid #808A87">
             </p>
         </div>
     </div>
     <div class="bottom" id="myDivMiddle1">
         <div class="inner1" id="myDivInner1">
-            <p id="myText1" style="border:thin solid #808A87">
             <p id="myText2" style="border:thin solid #808A87">
+            <p id="myText3" style="border:thin solid #808A87">
             </p>
         </div>
     </div>
@@ -117,8 +118,12 @@ var _gConjugates = 0;
  * Returns a random integer between min (inclusive) and max (inclusive)
  * Using Math.round() will give you a non-uniform distribution!
  */
-function getRandomInt(min, max) {
-    return Math.floor(Math.random() * (max - min + 1)) + min;
+function getRandomInt(min, max, text = false) {
+    n = Math.floor(Math.random() * (max - min + 1)) + min;
+    if (text) {
+        n = getNumberText(n);
+    }
+    return n;
 }
 
 /**
@@ -161,11 +166,21 @@ function setRadioValue(val) {
     }
 }
 
+function updateElementHtml(id, content) {
+    var dd = document.getElementById(id);
+    dd.innerHTML = content;
+}
+
 function buildDrillText() {
     var n;
     var val = getRadioValue();
+
+    var Text1 = '';
+    var Text2 = '';
+    var Text3 = '';
+
     if (val == 'r') {
-        val = getRandomInt(2, 9);
+        Text1 = getRandomInt(2, 9, true);
     } else if (val == 'f') {
         var a = ['mon', 'ma', 'mes','ton','ta', 'tes', 'son', 'sa', 'tes','notre', 'nos', 'votre', 'vos', 'leur','leurs'];
         var b = ['mien','mienne','tien','tienne', 'sien','siens','sienne','siennes','nôtre','vôtre']
@@ -174,8 +189,9 @@ function buildDrillText() {
         var e = ['celui','celle','ceux','celles']
         var words = a.concat(b).concat(c).concat(d).concat(e)
 
-        val = words[Math.floor(Math.random()*words.length)];
+        Text1 = words[Math.floor(Math.random()*words.length)];
     } else if (val == 'c') {
+
         //_words = JSON.parse(_french);
         _words = _french;
         if (_gIndex < 0) {
@@ -187,66 +203,69 @@ function buildDrillText() {
             i = _gIndex;
         }
         j = getRandomInt(0, 5);
-        val = _words[i].p[j];
+        Text1 = _words[i].p[j];
 
         _gConjugates = _words[i];
         
-        var dd=document.getElementById("myText1");
-        dd.innerHTML = _words[i].pi[j] + ' <br />' +  _words[i].w + ' : ' + _words[i].wi;
-        
-        var s = '<button type="button" onclick="event.stopPropagation();all_conjugates();"> ALL </button>';
-        var dd = document.getElementById("myText2");
-        dd.innerHTML = s;
+        Text2 = _words[i].pi[j] + ' <br />' +  _words[i].w + ' : ' + _words[i].wi;
+        Text3 = '<button type="button" onclick="event.stopPropagation();all_conjugates();"> ALL </button>';
+
     } else if (val == 'pinyin') {
+
         //_words = JSON.parse(_pinyin);
         _words = _pinyin;
         var keys = Object.keys(_words);
         key = keys[ keys.length * Math.random() << 0];
         
-        var dd = document.getElementById("myText1");
-        val = key
-        dd.innerHTML = _words[key];
+        Text1 = key;
+        var l = new Array();
+        for (var i = 0; i < _words[key].length; i++) {
+            Text2 += _words[key][i]['w'] + ' ';
+        }
+
     } else if (val == 'pinyin_ln') {
+
         _words = _pinyin;
-        lns = [];
+        values = [];
         for (var key in _words) {
             if (key.indexOf("l") == 0 || key.indexOf("n") == 0) {
-                lns = lns.concat(_words[key]);
+                values = values.concat(_words[key]);
             }
 
         }
-        ln = lns[ lns.length * Math.random() << 0];
+        value = values[ values.length * Math.random() << 0];
 
-        py = '';
+        Text1 = value['w'];
+        Text2 = value['p'];
+
+    } else if (val == 'pinyin_zcs') {
+
+        _words = _pinyin;
+        values = [];
         for (var key in _words) {
-            py = key;
-            found = false;
-            for (var i = 0; i < _words[key].length; i++) {
-                if (_words[key][i] == ln) {
-                    found = true;
-                    break;
-                }
+            if (key.indexOf("z") == 0 || key.indexOf("c") == 0 || key.indexOf("s") == 0) {
+                values = values.concat(_words[key]);
             }
-            if (found) break;
+
         }
-        
-        var dd = document.getElementById("myText1");
-        dd.innerHTML = py;
-        val = ln;
+        value = values[ values.length * Math.random() << 0];
+
+        Text1 = value['w'];
+        Text2 = value['p'];
+
     }
 
-    if (isNaN(val) == false) {
-         n = getNumberText(val);
-    } else if (val == 'd') {
-        n = "DMY: " + getRandomInt(1,31) + "." + getRandomInt(1,12) + "." + getRandomInt(1000,2050);
+    if (val == 'd') {
+        Text1 = "DMY: " + getRandomInt(1,31) + "." + getRandomInt(1,12) + "." + getRandomInt(1000,2050);
     } else if (val == 'w') {
-        n = getRandomInt(1,7);
+        Text1 = getRandomInt(1,7);
     } else if (val == 't') {
-        n = getRandomInt(1,12) + "." + getRandomInt(1,59)
-    } else {
-        n = val;
+        Text1 = getRandomInt(1,12) + "." + getRandomInt(1,59)
     }
-    return n;
+
+    updateElementHtml('myText1', Text1);
+    updateElementHtml('myText2', Text2);
+    updateElementHtml('myText3', Text3);
 }
 
 function all_conjugates(n) {
@@ -255,13 +274,12 @@ function all_conjugates(n) {
     for (var i =0; i < 6; i++) {
         s += _gConjugates.p[i] + '<br />'
     }
-    var dd=document.getElementById("myText2");
+    var dd=document.getElementById("myText3");
     dd.innerHTML = s;
 }
 
 function doIt() {
-    var dd=document.getElementById("myText");
-    dd.innerHTML =  buildDrillText();
+    buildDrillText();
 }
 
 function saveRadioIndex(val) {
@@ -295,6 +313,13 @@ async function loaddata(url) {
 async function init() {
     await loaddata('drill_pinyin.json').then(data => _pinyin = data);
     await loaddata('drill_french.json').then(data => _french = data);
+    for (var key in _pinyin) {
+        for (var i = 0; i < _pinyin[key].length; i++) {
+            w = _pinyin[key][i];
+            _pinyin[key][i] = {"w":w,"p":key};
+        }
+    }
+
 }
 </script>
 </body>
