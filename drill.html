@@ -266,6 +266,14 @@ function buildDrillText() {
     updateElementHtml('myText1', Text1);
     updateElementHtml('myText2', Text2);
     updateElementHtml('myText3', Text3);
+
+    // background color
+    //colors = ["BlueViolet","Crimson","DarkCyan","Magenta","Orchid","Red","Purple","Brown"];
+    //document.getElementById("myDivInner").style.background = colors[ colors.length * Math.random() << 0];
+    
+    rcolor = getRandomColor();
+    document.getElementById("myDivInner").style.background = rcolor;
+    document.getElementById("myText1").style.color = contrast(rcolor);
 }
 
 function all_conjugates(n) {
@@ -297,6 +305,50 @@ function loadRadioIndex() {
 }
 setRadioValue(loadRadioIndex());
 window.onload = async () => { await init(); doIt(); }
+</script>
+
+<script>
+function getRandomColor() {
+    var letters = '0123456789ABCDEF';
+    var color = '#';
+    for (var i = 0; i < 6; i++) {
+        color += letters[Math.floor(Math.random() * 16)];
+    }
+    return color;
+}
+
+function rgbToYIQ({r, g, b}) {
+    return ((r * 299) + (g * 587) + (b * 114)) / 1000;
+}
+
+function hexToRgb(hex) {
+    if (!hex || hex === undefined || hex === '') {
+        return undefined;
+    }
+
+    const result =
+          /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
+
+    return result ? {
+      r: parseInt(result[1], 16),
+      g: parseInt(result[2], 16),
+      b: parseInt(result[3], 16)
+    } : undefined;
+}
+
+function contrast(colorHex, threshold = 128) {
+    if (colorHex === undefined) {
+        return '#000';
+    }
+
+    const rgb = hexToRgb(colorHex);
+
+    if (rgb === undefined) {
+        return '#000';
+    }
+
+    return rgbToYIQ(rgb) >= threshold ? '#000' : '#fff';
+}
 </script>
 
 <script>
