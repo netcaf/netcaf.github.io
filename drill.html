@@ -96,11 +96,14 @@ html, body { height: 100%; width: 100%; }
 <div class="outer" id="myDivOuter" onclick="doIt();">
     <div class="middle" id="myDivMiddle">
         <div class="inner" id="myDivInner">
-            <div>
-            <p id="myText1" style="border:thin solid #808A87">
-            </p>
-            <a id="playaudio" href = "javascript:play();" onclick="event.stopPropagation();" style="display:;">Sound</a>
-            </div>
+            <a onclick="event.stopPropagation();playAudio();" style="display:block;">
+                <p id="myText1" style="border:thin solid #808A87">
+                </p>
+                <img id="speaker" src="speaker.svg">
+            </a>
+                <audio controls="controls" id="myaudio" style="display:none">
+                    <source src = "alicia/gǒng.mp3" type="audio/mp3"/>
+                </audio>
         </div>
     </div>
     <div class="bottom" id="myDivMiddle1">
@@ -115,17 +118,30 @@ html, body { height: 100%; width: 100%; }
 <button type="button" onclick="doIt();" style="position: relative;background-color: #ffffff;height:20%;width: 100%">Click Me!</button>
 -->
 <script>
-function play() {
-    e = document.getElementById("playaudio")
-    sound = new Audio();
-    sound.src = e.src;
-    //sound.preload = "none";
-    sound.play();
-    //document.getElementById('myaudio').src = 'alicia/dān.mp3';
-    //document.getElementById('myaudio').play();
+var currentFile = "";
+function playAudio() {
+    try {
+        var val = getRadioValue();
+        if (val != 'pinyin') return;
 
+        var eAudio = document.getElementById("myaudio");
+        var eBtn = document.getElementById("play");
+        if (eAudio.src != currentFile) {
+            eAudio.src = currentFile;
+        }
+
+        if (eAudio.paused) {
+            eAudio.play();
+        } else {
+            //eAudio.pause();
+            eAudio.currentTime = 0;
+        }
+    } catch (e) {
+            console.error("Error:" + e);
+    }
 }
 </script>
+
 <script type="text/javascript" defer="defer">
 var _gIndex = -1;
 var _gConjugates = 0;
@@ -194,8 +210,8 @@ function buildDrillText() {
     var Text2 = '';
     var Text3 = '';
 
-    e = document.getElementById("playaudio")
-    e.style.display = 'none';
+    e = document.getElementById("speaker");
+    e.style.display = "none";
 
     if (val == 'r') {
         Text1 = getRandomInt(2, 9, true);
@@ -240,9 +256,10 @@ function buildDrillText() {
         for (var i = 0; i < _words[key].length; i++) {
             Text2 += _words[key][i]['w'] + ' ';
         }
-        e.src = "alicia/" + Text1 + ".mp3";
+        //e.src = "alicia/" + Text1 + ".mp3";
+        //e.style.display = "";
+        currentFile = "alicia/" + Text1 + ".mp3";
         e.style.display = "";
-
 
     } else if (val == 'pinyin_ln') {
 
