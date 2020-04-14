@@ -98,6 +98,8 @@ html, body { height: 100%; width: 100%; }
         <div class="inner" id="myDivInner">
             <p id="myText1" style="border:thin solid #808A87">
             </p>
+            <audio controls id="myaudio" style="display:none;">
+            </audio>
         </div>
     </div>
     <div class="bottom" id="myDivMiddle1">
@@ -179,6 +181,9 @@ function buildDrillText() {
     var Text2 = '';
     var Text3 = '';
 
+    e = document.getElementById("myaudio")
+    e.style.display = 'none';
+
     if (val == 'r') {
         Text1 = getRandomInt(2, 9, true);
     } else if (val == 'f') {
@@ -222,6 +227,9 @@ function buildDrillText() {
         for (var i = 0; i < _words[key].length; i++) {
             Text2 += _words[key][i]['w'] + ' ';
         }
+        e.src = "alicia/" + Text1 + ".mp3";
+        e.style.display = "";
+
 
     } else if (val == 'pinyin_ln') {
 
