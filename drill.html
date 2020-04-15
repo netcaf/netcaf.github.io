@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html manifest="cache.appcache">
+<html>
 <head>
 <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
 <meta name="apple-mobile-web-app-capable" content="yes">
@@ -67,6 +67,7 @@ html, body { height: 100%; width: 100%; }
 }
 
 </style>
+<script type="text/javascript" src="pinyin_converter.js"></script>
 </head>
 <body onload=";">
 
@@ -101,8 +102,8 @@ html, body { height: 100%; width: 100%; }
                 </p>
                 <img id="speaker" src="speaker.svg">
             </a>
-                <audio controls="controls" id="myaudio" style="display:none">
-                    <source src = "alicia/gǒng.mp3" type="audio/mp3"/>
+                <audio controls="controls" preload="auto" id="myaudio" style="display:none">
+                    <source src = "" type="audio/mp3"/>
                 </audio>
         </div>
     </div>
@@ -126,15 +127,19 @@ function playAudio() {
 
         var eAudio = document.getElementById("myaudio");
         var eBtn = document.getElementById("play");
-        if (eAudio.src != currentFile) {
+        if (!decodeURI(eAudio.src).includes(currentFile)) {
             eAudio.src = currentFile;
         }
 
         if (eAudio.paused) {
+            eAudio.load();
+            eAudio.currentTime = 0;
             eAudio.play();
         } else {
             eAudio.pause();
             eAudio.currentTime = 0;
+            eAudio.play();
+
         }
     } catch (e) {
             console.error("Error:" + e);
@@ -251,14 +256,14 @@ function buildDrillText() {
         var keys = Object.keys(_words);
         key = keys[ keys.length * Math.random() << 0];
         
-        Text1 = key;
+        Text1 = numlat(vnum(key));
         var l = new Array();
         for (var i = 0; i < _words[key].length; i++) {
             Text2 += _words[key][i]['w'] + ' ';
         }
         //e.src = "alicia/" + Text1 + ".mp3";
         //e.style.display = "";
-        currentFile = "alicia/" + Text1 + ".mp3";
+        currentFile = "alicia/" + key + ".mp3";
         e.style.display = "";
 
     } else if (val == 'pinyin_ln') {
