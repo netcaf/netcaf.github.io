@@ -93,8 +93,7 @@ html, body { height: 100%; width: 100%; }
         <input type="radio" name="number" value="t" /> Time
     </form>
 </div>
-
-<div class="outer" id="myDivOuter" onclick="doIt();">
+<div class="outer" id="myDivOuter" onclick="">
     <div class="middle" id="myDivMiddle">
         <div class="inner" id="myDivInner">
             <a onclick="event.stopPropagation();playAudio();" style="display:block;">
@@ -102,9 +101,6 @@ html, body { height: 100%; width: 100%; }
                 </p>
                 <img id="speaker" src="speaker.svg">
             </a>
-                <audio controls="controls" preload="auto" id="myaudio" style="display:none">
-                    <source src = "" type="audio/mp3"/>
-                </audio>
         </div>
     </div>
     <div class="bottom" id="myDivMiddle1">
@@ -115,32 +111,22 @@ html, body { height: 100%; width: 100%; }
         </div>
     </div>
 </div>
-<!--
-<button type="button" onclick="doIt();" style="position: relative;background-color: #ffffff;height:20%;width: 100%">Click Me!</button>
--->
+<button type="button" onclick="doIt();" style="font-size:30px;position: relative;background-color: #ffffff;height:20%;width: 100%">Click Me!</button>
+
 <script>
 var currentFile = "";
+var player = new Audio();
 function playAudio() {
     try {
         var val = getRadioValue();
         if (val != 'pinyin') return;
 
-        var eAudio = document.getElementById("myaudio");
-        var eBtn = document.getElementById("play");
-        if (!decodeURI(eAudio.src).includes(currentFile)) {
-            eAudio.src = currentFile;
+        if (!decodeURI(player.src).includes(currentFile)) {
+            player.src = currentFile;
         }
+        player.load();
+        player.play();
 
-        if (eAudio.paused) {
-            eAudio.load();
-            eAudio.currentTime = 0;
-            eAudio.play();
-        } else {
-            eAudio.pause();
-            eAudio.currentTime = 0;
-            eAudio.play();
-
-        }
     } catch (e) {
             console.error("Error:" + e);
     }
@@ -298,7 +284,9 @@ function buildDrillText() {
 
     }
 
-    if (val == 'd') {
+    if (isNaN(val) == false) {
+        Text1 = getNumberText(val);
+    } else if (val == 'd') {
         Text1 = "DMY: " + getRandomInt(1,31) + "." + getRandomInt(1,12) + "." + getRandomInt(1000,2050);
     } else if (val == 'w') {
         Text1 = getRandomInt(1,7);
