@@ -111,7 +111,23 @@ html, body { height: 100%; width: 100%; }
         </div>
     </div>
 </div>
-<button type="button" onclick="doIt();" style="font-size:30px;position: relative;background-color: #ffffff;height:20%;width: 100%">Click Me!</button>
+<button id="mybutton" type="button" onclick="doIt();" style="font-size:30px;position: relative;background-color: #ffffff;height:20%;width: 100%">Click Me!</button>
+<script>
+var _counter = 0;
+function initRadios() {
+    var radios = document.myForm.number;
+    var prev = null;
+    for (var i = 0; i < radios.length; i++) {
+        radios[i].addEventListener('change', function() {
+            _counter = 0;
+            if ( this !== prev) {
+                prev = this;
+            }
+        })
+    }
+}
+initRadios();
+</script>
 
 <script>
 var currentFile = "";
@@ -201,6 +217,7 @@ function buildDrillText() {
     var Text2 = '';
     var Text3 = '';
 
+    _counter += 1;
     e = document.getElementById("speaker");
     e.style.display = "none";
 
@@ -305,6 +322,7 @@ function buildDrillText() {
     rcolor = getRandomColor();
     document.getElementById("myDivInner").style.background = rcolor;
     document.getElementById("myText1").style.color = contrast(rcolor);
+    document.getElementById("mybutton").textContent = "Click Me! " + _counter;
 }
 
 function all_conjugates(n) {
