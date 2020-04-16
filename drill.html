@@ -411,7 +411,8 @@ async function init() {
     for (var key in _pinyin) {
         for (var i = 0; i < _pinyin[key].length; i++) {
             w = _pinyin[key][i];
-            _pinyin[key][i] = {"w":w,"p":key};
+            py = numlat(vnum(key));
+            _pinyin[key][i] = {"w":w,"p":py};
         }
     }
 

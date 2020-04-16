@@ -156,6 +156,7 @@ return car;
 function vnum(car) {
 //car = document.transcription.text1.value;
 car = car.replace(/v=/g, "ü");
+car = car.replace(/v/g, "ü");
 //document.transcription.text1.value = car;
 return car;
 }
