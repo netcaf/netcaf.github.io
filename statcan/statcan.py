@@ -1,6 +1,7 @@
 import pandas as pd
 import geopandas as gpd
 import plotly.express as px
+import numpy as np
 import json
 import logging
 
@@ -185,11 +186,19 @@ class CensusData:
                                    hover_name='GEO_NAME',
                                    hover_data=tip_data,
                                    template='ggplot2',
-                                   labels={'color': 'Chinese ratio'},
+                                   #labels={'color': 'Chinese ratio1'},
                                   )
   
         logger.info("Update layout.")
         fig.update_layout(margin={"r":0,"t":30,"l":0,"b":0}, title={"text":'Minorities in Canada (Total Minority > {})'.format(threshold),})
+        fig.update_layout(
+            hoverlabel_align = 'right',
+            hoverlabel=dict(
+                bgcolor="aliceblue",
+                font_size=16,
+                font_family="Rockwell"
+            )
+        )
         
         if filename:
             logger.info("Write html.")
