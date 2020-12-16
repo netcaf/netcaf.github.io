@@ -115,8 +115,27 @@ class CensusData:
         print('Pruned: {} -> {}'.format(len(mapdata), len(pruned)))
         return pruned
 
-    def generate_tip_data(self, dataframe):
+    def generate_tip_data1(self, dataframe):
         
+        tip_data = {}
+        color = None
+        for col in dataframe.columns:
+            if col in ['GEO_NAME', 'GEO_CODE', 'CSD_TYPE_NAME','Not a visible minority']:
+                tip_data[col] = False
+            elif col in ['Total']:
+                tip_data[col] = ':,'
+            elif col in ['Total Minority']:
+                tip_data[col] = ':,'
+                tip_data[col+' ratio'] = (':.2%',dataframe[col].astype(float)/dataframe['Total'])
+            else:
+                if 'Chinese' == col:
+                    color = dataframe[col].astype(float)/dataframe['Total Minority']
+                tip_data[col+' ratio'] = (':.2%',dataframe[col].astype(float)/dataframe['Total Minority'])
+
+        return tip_data
+
+    def generate_tip_data(self, dataframe):
+
         tip_data = {}
         color = None
         for col in dataframe.columns:
@@ -166,11 +185,11 @@ class CensusData:
                                    hover_name='GEO_NAME',
                                    hover_data=tip_data,
                                    template='ggplot2',
-                                   labels={'color': 'Chinese'},
+                                   labels={'color': 'Chinese ratio'},
                                   )
   
         logger.info("Update layout.")
-        fig.update_layout(margin={"r":0,"t":30,"l":0,"b":0}, title={"text":'Minorities in Canada with the threshold {}'.format(threshold),})
+        fig.update_layout(margin={"r":0,"t":30,"l":0,"b":0}, title={"text":'Minorities in Canada (Total Minority > {})'.format(threshold),})
         
         if filename:
             logger.info("Write html.")
@@ -234,4 +253,4 @@ if __name__ == '__main__':
     if args.update:
         cd.update_data()
     else:
-        cd.show(threshold=args.threshold)
+        cd.show(threshold=args.threshold, filename='canada.html')
