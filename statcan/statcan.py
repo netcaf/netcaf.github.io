@@ -14,10 +14,12 @@ flist = ('98-401-X2016059_English_CSV_data.csv',  # Canada, provinces and territ
 
 flist = ('98-401-X2016055_English_CSV_data.csv',)
 class CensusData:
-    def __init__(self):
+    def __init__(self, threshold):
         
-        self.data_frame = None;
+        self.threshold = threshold
+        self.data_frame = None
         self.update_data_file = 'canada.csv'
+        self.update_map_file = 'canada.json'
         self.choroplethmap_file = 'lcsd000a16a_e.json'
         self.visible_name_mapping = {
             "Total - Visible minority for the population in private households - 25% sample data": "Total",
@@ -84,21 +86,6 @@ class CensusData:
         n = pd.DataFrame(population_by_category)
         out_data = n.loc[n['Chinese'].str.replace('.','',1).str.isdigit()]
 
-        '''
-        out_data.insert(len(out_data.columns), 'Chinese Ratio', 0)
-        out_data2 = out_data.copy()
-        for index, row in out_data.iterrows():
-            total_chinese = out_data.loc[index, 'Chinese']
-            total_minority = out_data.loc[index, 'Total Minority']
-
-            try:
-                ratio = float(total_chinese) / float(total_minority)
-                ratio = '{:.4}'.format(ratio)
-            except ZeroDivisionError:
-                ratio = 0
-
-            out_data2.loc[index, 'Chinese Ratio'] = ratio
-        '''
         out_data = out_data[out_data['Total Minority'].astype(float) != 0]
         out_data.to_csv(self.update_data_file, index=False)
 
@@ -154,27 +141,46 @@ class CensusData:
 
         return tip_data
 
-    def show(self, threshold, filename='out.html'):
+    def load_data(self, update=False, mapdata_key='CSDUID', dataframe_key='GEO_CODE'):
         
-        logger.info("Read map data.")
-        country_map = gpd.read_file(self.choroplethmap_file).to_crs("EPSG:4326")
-        #with open("test.json") as f:
-        #    country_map = json.load(f)
+        d_file = 'canada.filtered.csv'
+        m_file = 'map.pruned.json'
+        
+        if update:
+            logger.info("Read map data.")
+            country_map = gpd.read_file(self.choroplethmap_file).to_crs("EPSG:4326")
+            
+            logger.info("Read population data.")
+            df = pd.read_csv(self.update_data_file)
+        
+            logger.info("Filter with threshold.")
+            df = df.loc[df['Total Minority'] >= self.threshold]
+            
+            logger.info("Prune map data.")
+            country_map = self.prune_map(country_map, mapdata_key, df, dataframe_key)
 
-        logger.info("Read population data.")
-        df = pd.read_csv(self.update_data_file)
-        
-        logger.info("Filter with threshold.")
-        df = df.loc[df['Total Minority'] >= threshold]
-        
-        logger.info("Generate tip data.")
-        tip_data = self.generate_tip_data(df)
+            df.to_csv(d_file, index=False)
+            country_map.to_file(m_file, driver='GeoJSON')
+        else:
+            
+            logger.info("Read map data.")
+            country_map = gpd.read_file(m_file).to_crs("EPSG:4326")
+            
+            logger.info("Read population data.")
+            df = pd.read_csv(d_file)
+
+        return (df, country_map)
+
+    def show(self, filename='out.html'):
         
         mapdata_key = 'CSDUID'
         dataframe_key = 'GEO_CODE'
-        logger.info("Prune map data.")
-        country_map = self.prune_map(country_map, mapdata_key, df, dataframe_key)
 
+        df, country_map = self.load_data(update=False, mapdata_key=mapdata_key, dataframe_key=dataframe_key)
+
+        logger.info("Generate tip data.")
+        tip_data = self.generate_tip_data(df)
+        
         logger.info("Generate figure with choropleth_mapbox.")
         fig = px.choropleth_mapbox(df, geojson=country_map, featureidkey="properties.{}".format(mapdata_key), locations=dataframe_key, color=tip_data['Chinese ratio'][1],
                                    color_continuous_scale="sunsetdark",
@@ -190,7 +196,7 @@ class CensusData:
                                   )
   
         logger.info("Update layout.")
-        fig.update_layout(margin={"r":0,"t":30,"l":0,"b":0}, title={"text":'Minorities in Canada (Total Minority > {})'.format(threshold),})
+        fig.update_layout(margin={"r":0,"t":30,"l":0,"b":0}, title={"text":'Minorities in Canada (Total Minority > {})'.format(self.threshold),})
         fig.update_layout(
             hoverlabel_align = 'right',
             hoverlabel=dict(
@@ -258,8 +264,8 @@ if __name__ == '__main__':
     parser.add_argument('-t','--threshold', help='Threshold for minority population...', type=int, default=1000)
     args = parser.parse_args()
 
-    cd = CensusData()
+    cd = CensusData(args.threshold)
     if args.update:
         cd.update_data()
     else:
-        cd.show(threshold=args.threshold, filename='canada.html')
+        cd.show(filename='canada.html')
