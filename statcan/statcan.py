@@ -196,7 +196,7 @@ class CensusData:
                                   )
   
         logger.info("Update layout.")
-        fig.update_layout(margin={"r":0,"t":30,"l":0,"b":0}, title={"text":'Minorities in Canada (Total Minority > {})'.format(self.threshold),})
+        fig.update_layout(margin={"r":0,"t":30,"l":0,"b":0}, title={"text":'Minorities in Canada (Total Minority >= {})'.format(self.threshold),})
         fig.update_layout(
             hoverlabel_align = 'right',
             hoverlabel=dict(
