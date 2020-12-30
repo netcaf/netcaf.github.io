@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 21.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 203 202" style="enable-background:new 0 0 203 202;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#FEE503;stroke:#000000;stroke-width:0.25;}
+	.st1{fill:#FFDF00;}
+	.st2{fill:#E03127;}
+	.st3{fill:#2C9345;}
+</style>
+<g id="_x3C_TRAFFIC_LIGHT_Sign_x3E_">
+	<path class="st0" d="M97,198.3c3,3,7.9,3,10.9,0l91.1-91.1c3-3,3-7.9,0-10.9L108,5.1c-3-3-7.9-3-10.9,0L5.9,96.2c-3,3-3,7.9,0,10.9
+		L97,198.3z"/>
+	<path d="M9.5,105.2L99,194.7c1.9,1.9,5,1.9,6.9,0l89.6-89.6c1.9-1.9,1.9-5,0-6.9L106,8.7c-1.9-1.9-5-1.9-6.9,0L9.5,98.3
+		C7.6,100.2,7.6,103.3,9.5,105.2z M13,100l87.6-87.8c1-1,2.6-1,3.6,0L192,99.8c1,1,1,2.6,0,3.6l-87.7,87.7c-1,1-2.6,1-3.6,0
+		L13,103.6C12,102.6,12,101,13,100z"/>
+	<g>
+		<rect x="80.4" y="40.1" width="43.3" height="118.5"/>
+		<circle class="st1" cx="102.2" cy="99.3" r="15.2"/>
+		<circle class="st2" cx="102.2" cy="62.4" r="15.2"/>
+		<circle class="st3" cx="102.2" cy="136.4" r="15.2"/>
+	</g>
+</g>
+</svg>

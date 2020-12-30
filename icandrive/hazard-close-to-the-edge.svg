@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 21.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 203 202" style="enable-background:new 0 0 203 202;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#FEE503;}
+	.st1{fill:none;}
+</style>
+<g id="_x3C_MARKERS_1_x3E__1_">
+	<path class="st0" d="M67.8,192.5c0,3.3,2.7,6,6,6h52.8c3.3,0,5.9-2.7,5.9-6V9.9c0-3.3-2.7-5.9-5.9-5.9H73.7c-3.3,0-6,2.7-6,5.9
+		v182.6H67.8z"/>
+	<g>
+		<polygon class="st1" points="132.4,29 132.4,51.6 85,3.9 107.5,3.9 		"/>
+		<polygon class="st1" points="132.4,98.7 67.8,33.7 67.8,11.1 132.4,76.1 		"/>
+		<polygon class="st1" points="132.4,145.9 67.8,80.9 67.8,58.2 132.4,123.2 		"/>
+		<path class="st1" d="M132.4,192.5c0,0.1,0,0.3,0,0.4l-64.6-65v-22.7l64.7,65v22.3H132.4z"/>
+		<polygon class="st1" points="91.1,198.5 67.8,175.1 67.8,152.4 113.6,198.5 		"/>
+		<path d="M126.5,3.9c3.3,0,5.9,2.7,5.9,5.9V29L107.5,4L126.5,3.9L126.5,3.9z"/>
+		<path d="M132.4,76.1l-64.7-65V9.9c0-3.3,2.7-5.9,6-5.9H85l47.5,47.7v24.4H132.4z"/>
+		<polygon points="132.4,123.2 67.8,58.2 67.8,33.7 132.4,98.7 		"/>
+		<polygon points="132.4,170.3 67.8,105.3 67.8,80.9 132.4,145.9 		"/>
+		<path d="M126.5,198.5h-12.9l-45.8-46.1V128l64.6,65C132.2,196.1,129.6,198.5,126.5,198.5z"/>
+		<path d="M73.7,198.5c-3.3,0-6-2.7-6-6v-17.4L91,198.5H73.7z"/>
+	</g>
+</g>
+</svg>
