@@ -1,0 +1,2515 @@
+{
+    "AD": {
+        "Independent": "Yes",
+        "Official name": "Principality of Andorra",
+        "Capital city": "Andorra la Vella",
+        "Continent": "Europe",
+        "Chinese name": "安道尔",
+        "Official nameipa": "pɹˌɪnsɪpˈælɪɾi ʌv ˈændɔːɹə",
+        "Capital cityipa": "ˈændɔːɹə lˌæ vˈɛlə",
+        "Capital city in chinese": "安道尔城"
+    },
+    "AE": {
+        "Independent": "Yes",
+        "Official name": "United Arab Emirates",
+        "Capital city": "Abu Dhabi",
+        "Continent": "Asia",
+        "Chinese name": "阿拉伯联合酋长国",
+        "Official nameipa": "juːnˈa‍ɪɾᵻd ˈæɹəb ˈɛmᵻɹˌe‍ɪts",
+        "Capital cityipa": "ˈæbuː dˈɑːbi",
+        "Capital city in chinese": "阿布扎比"
+    },
+    "AF": {
+        "Independent": "Yes",
+        "Official name": "Islamic Republic of Afghanistan",
+        "Capital city": "Kabul",
+        "Continent": "Asia",
+        "Chinese name": "阿富汗",
+        "Official nameipa": "ɪslˈɑːmɪk ɹɪpˈʌblɪk ʌv æfɡˈænɪstˌæn",
+        "Capital cityipa": "kˈæbʌl",
+        "Capital city in chinese": "喀布尔"
+    },
+    "AG": {
+        "Independent": "Yes",
+        "Official name": "Antigua and Barbuda",
+        "Capital city": "Saint John's",
+        "Continent": "North America",
+        "Chinese name": "安提瓜和巴布达",
+        "Official nameipa": "æntˈiːɡə ænd bɑː‍ɹbjˈuːdə",
+        "Capital cityipa": "sˈe‍ɪnt d‍ʒˈɑːnz",
+        "Capital city in chinese": "圣约翰"
+    },
+    "AI": {
+        "Independent": "No",
+        "Official name": "Anguilla",
+        "Capital city": "The Valley",
+        "Continent": "North America",
+        "Chinese name": "安圭拉",
+        "Official nameipa": "ˈæŋɡɪlə",
+        "Capital cityipa": "ðə vˈæli",
+        "Capital city in chinese": "瓦利"
+    },
+    "AL": {
+        "Independent": "Yes",
+        "Official name": "Republic of Albania",
+        "Capital city": "Tirana",
+        "Continent": "Europe",
+        "Chinese name": "阿尔巴尼亚",
+        "Official nameipa": "ɹɪpˈʌblɪk ʌv ælbˈe‍ɪni‍ə",
+        "Capital cityipa": "tɜːɹˈɑːnə",
+        "Capital city in chinese": "地拉那"
+    },
+    "AM": {
+        "Independent": "Yes",
+        "Official name": "Republic of Armenia",
+        "Capital city": "Yerevan",
+        "Continent": "Asia",
+        "Chinese name": "亚美尼亚",
+        "Official nameipa": "ɹɪpˈʌblɪk ʌv ɑː‍ɹmˈiːni‍ə",
+        "Capital cityipa": "jˌɛɹəvˈæn",
+        "Capital city in chinese": "埃里温"
+    },
+    "AO": {
+        "Independent": "Yes",
+        "Official name": "Republic of Angola",
+        "Capital city": "Luanda",
+        "Continent": "Africa",
+        "Chinese name": "安哥拉",
+        "Official nameipa": "ɹɪpˈʌblɪk ʌv æŋɡˈo‍ʊlə",
+        "Capital cityipa": "luːˈændə",
+        "Capital city in chinese": "罗安达"
+    },
+    "AQ": {
+        "Independent": "No",
+        "Official name": "Antarctica",
+        "Chinese name": "南极洲",
+        "Official nameipa": "æntˈɑː‍ɹktɪkə"
+    },
+    "AR": {
+        "Independent": "Yes",
+        "Official name": "Argentine Republic",
+        "Capital city": "Buenos Aires",
+        "Continent": "South America",
+        "Chinese name": "阿根廷",
+        "Official nameipa": "ˈɑː‍ɹd‍ʒɪntˌa‍ɪn ɹɪpˈʌblɪk",
+        "Capital cityipa": "bwˈe‍ɪnɑːs ˈa‍ɪɹɪz",
+        "Capital city in chinese": "布宜诺斯艾利斯"
+    },
+    "AS": {
+        "Independent": "No",
+        "Official name": "American Samoa",
+        "Capital city": "Pago Pago",
+        "Continent": "Oceania",
+        "Chinese name": "美属萨摩亚",
+        "Official nameipa": "ɐmˈɛɹɪkən sæmˈo‍ʊə",
+        "Capital cityipa": "pˈe‍ɪɡo‍ʊ pˈe‍ɪɡo‍ʊ",
+        "Capital city in chinese": "帕果-帕果"
+    },
+    "AT": {
+        "Independent": "Yes",
+        "Official name": "Republic of Austria",
+        "Capital city": "Vienna",
+        "Continent": "Europe",
+        "Chinese name": "奥地利",
+        "Official nameipa": "ɹɪpˈʌblɪk ʌv ˈɔːstɹiə",
+        "Capital cityipa": "vɪˈɛnə",
+        "Capital city in chinese": "维也纳"
+    },
+    "AU": {
+        "Independent": "Yes",
+        "Official name": "Commonwealth of Australia",
+        "Capital city": "Canberra",
+        "Continent": "Oceania",
+        "Chinese name": "澳大利亚",
+        "Official nameipa": "kˈɑːmənwˌɛlθ ʌv ɔːstɹˈe‍ɪli‍ə",
+        "Capital cityipa": "kˈænbɚɹə",
+        "Capital city in chinese": "堪培拉"
+    },
+    "AW": {
+        "Independent": "No",
+        "Official name": "Aruba",
+        "Capital city": "Oranjestad",
+        "Continent": "North America",
+        "Chinese name": "阿鲁巴",
+        "Official nameipa": "æɹˈuːbə",
+        "Capital cityipa": "ˈoːɹɐnd‍ʒˌɛstæd",
+        "Capital city in chinese": "奥拉涅斯塔德"
+    },
+    "AX": {
+        "Independent": "No",
+        "Official name": "Åland Islands",
+        "Capital city": "Mariehamn",
+        "Continent": "Europe",
+        "Chinese name": "奥兰群岛",
+        "Official nameipa": "ɐlˈænd ˈa‍ɪləndz",
+        "Capital cityipa": "mˈæɹɪhˌæm",
+        "Capital city in chinese": "玛丽港"
+    },
+    "AZ": {
+        "Independent": "Yes",
+        "Official name": "Republic of Azerbaijan",
+        "Capital city": "Baku",
+        "Continent": "Asia",
+        "Chinese name": "阿塞拜疆",
+        "Official nameipa": "ɹɪpˈʌblɪk ʌv ˌæzɚba‍ɪd‍ʒˈɑːn",
+        "Capital cityipa": "bˈɑːkuː",
+        "Capital city in chinese": "巴库"
+    },
+    "BA": {
+        "Independent": "Yes",
+        "Official name": "Bosnia and Herzegovina",
+        "Capital city": "Sarajevo",
+        "Continent": "Europe",
+        "Chinese name": "波斯尼亚和黑塞哥维那",
+        "Official nameipa": "bˈɑːsniə ænd hˈɜːzɪɡˌɑːvɪnə",
+        "Capital cityipa": "sˌæɹɐjˈe‍ɪvo‍ʊ",
+        "Capital city in chinese": "萨拉热窝"
+    },
+    "BB": {
+        "Independent": "Yes",
+        "Official name": "Barbados",
+        "Capital city": "Bridgetown",
+        "Continent": "North America",
+        "Chinese name": "巴巴多斯",
+        "Official nameipa": "bɑː‍ɹbˈe‍ɪdo‍ʊs",
+        "Capital cityipa": "bɹˈɪd‍ʒɪtˌa‍ʊn",
+        "Capital city in chinese": "布里奇顿"
+    },
+    "BD": {
+        "Independent": "Yes",
+        "Official name": "People's Republic of Bangladesh",
+        "Capital city": "Dhaka",
+        "Continent": "Asia",
+        "Chinese name": "孟加拉国",
+        "Official nameipa": "pˈiːpə‍lz ɹɪpˈʌblɪk ʌv bˌæŋɡlɐdˈɛʃ",
+        "Capital cityipa": "dˈɑːkə",
+        "Capital city in chinese": "达卡"
+    },
+    "BE": {
+        "Independent": "Yes",
+        "Official name": "Kingdom of Belgium",
+        "Capital city": "Brussels",
+        "Continent": "Europe",
+        "Chinese name": "比利时",
+        "Official nameipa": "kˈɪŋdəm ʌv bˈɛld‍ʒəm",
+        "Capital cityipa": "bɹˈʌsə‍lz",
+        "Capital city in chinese": "布鲁塞尔"
+    },
+    "BF": {
+        "Independent": "Yes",
+        "Official name": "Burkina Faso",
+        "Capital city": "Ouagadougou",
+        "Continent": "Africa",
+        "Chinese name": "布基纳法索",
+        "Official nameipa": "bɜːkˈiːnə fˈɑːso‍ʊ",
+        "Capital cityipa": "wˈɑːɡɐdˌʌɡuː",
+        "Capital city in chinese": "瓦加杜古"
+    },
+    "BG": {
+        "Independent": "Yes",
+        "Official name": "Republic of Bulgaria",
+        "Capital city": "Sofia",
+        "Continent": "Europe",
+        "Chinese name": "保加利亚",
+        "Official nameipa": "ɹɪpˈʌblɪk ʌv bʌlɡˈɛɹi‍ə",
+        "Capital cityipa": "sˈo‍ʊfiə",
+        "Capital city in chinese": "索非亚"
+    },
+    "BH": {
+        "Independent": "Yes",
+        "Official name": "Kingdom of Bahrain",
+        "Capital city": "Manama",
+        "Continent": "Asia",
+        "Chinese name": "巴林",
+        "Official nameipa": "kˈɪŋdəm ʌv bɑːɹˈe‍ɪn",
+        "Capital cityipa": "mænˈɑːmə",
+        "Capital city in chinese": "麦纳麦"
+    },
+    "BI": {
+        "Independent": "Yes",
+        "Official name": "Republic of Burundi",
+        "Capital city": "Gitega",
+        "Continent": "Africa",
+        "Chinese name": "布隆迪",
+        "Official nameipa": "ɹɪpˈʌblɪk ʌv bʊɹˈʊndi",
+        "Capital cityipa": "ɡˈa‍ɪtɡə",
+        "Capital city in chinese": "布琼布拉"
+    },
+    "BJ": {
+        "Independent": "Yes",
+        "Official name": "Republic of Benin",
+        "Capital city": "Porto-Novo",
+        "Continent": "Africa",
+        "Chinese name": "贝宁",
+        "Official nameipa": "ɹɪpˈʌblɪk ʌv bˈɛnɪn",
+        "Capital cityipa": "pˈoː‍ɹto‍ʊnˈo‍ʊvo‍ʊ",
+        "Capital city in chinese": "波多诺伏"
+    },
+    "BL": {
+        "Independent": "No",
+        "Official name": "Collectivity of Saint Barthélemy",
+        "Capital city": "Gustavia",
+        "Continent": "North America",
+        "Chinese name": "圣巴泰勒米",
+        "Official nameipa": "kəlɪktˈɪvɪɾi ʌv sˈe‍ɪnt bˈɑː‍ɹθe‍ɪləmi",
+        "Capital cityipa": "ɡʌstˈe‍ɪvi‍ə",
+        "Capital city in chinese": "古斯塔维亚"
+    },
+    "BM": {
+        "Independent": "No",
+        "Official name": "Bermuda",
+        "Capital city": "Hamilton",
+        "Continent": "North America",
+        "Chinese name": "百慕大",
+        "Official nameipa": "bɜːmjˈuːdə",
+        "Capital cityipa": "hˈæmə‍ltən",
+        "Capital city in chinese": "哈密尔顿"
+    },
+    "BN": {
+        "Independent": "Yes",
+        "Official name": "Nation of Brunei, Abode of Peace",
+        "Capital city": "Bandar Seri Begawan",
+        "Continent": "Asia",
+        "Chinese name": "文莱",
+        "Official nameipa": "nˈe‍ɪʃən ʌv bɹuːnˈa‍ɪɐbˈo‍ʊd ʌv pˈiːs",
+        "Capital cityipa": "bˈændɚ sˈɛɹi bɪɡˈæwən",
+        "Capital city in chinese": "斯里巴加湾"
+    },
+    "BO": {
+        "Independent": "Yes",
+        "Official name": "Plurinational State of Bolivia",
+        "Capital city": "Sucre",
+        "Continent": "South America",
+        "Chinese name": "玻利维亚",
+        "Official nameipa": "plˌʊɹᵻnˈe‍ɪʃənə‍l stˈe‍ɪt ʌv bəlˈɪvi‍ə",
+        "Capital cityipa": "sˈʌkɚ",
+        "Capital city in chinese": "苏克雷"
+    },
+    "BQ": {
+        "Independent": "No",
+        "Official name": "Bonaire, Sint Eustatius and Saba",
+        "Continent": "North America",
+        "Chinese name": "荷属加勒比区",
+        "Official nameipa": "bənˈɛ‍ɹsˈɪnt juːstˈe‍ɪɾɪəs ænd sˈɑːbə"
+    },
+    "BR": {
+        "Independent": "Yes",
+        "Official name": "Federative Republic of Brazil",
+        "Capital city": "Brasília",
+        "Continent": "South America",
+        "Chinese name": "巴西",
+        "Official nameipa": "fˈɛdɚɹətˌɪv ɹɪpˈʌblɪk ʌv bɹɐzˈɪl",
+        "Capital cityipa": "bɹæsˈɪli‍ə",
+        "Capital city in chinese": "巴西利亚"
+    },
+    "BS": {
+        "Independent": "Yes",
+        "Official name": "Commonwealth of the Bahamas",
+        "Capital city": "Nassau",
+        "Continent": "North America",
+        "Chinese name": "巴哈马",
+        "Official nameipa": "kˈɑːmənwˌɛlθ ʌvðə bæhˈɑːməz",
+        "Capital cityipa": "nˈæsa‍ʊ",
+        "Capital city in chinese": "拿骚"
+    },
+    "BT": {
+        "Independent": "Yes",
+        "Official name": "Kingdom of Bhutan",
+        "Capital city": "Thimphu",
+        "Continent": "Asia",
+        "Chinese name": "不丹",
+        "Official nameipa": "kˈɪŋdəm ʌv buːtˈæn",
+        "Capital cityipa": "θˈɪmfuː",
+        "Capital city in chinese": "廷布"
+    },
+    "BV": {
+        "Independent": "No",
+        "Official name": "Bouvet Island",
+        "Chinese name": "布韦岛",
+        "Official nameipa": "bˈuːvɪt ˈa‍ɪlənd"
+    },
+    "BW": {
+        "Independent": "Yes",
+        "Official name": "Republic of Botswana",
+        "Capital city": "Gaborone",
+        "Continent": "Africa",
+        "Chinese name": "博茨瓦纳",
+        "Official nameipa": "ɹɪpˈʌblɪk ʌv bətswˈɑːnə",
+        "Capital cityipa": "ɡˈæboːɹˌo‍ʊn",
+        "Capital city in chinese": "哈博罗内"
+    },
+    "BY": {
+        "Independent": "Yes",
+        "Official name": "Republic of Belarus",
+        "Capital city": "Minsk",
+        "Continent": "Europe",
+        "Chinese name": "白俄罗斯",
+        "Official nameipa": "ɹɪpˈʌblɪk ʌv bˌɛlɚɹˈuːs",
+        "Capital cityipa": "mˈɪnsk",
+        "Capital city in chinese": "明斯克"
+    },
+    "BZ": {
+        "Independent": "Yes",
+        "Official name": "Belize",
+        "Capital city": "Belmopan",
+        "Continent": "North America",
+        "Chinese name": "伯利兹",
+        "Official nameipa": "bɛlˈiːz",
+        "Capital cityipa": "bˈɛlməpˌæn",
+        "Capital city in chinese": "贝尔莫潘"
+    },
+    "CA": {
+        "Independent": "Yes",
+        "Official name": "Canada",
+        "Capital city": "Ottawa",
+        "Continent": "North America",
+        "Chinese name": "加拿大",
+        "Official nameipa": "kˈænədə",
+        "Capital cityipa": "ˈɑːɾɐwə",
+        "Capital city in chinese": "渥太华"
+    },
+    "CC": {
+        "Independent": "No",
+        "Official name": "Territory of the Cocos (Keeling) Islands",
+        "Capital city": "West Island",
+        "Continent": "Oceania",
+        "Chinese name": "科科斯（基林）群岛",
+        "Official nameipa": "tˈɛɹɪtˌoːɹi ʌvðə kˈo‍ʊko‍ʊz kˈiːlɪŋ ˈa‍ɪləndz",
+        "Capital cityipa": "wˈɛst ˈa‍ɪlənd",
+        "Capital city in chinese": "西岛"
+    },
+    "CD": {
+        "Independent": "Yes",
+        "Official name": "Democratic Republic of the Congo",
+        "Capital city": "Kinshasa",
+        "Continent": "Africa",
+        "Chinese name": "刚果（金）",
+        "Official nameipa": "dˌɛməkɹˈæɾɪk ɹɪpˈʌblɪk ʌvðə kˈɑːŋɡo‍ʊ",
+        "Capital cityipa": "kɪnʃˈɑːsə",
+        "Capital city in chinese": "金沙萨"
+    },
+    "CF": {
+        "Independent": "Yes",
+        "Official name": "Central African Republic",
+        "Capital city": "Bangui",
+        "Continent": "Africa",
+        "Chinese name": "中非共和国",
+        "Official nameipa": "sˈɛntɹə‍l ˈæfɹɪkən ɹɪpˈʌblɪk",
+        "Capital cityipa": "bˈæŋɡwi",
+        "Capital city in chinese": "班吉"
+    },
+    "CG": {
+        "Independent": "Yes",
+        "Official name": "Republic of the Congo",
+        "Capital city": "Brazzaville",
+        "Continent": "Africa",
+        "Chinese name": "刚果（布）",
+        "Official nameipa": "ɹɪpˈʌblɪk ʌvðə kˈɑːŋɡo‍ʊ",
+        "Capital cityipa": "bɹˈæzɐvˌɪl",
+        "Capital city in chinese": "布拉柴维尔"
+    },
+    "CH": {
+        "Independent": "Yes",
+        "Official name": "Swiss Confederation",
+        "Capital city": "Bern",
+        "Continent": "Europe",
+        "Chinese name": "瑞士",
+        "Official nameipa": "swˈɪs kənfˌɛdɚɹˈe‍ɪʃən",
+        "Capital cityipa": "bˈɜːn",
+        "Capital city in chinese": "伯尔尼"
+    },
+    "CI": {
+        "Independent": "Yes",
+        "Official name": "Republic of Côte d'Ivoire",
+        "Capital city": "Yamoussoukro",
+        "Continent": "Africa",
+        "Chinese name": "科特迪瓦",
+        "Official nameipa": "ɹɪpˈʌblɪk ʌv kˈo‍ʊt dˈa‍ɪvwɑː‍ɹ",
+        "Capital cityipa": "jˌæma‍ʊsˈa‍ʊkɹo‍ʊ",
+        "Capital city in chinese": "亚穆苏克罗"
+    },
+    "CK": {
+        "Independent": "No",
+        "Official name": "Cook Islands",
+        "Capital city": "Avarua",
+        "Continent": "Oceania",
+        "Chinese name": "库克群岛",
+        "Official nameipa": "kˈʊk ˈa‍ɪləndz",
+        "Capital cityipa": "ævˈɑː‍ɹjuːə",
+        "Capital city in chinese": "阿瓦鲁"
+    },
+    "CL": {
+        "Independent": "Yes",
+        "Official name": "Republic of Chile",
+        "Capital city": "Santiago",
+        "Continent": "South America",
+        "Chinese name": "智利",
+        "Official nameipa": "ɹɪpˈʌblɪk ʌv t‍ʃˈɪli",
+        "Capital cityipa": "sˌæntɪˈɑːɡo‍ʊ",
+        "Capital city in chinese": "圣地亚哥"
+    },
+    "CM": {
+        "Independent": "Yes",
+        "Official name": "Republic of Cameroon",
+        "Capital city": "Yaoundé",
+        "Continent": "Africa",
+        "Chinese name": "喀麦隆",
+        "Official nameipa": "ɹɪpˈʌblɪk ʌv kˌæmɚɹˈuːn",
+        "Capital cityipa": "jˌe‍ɪəəndˈe‍ɪ",
+        "Capital city in chinese": "雅温得"
+    },
+    "CN": {
+        "Independent": "Yes",
+        "Official name": "People's Republic of China",
+        "Capital city": "Beijing",
+        "Continent": "Asia",
+        "Chinese name": "中国",
+        "Official nameipa": "pˈiːpə‍lz ɹɪpˈʌblɪk ʌv t‍ʃˈa‍ɪnə",
+        "Capital cityipa": "be‍ɪd‍ʒˈɪŋ",
+        "Capital city in chinese": "北京"
+    },
+    "CO": {
+        "Independent": "Yes",
+        "Official name": "Republic of Colombia",
+        "Capital city": "Bogotá",
+        "Continent": "South America",
+        "Chinese name": "哥伦比亚",
+        "Official nameipa": "ɹɪpˈʌblɪk ʌv kəlˈʌmbi‍ə",
+        "Capital cityipa": "bˌo‍ʊɡətˈɑː",
+        "Capital city in chinese": "波哥大"
+    },
+    "CR": {
+        "Independent": "Yes",
+        "Official name": "Republic of Costa Rica",
+        "Capital city": "San José",
+        "Continent": "North America",
+        "Chinese name": "哥斯达黎加",
+        "Official nameipa": "ɹɪpˈʌblɪk ʌv kˈɔstɚ ɹˈiːkə",
+        "Capital cityipa": "sˌæn ho‍ʊsˈe‍ɪ",
+        "Capital city in chinese": "圣何塞"
+    },
+    "CU": {
+        "Independent": "Yes",
+        "Official name": "Republic of Cuba",
+        "Capital city": "Havana",
+        "Continent": "North America",
+        "Chinese name": "古巴",
+        "Official nameipa": "ɹɪpˈʌblɪk ʌv kjˈuːbə",
+        "Capital cityipa": "hɐvˈænə",
+        "Capital city in chinese": "哈瓦那"
+    },
+    "CV": {
+        "Independent": "Yes",
+        "Official name": "Republic of Cabo Verde",
+        "Capital city": "Praia",
+        "Continent": "Africa",
+        "Chinese name": "佛得角",
+        "Official nameipa": "ɹɪpˈʌblɪk ʌv kˈɑːbo‍ʊ vˈɜːd",
+        "Capital cityipa": "pɹˈe‍ɪə",
+        "Capital city in chinese": "普拉亚"
+    },
+    "CW": {
+        "Independent": "No",
+        "Official name": "Country of Curaçao",
+        "Capital city": "Willemstad",
+        "Continent": "North America",
+        "Chinese name": "库拉索",
+        "Official nameipa": "kˈʌntɹi ʌv kjʊɹˈæsa‍ʊ",
+        "Capital cityipa": "wˈɪlɪmstˌæd",
+        "Capital city in chinese": "威廉斯塔德"
+    },
+    "CX": {
+        "Independent": "No",
+        "Official name": "Territory of Christmas Island",
+        "Capital city": "Flying Fish Cove",
+        "Continent": "Oceania",
+        "Chinese name": "圣诞岛",
+        "Official nameipa": "tˈɛɹɪtˌoːɹi ʌv kɹˈɪsməs ˈa‍ɪlənd",
+        "Capital cityipa": "flˈa‍ɪɪŋ fˈɪʃ kˈo‍ʊv",
+        "Capital city in chinese": "飞鱼湾"
+    },
+    "CY": {
+        "Independent": "Yes",
+        "Official name": "Republic of Cyprus",
+        "Capital city": "Nicosia",
+        "Continent": "Europe",
+        "Chinese name": "塞浦路斯",
+        "Official nameipa": "ɹɪpˈʌblɪk ʌv sˈa‍ɪpɹəs",
+        "Capital cityipa": "nˌɪkəsˈiːə",
+        "Capital city in chinese": "尼科西亚"
+    },
+    "CZ": {
+        "Independent": "Yes",
+        "Official name": "Czech Republic",
+        "Capital city": "Prague",
+        "Continent": "Europe",
+        "Chinese name": "捷克",
+        "Official nameipa": "t‍ʃˈɛk ɹɪpˈʌblɪk",
+        "Capital cityipa": "pɹˈɑːɡ",
+        "Capital city in chinese": "布拉格"
+    },
+    "DE": {
+        "Independent": "Yes",
+        "Official name": "Federal Republic of Germany",
+        "Capital city": "Berlin",
+        "Continent": "Europe",
+        "Chinese name": "德国",
+        "Official nameipa": "fˈɛdɚɹə‍l ɹɪpˈʌblɪk ʌv d‍ʒˈɜːməni",
+        "Capital cityipa": "bɜːlˈɪn",
+        "Capital city in chinese": "柏林"
+    },
+    "DJ": {
+        "Independent": "Yes",
+        "Official name": "Republic of Djibouti",
+        "Capital city": "Djibouti",
+        "Continent": "Africa",
+        "Chinese name": "吉布提",
+        "Official nameipa": "ɹɪpˈʌblɪk ʌv d‍ʒɪbˈuːɾi",
+        "Capital cityipa": "d‍ʒɪbˈuːɾi",
+        "Capital city in chinese": "吉布提"
+    },
+    "DK": {
+        "Independent": "Yes",
+        "Official name": "Kingdom of Denmark",
+        "Capital city": "Copenhagen",
+        "Continent": "Europe",
+        "Chinese name": "丹麦",
+        "Official nameipa": "kˈɪŋdəm ʌv dˈɛnmɑː‍ɹk",
+        "Capital cityipa": "kˌo‍ʊpənhˈe‍ɪɡən",
+        "Capital city in chinese": "哥本哈根"
+    },
+    "DM": {
+        "Independent": "Yes",
+        "Official name": "Commonwealth of Dominica",
+        "Capital city": "Roseau",
+        "Continent": "North America",
+        "Chinese name": "多米尼克",
+        "Official nameipa": "kˈɑːmənwˌɛlθ ʌv dəmˈɪnɪkə",
+        "Capital cityipa": "ɹˈo‍ʊza‍ʊ",
+        "Capital city in chinese": "罗索"
+    },
+    "DO": {
+        "Independent": "Yes",
+        "Official name": "Dominican Republic",
+        "Capital city": "Santo Domingo",
+        "Continent": "North America",
+        "Chinese name": "多米尼加共和国",
+        "Official nameipa": "dəmˈɪnɪkən ɹɪpˈʌblɪk",
+        "Capital cityipa": "sˈænto‍ʊ do‍ʊmˈɪŋɡo‍ʊ",
+        "Capital city in chinese": "圣多明各"
+    },
+    "DZ": {
+        "Independent": "Yes",
+        "Official name": "People's Democratic Republic of Algeria",
+        "Capital city": "Algiers",
+        "Continent": "Africa",
+        "Chinese name": "阿尔及利亚",
+        "Official nameipa": "pˈiːpə‍lz dˌɛməkɹˈæɾɪk ɹɪpˈʌblɪk ʌv æld‍ʒˈi‍əɹɪə",
+        "Capital cityipa": "æld‍ʒˈɪ‍ɹz",
+        "Capital city in chinese": "阿尔及尔"
+    },
+    "EC": {
+        "Independent": "Yes",
+        "Official name": "Republic of Ecuador",
+        "Capital city": "Quito",
+        "Continent": "South America",
+        "Chinese name": "厄瓜多尔",
+        "Official nameipa": "ɹɪpˈʌblɪk ʌv ˈɛkwɐdˌoː‍ɹ",
+        "Capital cityipa": "kwˈiːɾo‍ʊ",
+        "Capital city in chinese": "基多"
+    },
+    "EE": {
+        "Independent": "Yes",
+        "Official name": "Republic of Estonia",
+        "Capital city": "Tallinn",
+        "Continent": "Europe",
+        "Chinese name": "爱沙尼亚",
+        "Official nameipa": "ɹɪpˈʌblɪk ʌv ɛstˈo‍ʊni‍ə",
+        "Capital cityipa": "tˈælɪn",
+        "Capital city in chinese": "塔林"
+    },
+    "EG": {
+        "Independent": "Yes",
+        "Official name": "Arab Republic of Egypt",
+        "Capital city": "Cairo",
+        "Continent": "Africa, Asia",
+        "Chinese name": "埃及",
+        "Official nameipa": "ˈæɹəb ɹɪpˈʌblɪk ʌv ˈiːd‍ʒɪpt",
+        "Capital cityipa": "kˈa‍ɪɹo‍ʊ",
+        "Capital city in chinese": "开罗"
+    },
+    "EH": {
+        "Independent": "No",
+        "Official name": "Sahrawi Arab Democratic Republic",
+        "Capital city": "El Aaiún",
+        "Continent": "Africa",
+        "Chinese name": "西撒哈拉",
+        "Official nameipa": "sɑːɹˈɑːwi ˈæɹəb dˌɛməkɹˈæɾɪk ɹɪpˈʌblɪk",
+        "Capital cityipa": "ˌɛl ˈɑːɪˌʌn",
+        "Capital city in chinese": "阿尤恩"
+    },
+    "ER": {
+        "Independent": "Yes",
+        "Official name": "State of Eritrea",
+        "Capital city": "Asmara",
+        "Continent": "Africa",
+        "Chinese name": "厄立特里亚",
+        "Official nameipa": "stˈe‍ɪt ʌv ˌɛɹɪtɹˈi‍ə",
+        "Capital cityipa": "ɐsmˈɑː‍ɹɹə",
+        "Capital city in chinese": "阿斯马拉"
+    },
+    "ES": {
+        "Independent": "Yes",
+        "Official name": "Kingdom of Spain",
+        "Capital city": "Madrid",
+        "Continent": "Europe",
+        "Chinese name": "西班牙",
+        "Official nameipa": "kˈɪŋdəm ʌv spˈe‍ɪn",
+        "Capital cityipa": "mədɹˈɪd",
+        "Capital city in chinese": "马德里"
+    },
+    "ET": {
+        "Independent": "Yes",
+        "Official name": "Federal Democratic Republic of Ethiopia",
+        "Capital city": "Addis Ababa",
+        "Continent": "Africa",
+        "Chinese name": "埃塞俄比亚",
+        "Official nameipa": "fˈɛdɚɹə‍l dˌɛməkɹˈæɾɪk ɹɪpˈʌblɪk ʌv ˌiːθɪˈo‍ʊpi‍ə",
+        "Capital cityipa": "ˈædɪs ˈæbɐbə",
+        "Capital city in chinese": "亚的斯亚贝巴"
+    },
+    "FI": {
+        "Independent": "Yes",
+        "Official name": "Republic of Finland",
+        "Capital city": "Helsinki",
+        "Continent": "Europe",
+        "Chinese name": "芬兰",
+        "Official nameipa": "ɹɪpˈʌblɪk ʌv fˈɪnlənd",
+        "Capital cityipa": "hɛlsˈɪŋki",
+        "Capital city in chinese": "赫尔辛基"
+    },
+    "FJ": {
+        "Independent": "Yes",
+        "Official name": "Republic of Fiji",
+        "Capital city": "Suva",
+        "Continent": "Oceania",
+        "Chinese name": "斐济",
+        "Official nameipa": "ɹɪpˈʌblɪk ʌv fˈiːd‍ʒi",
+        "Capital cityipa": "sˈuːvə",
+        "Capital city in chinese": "苏瓦"
+    },
+    "FK": {
+        "Independent": "No",
+        "Official name": "Falkland Islands",
+        "Capital city": "Stanley",
+        "Continent": "South America",
+        "Chinese name": "福克兰群岛",
+        "Official nameipa": "fˈɑːlklənd ˈa‍ɪləndz",
+        "Capital cityipa": "stˈænli",
+        "Capital city in chinese": "斯坦利"
+    },
+    "FM": {
+        "Independent": "Yes",
+        "Official name": "Federated States of Micronesia",
+        "Capital city": "Palikir",
+        "Continent": "Oceania",
+        "Chinese name": "密克罗尼西亚",
+        "Official nameipa": "fˈɛdɚɹˌe‍ɪɾᵻd stˈe‍ɪts ʌv mˈa‍ɪkɹo‍ʊnˈiːʒə",
+        "Capital cityipa": "pˈælɪkˌɪ‍ɹ",
+        "Capital city in chinese": "帕利基尔"
+    },
+    "FO": {
+        "Independent": "No",
+        "Official name": "Faroe Islands",
+        "Capital city": "Tórshavn",
+        "Continent": "Europe",
+        "Chinese name": "法罗群岛",
+        "Official nameipa": "fˈæɹo‍ʊ ˈa‍ɪləndz",
+        "Capital cityipa": "tˈoː‍ɹʃævən",
+        "Capital city in chinese": "托尔斯港"
+    },
+    "FR": {
+        "Independent": "Yes",
+        "Official name": "French Republic",
+        "Capital city": "Paris",
+        "Continent": "Europe",
+        "Chinese name": "法国",
+        "Official nameipa": "fɹˈɛnt‍ʃ ɹɪpˈʌblɪk",
+        "Capital cityipa": "pˈæɹɪs",
+        "Capital city in chinese": "巴黎"
+    },
+    "GA": {
+        "Independent": "Yes",
+        "Official name": "Gabonese Republic",
+        "Capital city": "Libreville",
+        "Continent": "Africa",
+        "Chinese name": "加蓬",
+        "Official nameipa": "ɡˌæbo‍ʊnˈiːz ɹɪpˈʌblɪk",
+        "Capital cityipa": "liːbɹəvˈɪl",
+        "Capital city in chinese": "利伯维尔"
+    },
+    "GB-ENG": {
+        "Independent": "No",
+        "Official name": "England",
+        "Capital city": "London",
+        "Chinese name": "英格兰",
+        "Official nameipa": "ˈɪŋɡlənd",
+        "Capital cityipa": "lˈʌndən",
+        "Capital city in chinese": "伦敦"
+    },
+    "GB-NIR": {
+        "Independent": "No",
+        "Official name": "Northern Ireland",
+        "Capital city": "Belfast",
+        "Chinese name": "北爱尔兰",
+        "Official nameipa": "nˈɔː‍ɹðɚn ˈa‍ɪ‍ɚlənd",
+        "Capital cityipa": "bˈɛlfæst",
+        "Capital city in chinese": "贝尔法斯特"
+    },
+    "GB-SCT": {
+        "Independent": "No",
+        "Official name": "Scotland",
+        "Capital city": "Edinburgh",
+        "Chinese name": "苏格兰",
+        "Official nameipa": "skˈɑːtlənd",
+        "Capital cityipa": "ˈɛdɪnbʌɹə",
+        "Capital city in chinese": "爱丁堡"
+    },
+    "GB-WLS": {
+        "Independent": "No",
+        "Official name": "Wales",
+        "Capital city": "Cardiff",
+        "Chinese name": "威尔士",
+        "Official nameipa": "wˈe‍ɪlz",
+        "Capital cityipa": "kˈɑː‍ɹdɪf",
+        "Capital city in chinese": "加的夫"
+    },
+    "GB": {
+        "Independent": "Yes",
+        "Official name": "United Kingdom of Great Britain and Northern Ireland",
+        "Capital city": "London",
+        "Continent": "Europe",
+        "Chinese name": "英国",
+        "Official nameipa": "juːnˈa‍ɪɾᵻd kˈɪŋdəm ʌv ɡɹˈe‍ɪt bɹˈɪtən ænd nˈɔː‍ɹðɚn ˈa‍ɪ‍ɚlənd",
+        "Capital cityipa": "lˈʌndən",
+        "Capital city in chinese": "伦敦"
+    },
+    "GD": {
+        "Independent": "Yes",
+        "Official name": "Grenada",
+        "Capital city": "St. George's",
+        "Continent": "North America",
+        "Chinese name": "格林纳达",
+        "Official nameipa": "ɡɹɛnˈɑːdə",
+        "Capital cityipa": "səntd‍ʒˈɔː‍ɹd‍ʒɪz",
+        "Capital city in chinese": "圣乔治"
+    },
+    "GE": {
+        "Independent": "Yes",
+        "Official name": "Georgia",
+        "Capital city": "Tbilisi",
+        "Continent": "Asia",
+        "Chinese name": "格鲁吉亚",
+        "Official nameipa": "d‍ʒˈɔː‍ɹd‍ʒə",
+        "Capital cityipa": "tˈiːba‍ɪlˈɪsi",
+        "Capital city in chinese": "第比利斯"
+    },
+    "GF": {
+        "Independent": "No",
+        "Official name": "Guiana",
+        "Capital city": "Cayenne",
+        "Continent": "South America",
+        "Chinese name": "法属圭亚那",
+        "Official nameipa": "ɡɪˈɑːnə",
+        "Capital cityipa": "kˈe‍ɪən",
+        "Capital city in chinese": "卡宴"
+    },
+    "GG": {
+        "Independent": "No",
+        "Official name": "Bailiwick of Guernsey",
+        "Capital city": "St. Peter Port",
+        "Continent": "Europe",
+        "Chinese name": "根西岛",
+        "Official nameipa": "bˈe‍ɪlɪwˌɪk ʌv ɡˈɜːnsi",
+        "Capital cityipa": "səntpˈiːɾɚ pˈoː‍ɹt",
+        "Capital city in chinese": "圣彼得港"
+    },
+    "GH": {
+        "Independent": "Yes",
+        "Official name": "Republic of Ghana",
+        "Capital city": "Accra",
+        "Continent": "Africa",
+        "Chinese name": "加纳",
+        "Official nameipa": "ɹɪpˈʌblɪk ʌv ɡˈɑːnə",
+        "Capital cityipa": "ˈækɹɐ",
+        "Capital city in chinese": "阿克拉"
+    },
+    "GI": {
+        "Independent": "No",
+        "Official name": "Gibraltar",
+        "Capital city": "Gibraltar",
+        "Continent": "Europe",
+        "Chinese name": "直布罗陀",
+        "Official nameipa": "d‍ʒɪbɹˈɑːltɚ",
+        "Capital cityipa": "d‍ʒɪbɹˈɑːltɚ",
+        "Capital city in chinese": "直布罗陀"
+    },
+    "GL": {
+        "Independent": "No",
+        "Official name": "Greenland",
+        "Capital city": "Nuuk",
+        "Continent": "North America",
+        "Chinese name": "格陵兰",
+        "Official nameipa": "ɡɹˈiːnlənd",
+        "Capital cityipa": "nˈʌʌk",
+        "Capital city in chinese": "努克"
+    },
+    "GM": {
+        "Independent": "Yes",
+        "Official name": "Republic of the Gambia",
+        "Capital city": "Banjul",
+        "Continent": "Africa",
+        "Chinese name": "冈比亚",
+        "Official nameipa": "ɹɪpˈʌblɪk ʌvðə ɡˈæmbiə",
+        "Capital cityipa": "bˈænd‍ʒʌl",
+        "Capital city in chinese": "班珠尔"
+    },
+    "GN": {
+        "Independent": "Yes",
+        "Official name": "Republic of Guinea",
+        "Capital city": "Conakry",
+        "Continent": "Africa",
+        "Chinese name": "几内亚",
+        "Official nameipa": "ɹɪpˈʌblɪk ʌv ɡˈɪni",
+        "Capital cityipa": "kənˈækɹi",
+        "Capital city in chinese": "科纳克里"
+    },
+    "GP": {
+        "Independent": "No",
+        "Official name": "Guadeloupe",
+        "Capital city": "Basse-Terre",
+        "Continent": "North America",
+        "Chinese name": "瓜德罗普",
+        "Official nameipa": "ɡwˈɑːdɪlˌuːp",
+        "Capital cityipa": "bˈæstˈɛr",
+        "Capital city in chinese": "巴斯特尔"
+    },
+    "GQ": {
+        "Independent": "Yes",
+        "Official name": "Republic of Equatorial Guinea",
+        "Capital city": "Malabo",
+        "Continent": "Africa",
+        "Chinese name": "赤道几内亚",
+        "Official nameipa": "ɹɪpˈʌblɪk ʌv ɪkwɐtˈoːɹɪəl ɡˈɪni",
+        "Capital cityipa": "mælˈɑːbo‍ʊ",
+        "Capital city in chinese": "马拉博"
+    },
+    "GR": {
+        "Independent": "Yes",
+        "Official name": "Hellenic Republic",
+        "Capital city": "Athens",
+        "Continent": "Europe",
+        "Chinese name": "希腊",
+        "Official nameipa": "hɛlˈɛnɪk ɹɪpˈʌblɪk",
+        "Capital cityipa": "ˈæθɪnz",
+        "Capital city in chinese": "雅典"
+    },
+    "GS": {
+        "Independent": "No",
+        "Official name": "South Georgia and the South Sandwich Islands",
+        "Capital city": "King Edward Point",
+        "Chinese name": "南乔治亚和南桑威奇群岛",
+        "Official nameipa": "sˈa‍ʊθ d‍ʒˈɔː‍ɹd‍ʒə ænd ðə sˈa‍ʊθ sˈændwɪt‍ʃ ˈa‍ɪləndz",
+        "Capital cityipa": "kˈɪŋ ˈɛdwɚd pˈɔ‍ɪnt",
+        "Capital city in chinese": "爱德华国王角"
+    },
+    "GT": {
+        "Independent": "Yes",
+        "Official name": "Republic of Guatemala",
+        "Capital city": "Guatemala City",
+        "Continent": "North America",
+        "Chinese name": "危地马拉",
+        "Official nameipa": "ɹɪpˈʌblɪk ʌv ɡwˌɑːɾɪmˈɑːlə",
+        "Capital cityipa": "ɡwˌɑːɾɪmˈɑːlə sˈɪɾi",
+        "Capital city in chinese": "危地马拉城"
+    },
+    "GU": {
+        "Independent": "No",
+        "Official name": "Guam",
+        "Capital city": "Hagåtña",
+        "Continent": "Oceania",
+        "Chinese name": "关岛",
+        "Official nameipa": "ɡwˈɑːm",
+        "Capital cityipa": "(‍e‍s)aɣˈatɲa(‍e‍n-‍u‍s)",
+        "Capital city in chinese": "阿加尼亚"
+    },
+    "GW": {
+        "Independent": "Yes",
+        "Official name": "Republic of Guinea-Bissau",
+        "Capital city": "Bissau",
+        "Continent": "Africa",
+        "Chinese name": "几内亚比绍",
+        "Official nameipa": "ɹɪpˈʌblɪk ʌv ɡˈɪnibˈɪsa‍ʊ",
+        "Capital cityipa": "bˈɪsa‍ʊ",
+        "Capital city in chinese": "比绍"
+    },
+    "GY": {
+        "Independent": "Yes",
+        "Official name": "Co-operative Republic of Guyana",
+        "Capital city": "Georgetown",
+        "Continent": "South America",
+        "Chinese name": "圭亚那",
+        "Official nameipa": "kˈo‍ʊˈɑːpɚɹətˌɪv ɹɪpˈʌblɪk ʌv ɡa‍ɪˈɑːnə",
+        "Capital cityipa": "d‍ʒˈɔː‍ɹd‍ʒta‍ʊn",
+        "Capital city in chinese": "乔治敦"
+    },
+    "HK": {
+        "Independent": "No",
+        "Official name": "Hong Kong Special Administrative Region of the People's Republic of China",
+        "Capital city": "City of Victoria",
+        "Continent": "Asia",
+        "Chinese name": "中国香港特别行政区",
+        "Official nameipa": "hˈɑːŋ kˈɑːŋ spˈɛʃə‍l ɐdmˈɪnɪstɹətˌɪv ɹˈiːd‍ʒən ʌvðə pˈiːpə‍lz ɹɪpˈʌblɪk ʌv t‍ʃˈa‍ɪnə",
+        "Capital cityipa": "sˈɪɾi ʌv vɪktˈoːɹi‍ə",
+        "Capital city in chinese": "维多利亚城"
+    },
+    "HM": {
+        "Independent": "No",
+        "Official name": "Heard Island and McDonald Islands",
+        "Chinese name": "赫德岛和麦克唐纳群岛",
+        "Official nameipa": "hˈɜːd ˈa‍ɪlənd ænd mək dˈɑːnə‍ld ˈa‍ɪləndz"
+    },
+    "HN": {
+        "Independent": "Yes",
+        "Official name": "Republic of Honduras",
+        "Capital city": "Tegucigalpa",
+        "Continent": "North America",
+        "Chinese name": "洪都拉斯",
+        "Official nameipa": "ɹɪpˈʌblɪk ʌv hɑːndjˈʊ‍ɹɹəs",
+        "Capital cityipa": "tˈɛɡjuːsˌɪɡælpə",
+        "Capital city in chinese": "特古西加尔巴"
+    },
+    "HR": {
+        "Independent": "Yes",
+        "Official name": "Republic of Croatia",
+        "Capital city": "Zagreb",
+        "Continent": "Europe",
+        "Chinese name": "克罗地亚",
+        "Official nameipa": "ɹɪpˈʌblɪk ʌv kɹo‍ʊˈe‍ɪʃə",
+        "Capital cityipa": "zˈæɡɹɛb",
+        "Capital city in chinese": "萨格勒布"
+    },
+    "HT": {
+        "Independent": "Yes",
+        "Official name": "Republic of Haiti",
+        "Capital city": "Port-au-Prince",
+        "Continent": "North America",
+        "Chinese name": "海地",
+        "Official nameipa": "ɹɪpˈʌblɪk ʌv hˈe‍ɪɾi",
+        "Capital cityipa": "pˈoː‍ɹtˌo‍ʊpɹˈɪns",
+        "Capital city in chinese": "太子港"
+    },
+    "HU": {
+        "Independent": "Yes",
+        "Official name": "Hungary",
+        "Capital city": "Budapest",
+        "Continent": "Europe",
+        "Chinese name": "匈牙利",
+        "Official nameipa": "hˈʌŋɡɚɹi",
+        "Capital cityipa": "bˌuːdəpˈɛst",
+        "Capital city in chinese": "布达佩斯"
+    },
+    "ID": {
+        "Independent": "Yes",
+        "Official name": "Republic of Indonesia",
+        "Capital city": "Jakarta",
+        "Continent": "Asia, Oceania",
+        "Chinese name": "印度尼西亚",
+        "Official nameipa": "ɹɪpˈʌblɪk ʌv ɪndo‍ʊnˈiːʒə",
+        "Capital cityipa": "d‍ʒɐkˈɑː‍ɹɾə",
+        "Capital city in chinese": "雅加达"
+    },
+    "IE": {
+        "Independent": "Yes",
+        "Official name": "Republic of Ireland",
+        "Capital city": "Dublin",
+        "Continent": "Europe",
+        "Chinese name": "爱尔兰",
+        "Official nameipa": "ɹɪpˈʌblɪk ʌv ˈa‍ɪ‍ɚlənd",
+        "Capital cityipa": "dˈʌblɪn",
+        "Capital city in chinese": "都柏林"
+    },
+    "IL": {
+        "Independent": "Yes",
+        "Official name": "State of Israel",
+        "Capital city": "Jerusalem",
+        "Continent": "Asia",
+        "Chinese name": "以色列",
+        "Official nameipa": "stˈe‍ɪt ʌv ˈɪzɹiːə‍l",
+        "Capital cityipa": "d‍ʒɚɹˈuːsələm",
+        "Capital city in chinese": "耶路撒冷"
+    },
+    "IM": {
+        "Independent": "No",
+        "Official name": "Isle of Man",
+        "Capital city": "Douglas",
+        "Continent": "Europe",
+        "Chinese name": "马恩岛",
+        "Official nameipa": "ˈa‍ɪə‍l ʌv mˈæn",
+        "Capital cityipa": "dˈʌɡləz",
+        "Capital city in chinese": "道格拉斯"
+    },
+    "IN": {
+        "Independent": "Yes",
+        "Official name": "Republic of India",
+        "Capital city": "New Delhi",
+        "Continent": "Asia",
+        "Chinese name": "印度",
+        "Official nameipa": "ɹɪpˈʌblɪk ʌv ˈɪndiə",
+        "Capital cityipa": "nˈuː dˈɛli",
+        "Capital city in chinese": "新德里"
+    },
+    "IO": {
+        "Independent": "No",
+        "Official name": "British Indian Ocean Territory",
+        "Capital city": "Diego Garcia",
+        "Continent": "Africa",
+        "Chinese name": "英属印度洋领地",
+        "Official nameipa": "bɹˈɪɾɪʃ ˈɪndi‍ən ˈo‍ʊʃən tˈɛɹɪtˌoːɹi",
+        "Capital cityipa": "dɪˈe‍ɪɡo‍ʊ ɡˈɑː‍ɹʃə",
+        "Capital city in chinese": "迪戈加西亚岛"
+    },
+    "IQ": {
+        "Independent": "Yes",
+        "Official name": "Republic of Iraq",
+        "Capital city": "Baghdad",
+        "Continent": "Asia",
+        "Chinese name": "伊拉克",
+        "Official nameipa": "ɹɪpˈʌblɪk ʌv ɪɹˈæk",
+        "Capital cityipa": "bˈæɡdæd",
+        "Capital city in chinese": "巴格达"
+    },
+    "IR": {
+        "Independent": "Yes",
+        "Official name": "Islamic Republic of Iran",
+        "Capital city": "Tehran",
+        "Continent": "Asia",
+        "Chinese name": "伊朗",
+        "Official nameipa": "ɪslˈɑːmɪk ɹɪpˈʌblɪk ʌv ɪɹˈæn",
+        "Capital cityipa": "tɛɹˈɑːn",
+        "Capital city in chinese": "德黑兰"
+    },
+    "IS": {
+        "Independent": "Yes",
+        "Official name": "Iceland",
+        "Capital city": "Reykjavik",
+        "Continent": "Europe",
+        "Chinese name": "冰岛",
+        "Official nameipa": "ˈa‍ɪslənd",
+        "Capital cityipa": "ɹˈe‍ɪkd‍ʒɐvˌɪk",
+        "Capital city in chinese": "雷克雅未克"
+    },
+    "IT": {
+        "Independent": "Yes",
+        "Official name": "Italian Republic",
+        "Capital city": "Rome",
+        "Continent": "Europe",
+        "Chinese name": "意大利",
+        "Official nameipa": "ɪtˈælɪən ɹɪpˈʌblɪk",
+        "Capital cityipa": "ɹˈo‍ʊm",
+        "Capital city in chinese": "罗马"
+    },
+    "JE": {
+        "Independent": "No",
+        "Official name": "Bailiwick of Jersey",
+        "Capital city": "Saint Helier",
+        "Continent": "Europe",
+        "Chinese name": "泽西岛",
+        "Official nameipa": "bˈe‍ɪlɪwˌɪk ʌv d‍ʒˈɜːsi",
+        "Capital cityipa": "sˈe‍ɪnt hˈɛliɚ",
+        "Capital city in chinese": "圣赫利尔"
+    },
+    "JM": {
+        "Independent": "Yes",
+        "Official name": "Jamaica",
+        "Capital city": "Kingston",
+        "Continent": "North America",
+        "Chinese name": "牙买加",
+        "Official nameipa": "d‍ʒɐmˈe‍ɪkə",
+        "Capital cityipa": "kˈɪŋstən",
+        "Capital city in chinese": "金斯敦"
+    },
+    "JO": {
+        "Independent": "Yes",
+        "Official name": "Hashemite Kingdom of Jordan",
+        "Capital city": "Amman",
+        "Continent": "Asia",
+        "Chinese name": "约旦",
+        "Official nameipa": "hˈæʃɪmˌa‍ɪt kˈɪŋdəm ʌv d‍ʒˈoː‍ɹdən",
+        "Capital cityipa": "ɐmˈɑːn",
+        "Capital city in chinese": "安曼"
+    },
+    "JP": {
+        "Independent": "Yes",
+        "Official name": "Japan",
+        "Capital city": "Tokyo",
+        "Continent": "Asia",
+        "Chinese name": "日本",
+        "Official nameipa": "d‍ʒəpˈæn",
+        "Capital cityipa": "tˈo‍ʊkɪˌo‍ʊ",
+        "Capital city in chinese": "东京"
+    },
+    "KE": {
+        "Independent": "Yes",
+        "Official name": "Republic of Kenya",
+        "Capital city": "Nairobi",
+        "Continent": "Africa",
+        "Chinese name": "肯尼亚",
+        "Official nameipa": "ɹɪpˈʌblɪk ʌv kˈɛnjə",
+        "Capital cityipa": "na‍ɪɹˈo‍ʊbi",
+        "Capital city in chinese": "内罗毕"
+    },
+    "KG": {
+        "Independent": "Yes",
+        "Official name": "Kyrgyz Republic",
+        "Capital city": "Bishkek",
+        "Continent": "Asia",
+        "Chinese name": "吉尔吉斯斯坦",
+        "Official nameipa": "kˈɜːrɡɪz ɹɪpˈʌblɪk",
+        "Capital cityipa": "bˈɪʃkɛk",
+        "Capital city in chinese": "比什凯克"
+    },
+    "KH": {
+        "Independent": "Yes",
+        "Official name": "Kingdom of Cambodia",
+        "Capital city": "Phnom Penh",
+        "Continent": "Asia",
+        "Chinese name": "柬埔寨",
+        "Official nameipa": "kˈɪŋdəm ʌv kæmbˈo‍ʊdi‍ə",
+        "Capital cityipa": "pnˈɑːm pˈɛn",
+        "Capital city in chinese": "金边"
+    },
+    "KI": {
+        "Independent": "Yes",
+        "Official name": "Independent and Sovereign Republic of Kiribati",
+        "Capital city": "South Tarawa",
+        "Continent": "Oceania",
+        "Chinese name": "基里巴斯",
+        "Official nameipa": "ˌɪndɪpˈɛndənt ænd sˈɑːvɚɹˌɪn ɹɪpˈʌblɪk ʌv kˌɪɹɪbˈɑːɾi",
+        "Capital cityipa": "sˈa‍ʊθ tæɹˈɑːwə",
+        "Capital city in chinese": "塔拉瓦"
+    },
+    "KM": {
+        "Independent": "Yes",
+        "Official name": "Union of the Comoros",
+        "Capital city": "Moroni",
+        "Continent": "Africa",
+        "Chinese name": "科摩罗",
+        "Official nameipa": "jˈuːni‍ən ʌvðə kəmˈoːɹo‍ʊz",
+        "Capital cityipa": "mɔːɹˈo‍ʊni",
+        "Capital city in chinese": "莫罗尼"
+    },
+    "KN": {
+        "Independent": "Yes",
+        "Official name": "Federation of Saint Christopher and Nevis",
+        "Capital city": "Basseterre",
+        "Continent": "North America",
+        "Chinese name": "圣基茨和尼维斯",
+        "Official nameipa": "fˌɛdɚɹˈe‍ɪʃən ʌv sˈe‍ɪnt kɹˈɪstəfɚ ænd nˈɛvɪs",
+        "Capital cityipa": "bˈæsɪtˌɛɹə",
+        "Capital city in chinese": "巴斯特尔"
+    },
+    "KP": {
+        "Independent": "Yes",
+        "Official name": "Democratic People's Republic of Korea",
+        "Capital city": "Pyongyang",
+        "Continent": "Asia",
+        "Chinese name": "朝鲜",
+        "Official nameipa": "dˌɛməkɹˈæɾɪk pˈiːpə‍lz ɹɪpˈʌblɪk ʌv kɚɹˈiːə",
+        "Capital cityipa": "pjɑːnd‍ʒjˈæŋ",
+        "Capital city in chinese": "平壤"
+    },
+    "KR": {
+        "Independent": "Yes",
+        "Official name": "Republic of Korea",
+        "Capital city": "Seoul",
+        "Continent": "Asia",
+        "Chinese name": "韩国",
+        "Official nameipa": "ɹɪpˈʌblɪk ʌv kɚɹˈiːə",
+        "Capital cityipa": "sˈo‍ʊl",
+        "Capital city in chinese": "首尔"
+    },
+    "KW": {
+        "Independent": "Yes",
+        "Official name": "State of Kuwait",
+        "Capital city": "Kuwait City",
+        "Continent": "Asia",
+        "Chinese name": "科威特",
+        "Official nameipa": "stˈe‍ɪt ʌv kuːwˈe‍ɪt",
+        "Capital cityipa": "kuːwˈe‍ɪt sˈɪɾi",
+        "Capital city in chinese": "科威特城"
+    },
+    "KY": {
+        "Independent": "No",
+        "Official name": "Cayman Islands",
+        "Capital city": "George Town",
+        "Continent": "North America",
+        "Chinese name": "开曼群岛",
+        "Official nameipa": "kˈe‍ɪmən ˈa‍ɪləndz",
+        "Capital cityipa": "d‍ʒˈɔː‍ɹd‍ʒ tˈa‍ʊn",
+        "Capital city in chinese": "乔治市"
+    },
+    "KZ": {
+        "Independent": "Yes",
+        "Official name": "Republic of Kazakhstan",
+        "Capital city": "Nur-Sultan",
+        "Continent": "Asia",
+        "Chinese name": "哈萨克斯坦",
+        "Official nameipa": "ɹɪpˈʌblɪk ʌv kˈæzɐkhstˌæn",
+        "Capital cityipa": "nˈɜːsˈʌltən",
+        "Capital city in chinese": "阿斯塔纳"
+    },
+    "LA": {
+        "Independent": "Yes",
+        "Official name": "Lao People's Democratic Republic",
+        "Capital city": "Vientiane",
+        "Continent": "Asia",
+        "Chinese name": "老挝",
+        "Official nameipa": "lˈa‍ʊ pˈiːpə‍lz dˌɛməkɹˈæɾɪk ɹɪpˈʌblɪk",
+        "Capital cityipa": "vɪˈɛnʃi‍ən",
+        "Capital city in chinese": "万象"
+    },
+    "LB": {
+        "Independent": "Yes",
+        "Official name": "Lebanese Republic",
+        "Capital city": "Beirut",
+        "Continent": "Asia",
+        "Chinese name": "黎巴嫩",
+        "Official nameipa": "lˌɛbənˈiːz ɹɪpˈʌblɪk",
+        "Capital cityipa": "be‍ɪɹˈuːt",
+        "Capital city in chinese": "贝鲁特"
+    },
+    "LC": {
+        "Independent": "Yes",
+        "Official name": "Saint Lucia",
+        "Capital city": "Castries",
+        "Continent": "North America",
+        "Chinese name": "圣卢西亚",
+        "Official nameipa": "sˈe‍ɪnt lˈuːʃə",
+        "Capital cityipa": "kˈæstɹɪz",
+        "Capital city in chinese": "卡斯特里"
+    },
+    "LI": {
+        "Independent": "Yes",
+        "Official name": "Principality of Liechtenstein",
+        "Capital city": "Vaduz",
+        "Continent": "Europe",
+        "Chinese name": "列支敦士登",
+        "Official nameipa": "pɹˌɪnsɪpˈælɪɾi ʌv lˈɪxtənstˌa‍ɪn",
+        "Capital cityipa": "vˈædʌz",
+        "Capital city in chinese": "瓦杜兹"
+    },
+    "LK": {
+        "Independent": "Yes",
+        "Official name": "Democratic Socialist Republic of Sri Lanka",
+        "Capital city": "Colombo",
+        "Continent": "Asia",
+        "Chinese name": "斯里兰卡",
+        "Official nameipa": "dˌɛməkɹˈæɾɪk sˈo‍ʊʃə‍lˌɪst ɹɪpˈʌblɪk ʌv sɹˌiː lˈæŋkə",
+        "Capital cityipa": "kəlˈɑːmbo‍ʊ",
+        "Capital city in chinese": "科伦坡"
+    },
+    "LR": {
+        "Independent": "Yes",
+        "Official name": "Republic of Liberia",
+        "Capital city": "Monrovia",
+        "Continent": "Africa",
+        "Chinese name": "利比里亚",
+        "Official nameipa": "ɹɪpˈʌblɪk ʌv la‍ɪbˈi‍əɹiːə",
+        "Capital cityipa": "mənɹˈo‍ʊvi‍ə",
+        "Capital city in chinese": "蒙罗维亚"
+    },
+    "LS": {
+        "Independent": "Yes",
+        "Official name": "Kingdom of Lesotho",
+        "Capital city": "Maseru",
+        "Continent": "Africa",
+        "Chinese name": "莱索托",
+        "Official nameipa": "kˈɪŋdəm ʌv ləsˈuːɾuː",
+        "Capital cityipa": "mˈæzɚɹˌuː",
+        "Capital city in chinese": "马塞卢"
+    },
+    "LT": {
+        "Independent": "Yes",
+        "Official name": "Republic of Lithuania",
+        "Capital city": "Vilnius",
+        "Continent": "Europe",
+        "Chinese name": "立陶宛",
+        "Official nameipa": "ɹɪpˈʌblɪk ʌv lˌɪθjuːˈe‍ɪni‍ə",
+        "Capital cityipa": "vˈɪlnɪəs",
+        "Capital city in chinese": "维尔纽斯"
+    },
+    "LU": {
+        "Independent": "Yes",
+        "Official name": "Grand Duchy of Luxembourg",
+        "Capital city": "Luxembourg",
+        "Continent": "Europe",
+        "Chinese name": "卢森堡",
+        "Official nameipa": "ɡɹˈænd dˈʌt‍ʃi ʌv lˈʌksəmbˌɜːɡ",
+        "Capital cityipa": "lˈʌksəmbˌɜːɡ",
+        "Capital city in chinese": "卢森堡市"
+    },
+    "LV": {
+        "Independent": "Yes",
+        "Official name": "Republic of Latvia",
+        "Capital city": "Riga",
+        "Continent": "Europe",
+        "Chinese name": "拉脱维亚",
+        "Official nameipa": "ɹɪpˈʌblɪk ʌv lˈætviə",
+        "Capital cityipa": "ɹˈiːɡə",
+        "Capital city in chinese": "里加"
+    },
+    "LY": {
+        "Independent": "Yes",
+        "Official name": "State of Libya",
+        "Capital city": "Tripoli",
+        "Continent": "Africa",
+        "Chinese name": "利比亚",
+        "Official nameipa": "stˈe‍ɪt ʌv lˈɪbɪə",
+        "Capital cityipa": "tɹˈɪpəli",
+        "Capital city in chinese": "的黎波里"
+    },
+    "MA": {
+        "Independent": "Yes",
+        "Official name": "Kingdom of Morocco",
+        "Capital city": "Rabat",
+        "Continent": "Africa",
+        "Chinese name": "摩洛哥",
+        "Official nameipa": "kˈɪŋdəm ʌv mɚɹˈɑːko‍ʊ",
+        "Capital cityipa": "ɹˈæbæt",
+        "Capital city in chinese": "拉巴特"
+    },
+    "MC": {
+        "Independent": "Yes",
+        "Official name": "Principality of Monaco",
+        "Capital city": "Monaco",
+        "Continent": "Europe",
+        "Chinese name": "摩纳哥",
+        "Official nameipa": "pɹˌɪnsɪpˈælɪɾi ʌv mˈɑːnəkˌo‍ʊ",
+        "Capital cityipa": "mˈɑːnəkˌo‍ʊ",
+        "Capital city in chinese": "摩纳哥"
+    },
+    "MD": {
+        "Independent": "Yes",
+        "Official name": "Republic of Moldova",
+        "Capital city": "Chișinău",
+        "Continent": "Europe",
+        "Chinese name": "摩尔多瓦",
+        "Official nameipa": "ɹɪpˈʌblɪk ʌv mo‍ʊldˈo‍ʊvə",
+        "Capital cityipa": "t‍ʃˈɪsɪnˌa‍ʊ",
+        "Capital city in chinese": "基希讷乌"
+    },
+    "ME": {
+        "Independent": "Yes",
+        "Official name": "Montenegro",
+        "Capital city": "Podgorica",
+        "Continent": "Europe",
+        "Chinese name": "黑山",
+        "Official nameipa": "mˌɑːntənˈiːɡɹo‍ʊ",
+        "Capital cityipa": "pədɡˈoːɹɪkə",
+        "Capital city in chinese": "波德戈里察"
+    },
+    "MF": {
+        "Independent": "No",
+        "Official name": "Saint Martin",
+        "Capital city": "Marigot",
+        "Continent": "North America",
+        "Chinese name": "法属圣马丁",
+        "Official nameipa": "sˈe‍ɪnt mˈɑː‍ɹtɪn",
+        "Capital cityipa": "mˈæɹɪɡət",
+        "Capital city in chinese": "马里戈特"
+    },
+    "MG": {
+        "Independent": "Yes",
+        "Official name": "Republic of Madagascar",
+        "Capital city": "Antananarivo",
+        "Continent": "Africa",
+        "Chinese name": "马达加斯加",
+        "Official nameipa": "ɹɪpˈʌblɪk ʌv mˌædəɡˈæskɚ",
+        "Capital cityipa": "ˌæntɐnˌænɑːɹˈɪvo‍ʊ",
+        "Capital city in chinese": "塔那那利佛"
+    },
+    "MH": {
+        "Independent": "Yes",
+        "Official name": "Republic of the Marshall Islands",
+        "Capital city": "Majuro",
+        "Continent": "Oceania",
+        "Chinese name": "马绍尔群岛",
+        "Official nameipa": "ɹɪpˈʌblɪk ʌvðə mˈɑː‍ɹʃə‍l ˈa‍ɪləndz",
+        "Capital cityipa": "mæd‍ʒjˈʊɹo‍ʊ",
+        "Capital city in chinese": "马朱罗"
+    },
+    "MK": {
+        "Independent": "Yes",
+        "Official name": "Republic of North Macedonia",
+        "Capital city": "Skopje",
+        "Continent": "Europe",
+        "Chinese name": "北马其顿",
+        "Official nameipa": "ɹɪpˈʌblɪk ʌv nˈɔː‍ɹθ mˌæsɪdˈo‍ʊni‍ə",
+        "Capital cityipa": "skˈɑːpd‍ʒ",
+        "Capital city in chinese": "斯科普里"
+    },
+    "ML": {
+        "Independent": "Yes",
+        "Official name": "Republic of Mali",
+        "Capital city": "Bamako",
+        "Continent": "Africa",
+        "Chinese name": "马里",
+        "Official nameipa": "ɹɪpˈʌblɪk ʌv mˈɑːli",
+        "Capital cityipa": "bæmˈɑːko‍ʊ",
+        "Capital city in chinese": "巴马科"
+    },
+    "MM": {
+        "Independent": "Yes",
+        "Official name": "Republic of the Union of Myanmar",
+        "Capital city": "Naypyidaw",
+        "Continent": "Asia",
+        "Chinese name": "缅甸",
+        "Official nameipa": "ɹɪpˈʌblɪk ʌvðə jˈuːni‍ən ʌv mjˈɑːnmɑː‍ɹ",
+        "Capital cityipa": "nˈe‍ɪpɪˌɪdɔː",
+        "Capital city in chinese": "内比都"
+    },
+    "MN": {
+        "Independent": "Yes",
+        "Official name": "Mongolia",
+        "Capital city": "Ulan Bator",
+        "Continent": "Asia",
+        "Chinese name": "蒙古",
+        "Official nameipa": "məŋɡˈo‍ʊli‍ə",
+        "Capital cityipa": "ˈuːlæn bˈe‍ɪɾɚ",
+        "Capital city in chinese": "乌兰巴托"
+    },
+    "MO": {
+        "Independent": "No",
+        "Official name": "Macao Special Administrative Region of the People's Republic of China",
+        "Continent": "Asia",
+        "Chinese name": "中国澳门特别行政区",
+        "Official nameipa": "mˈæka‍ʊ spˈɛʃə‍l ɐdmˈɪnɪstɹətˌɪv ɹˈiːd‍ʒən ʌvðə pˈiːpə‍lz ɹɪpˈʌblɪk ʌv t‍ʃˈa‍ɪnə"
+    },
+    "MP": {
+        "Independent": "No",
+        "Official name": "Commonwealth of the Northern Mariana Islands",
+        "Capital city": "Saipan",
+        "Continent": "Oceania",
+        "Chinese name": "北马里亚纳群岛",
+        "Official nameipa": "kˈɑːmənwˌɛlθ ʌvðə nˈɔː‍ɹðɚn mˌæɹiːˈænə ˈa‍ɪləndz",
+        "Capital cityipa": "sˈe‍ɪpæn",
+        "Capital city in chinese": "塞班岛"
+    },
+    "MQ": {
+        "Independent": "No",
+        "Official name": "Martinique",
+        "Capital city": "Fort-de-France",
+        "Continent": "North America",
+        "Chinese name": "马提尼克",
+        "Official nameipa": "mˌɑː‍ɹtɪnˈiːk",
+        "Capital cityipa": "fˈɔː‍ɹtdəfɹˈæns",
+        "Capital city in chinese": "法兰西堡"
+    },
+    "MR": {
+        "Independent": "Yes",
+        "Official name": "Islamic Republic of Mauritania",
+        "Capital city": "Nouakchott",
+        "Continent": "Africa",
+        "Chinese name": "毛里塔尼亚",
+        "Official nameipa": "ɪslˈɑːmɪk ɹɪpˈʌblɪk ʌv mˌɔːɹɪtˈe‍ɪni‍ə",
+        "Capital cityipa": "nwˈɑːkt‍ʃɑːt",
+        "Capital city in chinese": "努瓦克肖特"
+    },
+    "MS": {
+        "Independent": "No",
+        "Official name": "Montserrat",
+        "Capital city": "Plymouth",
+        "Continent": "North America",
+        "Chinese name": "蒙特塞拉特",
+        "Official nameipa": "mˈɑːntsɪɹˌæt",
+        "Capital cityipa": "plˈɪməθ",
+        "Capital city in chinese": "普利茅斯"
+    },
+    "MT": {
+        "Independent": "Yes",
+        "Official name": "Republic of Malta",
+        "Capital city": "Valletta",
+        "Continent": "Europe",
+        "Chinese name": "马耳他",
+        "Official nameipa": "ɹɪpˈʌblɪk ʌv mˈɑːltə",
+        "Capital cityipa": "vælˈɛɾə",
+        "Capital city in chinese": "瓦莱塔"
+    },
+    "MU": {
+        "Independent": "Yes",
+        "Official name": "Republic of Mauritius",
+        "Capital city": "Port Louis",
+        "Continent": "Africa",
+        "Chinese name": "毛里求斯",
+        "Official nameipa": "ɹɪpˈʌblɪk ʌv mɔːɹˈɪʃəs",
+        "Capital cityipa": "pˈoː‍ɹt lˈuːi",
+        "Capital city in chinese": "路易港"
+    },
+    "MV": {
+        "Independent": "Yes",
+        "Official name": "Republic of the Maldives",
+        "Capital city": "Malé",
+        "Continent": "Asia",
+        "Chinese name": "马尔代夫",
+        "Official nameipa": "ɹɪpˈʌblɪk ʌvðə mɔːldˈiːv",
+        "Capital cityipa": "mælˈe‍ɪ",
+        "Capital city in chinese": "马累"
+    },
+    "MW": {
+        "Independent": "Yes",
+        "Official name": "Republic of Malawi",
+        "Capital city": "Lilongwe",
+        "Continent": "Africa",
+        "Chinese name": "马拉维",
+        "Official nameipa": "ɹɪpˈʌblɪk ʌv mɐlˈɑːwi",
+        "Capital cityipa": "la‍ɪlˈɑːŋwi",
+        "Capital city in chinese": "利隆圭"
+    },
+    "MX": {
+        "Independent": "Yes",
+        "Official name": "United Mexican States",
+        "Capital city": "Mexico City",
+        "Continent": "North America",
+        "Chinese name": "墨西哥",
+        "Official nameipa": "juːnˈa‍ɪɾᵻd mˈɛksɪkən stˈe‍ɪts",
+        "Capital cityipa": "mˈɛksɪkˌo‍ʊ sˈɪɾi",
+        "Capital city in chinese": "墨西哥城"
+    },
+    "MY": {
+        "Independent": "Yes",
+        "Official name": "Malaysia",
+        "Capital city": "Kuala Lumpur",
+        "Continent": "Asia",
+        "Chinese name": "马来西亚",
+        "Official nameipa": "məlˈe‍ɪʒə",
+        "Capital cityipa": "kwˈɑːlɐ lˈʌmpʊ‍ɹ",
+        "Capital city in chinese": "吉隆坡"
+    },
+    "MZ": {
+        "Independent": "Yes",
+        "Official name": "Republic of Mozambique",
+        "Capital city": "Maputo",
+        "Continent": "Africa",
+        "Chinese name": "莫桑比克",
+        "Official nameipa": "ɹɪpˈʌblɪk ʌv mˌɑːzɐmbˈiːk",
+        "Capital cityipa": "mæpjˈuːɾo‍ʊ",
+        "Capital city in chinese": "马普托"
+    },
+    "NA": {
+        "Independent": "Yes",
+        "Official name": "Republic of Namibia",
+        "Capital city": "Windhoek",
+        "Continent": "Africa",
+        "Chinese name": "纳米比亚",
+        "Official nameipa": "ɹɪpˈʌblɪk ʌv næmˈɪbi‍ə",
+        "Capital cityipa": "wˈɪndho‍ʊk",
+        "Capital city in chinese": "温得和克"
+    },
+    "NC": {
+        "Independent": "No",
+        "Official name": "New Caledonia",
+        "Capital city": "Nouméa",
+        "Continent": "Oceania",
+        "Chinese name": "新喀里多尼亚",
+        "Official nameipa": "nˈuː kˌælɪdˈo‍ʊni‍ə",
+        "Capital cityipa": "nˈa‍ʊme‍ɪə",
+        "Capital city in chinese": "努美阿"
+    },
+    "NE": {
+        "Independent": "Yes",
+        "Official name": "Republic of Niger",
+        "Capital city": "Niamey",
+        "Continent": "Africa",
+        "Chinese name": "尼日尔",
+        "Official nameipa": "ɹɪpˈʌblɪk ʌv nˈa‍ɪd‍ʒɚ",
+        "Capital cityipa": "nˈa‍ɪəmi",
+        "Capital city in chinese": "尼亚美"
+    },
+    "NF": {
+        "Independent": "No",
+        "Official name": "Territory of Norfolk Island",
+        "Capital city": "Kingston",
+        "Continent": "Oceania",
+        "Chinese name": "诺福克岛",
+        "Official nameipa": "tˈɛɹɪtˌoːɹi ʌv nˈɔː‍ɹfək ˈa‍ɪlənd",
+        "Capital cityipa": "kˈɪŋstən",
+        "Capital city in chinese": "金斯敦"
+    },
+    "NG": {
+        "Independent": "Yes",
+        "Official name": "Federal Republic of Nigeria",
+        "Capital city": "Abuja",
+        "Continent": "Africa",
+        "Chinese name": "尼日利亚",
+        "Official nameipa": "fˈɛdɚɹə‍l ɹɪpˈʌblɪk ʌv na‍ɪd‍ʒˈi‍əɹɪə",
+        "Capital cityipa": "ɐbjˈuːd‍ʒə",
+        "Capital city in chinese": "阿布贾"
+    },
+    "NI": {
+        "Independent": "Yes",
+        "Official name": "Republic of Nicaragua",
+        "Capital city": "Managua",
+        "Continent": "North America",
+        "Chinese name": "尼加拉瓜",
+        "Official nameipa": "ɹɪpˈʌblɪk ʌv nˌɪkɐɹˈɑːɡwə",
+        "Capital cityipa": "mænˈɑːɡwə",
+        "Capital city in chinese": "马那瓜"
+    },
+    "NL": {
+        "Independent": "Yes",
+        "Official name": "Kingdom of the Netherlands",
+        "Capital city": "Amsterdam",
+        "Continent": "Europe",
+        "Chinese name": "荷兰",
+        "Official nameipa": "kˈɪŋdəm ʌvðə nˈɛðɚləndz",
+        "Capital cityipa": "ˈæmstɚdˌæm",
+        "Capital city in chinese": "阿姆斯特丹"
+    },
+    "NO": {
+        "Independent": "Yes",
+        "Official name": "Kingdom of Norway",
+        "Capital city": "Oslo",
+        "Continent": "Europe",
+        "Chinese name": "挪威",
+        "Official nameipa": "kˈɪŋdəm ʌv nˈoː‍ɹwe‍ɪ",
+        "Capital cityipa": "ˈɑːslo‍ʊ",
+        "Capital city in chinese": "奥斯陆"
+    },
+    "NP": {
+        "Independent": "Yes",
+        "Official name": "Federal Democratic Republic of Nepal",
+        "Capital city": "Kathmandu",
+        "Continent": "Asia",
+        "Chinese name": "尼泊尔",
+        "Official nameipa": "fˈɛdɚɹə‍l dˌɛməkɹˈæɾɪk ɹɪpˈʌblɪk ʌv nɛpˈɔːl",
+        "Capital cityipa": "kæθmˌændˈuː",
+        "Capital city in chinese": "加德满都"
+    },
+    "NR": {
+        "Independent": "Yes",
+        "Official name": "Republic of Nauru",
+        "Capital city": "Yaren",
+        "Continent": "Oceania",
+        "Chinese name": "瑙鲁",
+        "Official nameipa": "ɹɪpˈʌblɪk ʌv nˈa‍ʊɹuː",
+        "Capital cityipa": "jˈæɹən",
+        "Capital city in chinese": "亚伦"
+    },
+    "NU": {
+        "Independent": "No",
+        "Official name": "Niue",
+        "Capital city": "Alofi",
+        "Continent": "Oceania",
+        "Chinese name": "纽埃",
+        "Official nameipa": "nˈɪjuː",
+        "Capital cityipa": "ɐlˈo‍ʊfi",
+        "Capital city in chinese": "阿洛菲"
+    },
+    "NZ": {
+        "Independent": "Yes",
+        "Official name": "New Zealand",
+        "Capital city": "Wellington",
+        "Continent": "Oceania",
+        "Chinese name": "新西兰",
+        "Official nameipa": "nˈuː zˈiːlənd",
+        "Capital cityipa": "wˈɛlɪŋtən",
+        "Capital city in chinese": "惠灵顿"
+    },
+    "OM": {
+        "Independent": "Yes",
+        "Official name": "Sultanate of Oman",
+        "Capital city": "Muscat",
+        "Continent": "Asia",
+        "Chinese name": "阿曼",
+        "Official nameipa": "sˈʌltɐnˌe‍ɪt ʌv o‍ʊmˈæn",
+        "Capital cityipa": "mˈʌskæt",
+        "Capital city in chinese": "马斯喀特"
+    },
+    "PA": {
+        "Independent": "Yes",
+        "Official name": "Republic of Panama",
+        "Capital city": "Panama City",
+        "Continent": "North America",
+        "Chinese name": "巴拿马",
+        "Official nameipa": "ɹɪpˈʌblɪk ʌv pˈænəmˌɑː",
+        "Capital cityipa": "pˈænəmˌɑː sˈɪɾi",
+        "Capital city in chinese": "巴拿马城"
+    },
+    "PE": {
+        "Independent": "Yes",
+        "Official name": "Republic of Peru",
+        "Capital city": "Lima",
+        "Continent": "South America",
+        "Chinese name": "秘鲁",
+        "Official nameipa": "ɹɪpˈʌblɪk ʌv pɚɹˈuː",
+        "Capital cityipa": "lˈiːmɐ",
+        "Capital city in chinese": "利马"
+    },
+    "PF": {
+        "Independent": "No",
+        "Official name": "French Polynesia",
+        "Capital city": "Papeetē",
+        "Continent": "Oceania",
+        "Chinese name": "法属波利尼西亚",
+        "Official nameipa": "fɹˈɛnt‍ʃ pˌɑːlɪnˈiːʒə",
+        "Capital cityipa": "pˈæpiːt",
+        "Capital city in chinese": "帕比提"
+    },
+    "PG": {
+        "Independent": "Yes",
+        "Official name": "Independent State of Papua New Guinea",
+        "Capital city": "Port Moresby",
+        "Continent": "Oceania",
+        "Chinese name": "巴布亚新几内亚",
+        "Official nameipa": "ˌɪndɪpˈɛndənt stˈe‍ɪt ʌv pˈæpjuːə nˈuː ɡˈɪni",
+        "Capital cityipa": "pˈoː‍ɹt mˈoː‍ɹsbi",
+        "Capital city in chinese": "莫尔斯比港"
+    },
+    "PH": {
+        "Independent": "Yes",
+        "Official name": "Republic of the Philippines",
+        "Capital city": "Manila",
+        "Continent": "Asia",
+        "Chinese name": "菲律宾",
+        "Official nameipa": "ɹɪpˈʌblɪk ʌvðə fˈɪlɪpˌiːnz",
+        "Capital cityipa": "mɐnˈɪlə",
+        "Capital city in chinese": "马尼拉"
+    },
+    "PK": {
+        "Independent": "Yes",
+        "Official name": "Islamic Republic of Pakistan",
+        "Capital city": "Islamabad",
+        "Continent": "Asia",
+        "Chinese name": "巴基斯坦",
+        "Official nameipa": "ɪslˈɑːmɪk ɹɪpˈʌblɪk ʌv pˈækɪstˌæn",
+        "Capital cityipa": "ɪslˈɑːmɐbˌæd",
+        "Capital city in chinese": "伊斯兰堡"
+    },
+    "PL": {
+        "Independent": "Yes",
+        "Official name": "Republic of Poland",
+        "Capital city": "Warsaw",
+        "Continent": "Europe",
+        "Chinese name": "波兰",
+        "Official nameipa": "ɹɪpˈʌblɪk ʌv pˈo‍ʊlənd",
+        "Capital cityipa": "wˈɔː‍ɹsɔː",
+        "Capital city in chinese": "华沙"
+    },
+    "PM": {
+        "Independent": "No",
+        "Official name": "Saint Pierre and Miquelon",
+        "Capital city": "Saint-Pierre",
+        "Continent": "North America",
+        "Chinese name": "圣皮埃尔和密克隆群岛",
+        "Official nameipa": "sˈe‍ɪnt pɪˈɛ‍ɹ ænd mˈɪkwɛlən",
+        "Capital cityipa": "sˈe‍ɪntpɪˈɛ‍ɹ",
+        "Capital city in chinese": "圣彼得岛"
+    },
+    "PN": {
+        "Independent": "No",
+        "Official name": "Pitcairn Group of Islands",
+        "Capital city": "Adamstown",
+        "Continent": "Oceania",
+        "Chinese name": "皮特凯恩群岛",
+        "Official nameipa": "pˈɪtkɛ‍ɹn ɡɹˈuːp ʌv ˈa‍ɪləndz",
+        "Capital cityipa": "ˈædɐmztˌa‍ʊn",
+        "Capital city in chinese": "亚当斯敦"
+    },
+    "PR": {
+        "Independent": "No",
+        "Official name": "Commonwealth of Puerto Rico",
+        "Capital city": "San Juan",
+        "Continent": "North America",
+        "Chinese name": "波多黎各",
+        "Official nameipa": "kˈɑːmənwˌɛlθ ʌv pwˈɛ‍ɹɾo‍ʊ ɹˈiːko‍ʊ",
+        "Capital cityipa": "sˌæn hwˈɑːn",
+        "Capital city in chinese": "圣胡安"
+    },
+    "PS": {
+        "Independent": "No",
+        "Official name": "State of Palestine",
+        "Capital city": "Ramallah",
+        "Continent": "Asia",
+        "Chinese name": "巴勒斯坦领土",
+        "Official nameipa": "stˈe‍ɪt ʌv pˈæləstˌa‍ɪn",
+        "Capital cityipa": "ɹˈæmælə",
+        "Capital city in chinese": "拉姆安拉"
+    },
+    "PT": {
+        "Independent": "Yes",
+        "Official name": "Portuguese Republic",
+        "Capital city": "Lisbon",
+        "Continent": "Europe",
+        "Chinese name": "葡萄牙",
+        "Official nameipa": "pˌoː‍ɹt‍ʃəɡˈiːz ɹɪpˈʌblɪk",
+        "Capital cityipa": "lˈɪsbən",
+        "Capital city in chinese": "里斯本"
+    },
+    "PW": {
+        "Independent": "Yes",
+        "Official name": "Republic of Palau",
+        "Capital city": "Ngerulmud",
+        "Continent": "Oceania",
+        "Chinese name": "帕劳",
+        "Official nameipa": "ɹɪpˈʌblɪk ʌv pˈæla‍ʊ",
+        "Capital cityipa": "əŋd‍ʒˈɛɹəlmˌʌd",
+        "Capital city in chinese": "梅莱凯奥克"
+    },
+    "PY": {
+        "Independent": "Yes",
+        "Official name": "Republic of Paraguay",
+        "Capital city": "Asunción",
+        "Continent": "South America",
+        "Chinese name": "巴拉圭",
+        "Official nameipa": "ɹɪpˈʌblɪk ʌv pˈæɹəɡwˌa‍ɪ",
+        "Capital cityipa": "ɐsˌʌnsɪˈɑːn",
+        "Capital city in chinese": "亚松森"
+    },
+    "QA": {
+        "Independent": "Yes",
+        "Official name": "State of Qatar",
+        "Capital city": "Doha",
+        "Continent": "Asia",
+        "Chinese name": "卡塔尔",
+        "Official nameipa": "stˈe‍ɪt ʌv kˈæɾɑː‍ɹ",
+        "Capital cityipa": "dˈo‍ʊhə",
+        "Capital city in chinese": "多哈"
+    },
+    "RE": {
+        "Independent": "No",
+        "Official name": "Réunion Island",
+        "Capital city": "Saint-Denis",
+        "Continent": "Africa",
+        "Chinese name": "留尼汪",
+        "Official nameipa": "ɹe‍ɪjˈuːni‍ən ˈa‍ɪlənd",
+        "Capital cityipa": "sˈe‍ɪntdˈɛniz",
+        "Capital city in chinese": "圣但尼区"
+    },
+    "RO": {
+        "Independent": "Yes",
+        "Official name": "Romania",
+        "Capital city": "Bucharest",
+        "Continent": "Europe",
+        "Chinese name": "罗马尼亚",
+        "Official nameipa": "ɹo‍ʊmˈe‍ɪni‍ə",
+        "Capital cityipa": "bˌuːkɐɹˈɛst",
+        "Capital city in chinese": "布加勒斯特"
+    },
+    "RS": {
+        "Independent": "Yes",
+        "Official name": "Republic of Serbia",
+        "Capital city": "Belgrade",
+        "Continent": "Europe",
+        "Chinese name": "塞尔维亚",
+        "Official nameipa": "ɹɪpˈʌblɪk ʌv sˈɜːbiə",
+        "Capital cityipa": "bɛlɡɹˈe‍ɪd",
+        "Capital city in chinese": "贝尔格莱德"
+    },
+    "RU": {
+        "Independent": "Yes",
+        "Official name": "Russian Federation",
+        "Capital city": "Moscow",
+        "Continent": "Asia, Europe",
+        "Chinese name": "俄罗斯",
+        "Official nameipa": "ɹˈʌʃən fˌɛdɚɹˈe‍ɪʃən",
+        "Capital cityipa": "mˈɑːsko‍ʊ",
+        "Capital city in chinese": "莫斯科"
+    },
+    "RW": {
+        "Independent": "Yes",
+        "Official name": "Republic of Rwanda",
+        "Capital city": "Kigali",
+        "Continent": "Africa",
+        "Chinese name": "卢旺达",
+        "Official nameipa": "ɹɪpˈʌblɪk ʌv ɹʊˈændə",
+        "Capital cityipa": "kɪɡˈɑːli",
+        "Capital city in chinese": "基加利"
+    },
+    "SA": {
+        "Independent": "Yes",
+        "Official name": "Kingdom of Saudi Arabia",
+        "Capital city": "Riyadh",
+        "Continent": "Asia",
+        "Chinese name": "沙特阿拉伯",
+        "Official nameipa": "kˈɪŋdəm ʌv sˈa‍ʊdi ɚɹˈe‍ɪbi‍ə",
+        "Capital cityipa": "ɹˈɪjæd",
+        "Capital city in chinese": "利雅得"
+    },
+    "SB": {
+        "Independent": "Yes",
+        "Official name": "Solomon Islands",
+        "Capital city": "Honiara",
+        "Continent": "Oceania",
+        "Chinese name": "所罗门群岛",
+        "Official nameipa": "sˈɑːlɑːmən ˈa‍ɪləndz",
+        "Capital cityipa": "hˈo‍ʊnɪˈɑːɹə",
+        "Capital city in chinese": "霍尼亚拉"
+    },
+    "SC": {
+        "Independent": "Yes",
+        "Official name": "Republic of Seychelles",
+        "Capital city": "Victoria",
+        "Continent": "Africa",
+        "Chinese name": "塞舌尔",
+        "Official nameipa": "ɹɪpˈʌblɪk ʌv se‍ɪʃˈɛlz",
+        "Capital cityipa": "vɪktˈoːɹi‍ə",
+        "Capital city in chinese": "维多利亚"
+    },
+    "SD": {
+        "Independent": "Yes",
+        "Official name": "Republic of the Sudan",
+        "Capital city": "Khartoum",
+        "Continent": "Africa",
+        "Chinese name": "苏丹",
+        "Official nameipa": "ɹɪpˈʌblɪk ʌvðə suːdˈæn",
+        "Capital cityipa": "kɑː‍ɹtˈuːm",
+        "Capital city in chinese": "喀土穆"
+    },
+    "SE": {
+        "Independent": "Yes",
+        "Official name": "Kingdom of Sweden",
+        "Capital city": "Stockholm",
+        "Continent": "Europe",
+        "Chinese name": "瑞典",
+        "Official nameipa": "kˈɪŋdəm ʌv swˈiːdən",
+        "Capital cityipa": "stˈɑːkho‍ʊm",
+        "Capital city in chinese": "斯德哥尔摩"
+    },
+    "SG": {
+        "Independent": "Yes",
+        "Official name": "Republic of Singapore",
+        "Capital city": "Singapore",
+        "Continent": "Asia",
+        "Chinese name": "新加坡",
+        "Official nameipa": "ɹɪpˈʌblɪk ʌv sˈɪŋɡɐpˌoː‍ɹ",
+        "Capital cityipa": "sˈɪŋɡɐpˌoː‍ɹ",
+        "Capital city in chinese": "新加坡"
+    },
+    "SH": {
+        "Independent": "No",
+        "Official name": "Saint Helena, Ascension and Tristan da Cunha",
+        "Capital city": "Jamestown",
+        "Continent": "Africa",
+        "Chinese name": "圣赫勒拿",
+        "Official nameipa": "sˈe‍ɪnt hɛlˈiːnəɐsˈɛnʃən ænd tɹˈɪstən dˈɑː kˈʌnhə",
+        "Capital cityipa": "d‍ʒˈe‍ɪmzta‍ʊn",
+        "Capital city in chinese": "詹姆斯敦"
+    },
+    "SI": {
+        "Independent": "Yes",
+        "Official name": "Republic of Slovenia",
+        "Capital city": "Ljubljana",
+        "Continent": "Europe",
+        "Chinese name": "斯洛文尼亚",
+        "Official nameipa": "ɹɪpˈʌblɪk ʌv slo‍ʊvˈiːni‍ə",
+        "Capital cityipa": "ljuːbljˈɑːnə",
+        "Capital city in chinese": "卢布尔雅那"
+    },
+    "SJ": {
+        "Independent": "No",
+        "Official name": "Svalbard og Jan Mayen",
+        "Capital city": "Longyearbyen",
+        "Continent": "Europe",
+        "Chinese name": "斯瓦尔巴和扬马延",
+        "Official nameipa": "svˈælbɑː‍ɹd ˈɑːɡ d‍ʒˈæn mˈe‍ɪən",
+        "Capital cityipa": "ləŋjˈɪ‍ɹbɪən",
+        "Capital city in chinese": "朗伊尔城"
+    },
+    "SK": {
+        "Independent": "Yes",
+        "Official name": "Slovak Republic",
+        "Capital city": "Bratislava",
+        "Continent": "Europe",
+        "Chinese name": "斯洛伐克",
+        "Official nameipa": "slˈo‍ʊvæk ɹɪpˈʌblɪk",
+        "Capital cityipa": "bɹˌæɾɪslˈɑːvə",
+        "Capital city in chinese": "布拉迪斯拉发"
+    },
+    "SL": {
+        "Independent": "Yes",
+        "Official name": "Republic of Sierra Leone",
+        "Capital city": "Freetown",
+        "Continent": "Africa",
+        "Chinese name": "塞拉利昂",
+        "Official nameipa": "ɹɪpˈʌblɪk ʌv siːˈɛɹə liːˈo‍ʊn",
+        "Capital cityipa": "fɹˈiːta‍ʊn",
+        "Capital city in chinese": "弗里敦"
+    },
+    "SM": {
+        "Independent": "Yes",
+        "Official name": "Most Serene Republic of San Marino",
+        "Capital city": "City of San Marino",
+        "Continent": "Europe",
+        "Chinese name": "圣马力诺",
+        "Official nameipa": "mˈo‍ʊst sɚɹˈiːn ɹɪpˈʌblɪk ʌv sˌæn mɚɹˈiːno‍ʊ",
+        "Capital cityipa": "sˈɪɾi ʌv sˌæn mɚɹˈiːno‍ʊ",
+        "Capital city in chinese": "圣马力诺"
+    },
+    "SN": {
+        "Independent": "Yes",
+        "Official name": "Republic of Senegal",
+        "Capital city": "Dakar",
+        "Continent": "Africa",
+        "Chinese name": "塞内加尔",
+        "Official nameipa": "ɹɪpˈʌblɪk ʌv sˈɛnɛɡə‍l",
+        "Capital cityipa": "dˈækɑː‍ɹ",
+        "Capital city in chinese": "达喀尔"
+    },
+    "SO": {
+        "Independent": "Yes",
+        "Official name": "Federal Republic of Somalia",
+        "Capital city": "Mogadishu",
+        "Continent": "Africa",
+        "Chinese name": "索马里",
+        "Official nameipa": "fˈɛdɚɹə‍l ɹɪpˈʌblɪk ʌv səmˈɑːli‍ə",
+        "Capital cityipa": "mˌɑːɡɐdˈiːʃuː",
+        "Capital city in chinese": "摩加迪沙"
+    },
+    "SR": {
+        "Independent": "Yes",
+        "Official name": "Republic of Suriname",
+        "Capital city": "Paramaribo",
+        "Continent": "South America",
+        "Chinese name": "苏里南",
+        "Official nameipa": "ɹɪpˈʌblɪk ʌv sˌʊ‍ɹɹɪnˈæm",
+        "Capital cityipa": "pˌæɹəmɚɹˈiːbo‍ʊ",
+        "Capital city in chinese": "帕拉马里博"
+    },
+    "SS": {
+        "Independent": "Yes",
+        "Official name": "Republic of South Sudan",
+        "Capital city": "Juba",
+        "Continent": "Africa",
+        "Chinese name": "南苏丹",
+        "Official nameipa": "ɹɪpˈʌblɪk ʌv sˈa‍ʊθ suːdˈæn",
+        "Capital cityipa": "d‍ʒˈuːbə",
+        "Capital city in chinese": "朱巴"
+    },
+    "ST": {
+        "Independent": "Yes",
+        "Official name": "Democratic Republic of São Tomé and Príncipe",
+        "Capital city": "São Tomé",
+        "Continent": "Africa",
+        "Chinese name": "圣多美和普林西比",
+        "Official nameipa": "dˌɛməkɹˈæɾɪk ɹɪpˈʌblɪk ʌv sˈa‍ʊ təmˈe‍ɪ ænd pɹˈɪnsa‍ɪp",
+        "Capital cityipa": "sˈa‍ʊ təmˈe‍ɪ",
+        "Capital city in chinese": "圣多美"
+    },
+    "SV": {
+        "Independent": "Yes",
+        "Official name": "Republic of El Salvador",
+        "Capital city": "San Salvador",
+        "Continent": "North America",
+        "Chinese name": "萨尔瓦多",
+        "Official nameipa": "ɹɪpˈʌblɪk ʌv ˌɛl sˈælvɐdˌoː‍ɹ",
+        "Capital cityipa": "sˌæn sˈælvɐdˌoː‍ɹ",
+        "Capital city in chinese": "圣萨尔瓦多"
+    },
+    "SX": {
+        "Independent": "No",
+        "Official name": "Sint Maarten",
+        "Capital city": "Philipsburg",
+        "Continent": "North America",
+        "Chinese name": "荷属圣马丁",
+        "Official nameipa": "sˈɪnt mˈɑː‍ɹʔn̩",
+        "Capital cityipa": "fˈɪlɪpsbˌɜːɡ",
+        "Capital city in chinese": "菲利普斯堡"
+    },
+    "SY": {
+        "Independent": "Yes",
+        "Official name": "Syrian Arab Republic",
+        "Capital city": "Damascus",
+        "Continent": "Asia",
+        "Chinese name": "叙利亚",
+        "Official nameipa": "sˈɪɹi‍ən ˈæɹəb ɹɪpˈʌblɪk",
+        "Capital cityipa": "dɐmˈæskəs",
+        "Capital city in chinese": "大马士革"
+    },
+    "SZ": {
+        "Independent": "Yes",
+        "Official name": "Kingdom of Eswatini",
+        "Capital city": "Lobamba",
+        "Continent": "Africa",
+        "Chinese name": "斯威士兰",
+        "Official nameipa": "kˈɪŋdəm ʌv ˌɛswətˈiːni",
+        "Capital cityipa": "lo‍ʊbˈæmbə",
+        "Capital city in chinese": "姆巴巴内"
+    },
+    "TC": {
+        "Independent": "No",
+        "Official name": "Turks and Caicos Islands",
+        "Capital city": "Cockburn Town",
+        "Continent": "North America",
+        "Chinese name": "特克斯和凯科斯群岛",
+        "Official nameipa": "tˈɜːks ænd kˈe‍ɪko‍ʊz ˈa‍ɪləndz",
+        "Capital cityipa": "kˈɑːkbɜːn tˈa‍ʊn",
+        "Capital city in chinese": "科伯恩城"
+    },
+    "TD": {
+        "Independent": "Yes",
+        "Official name": "Republic of Chad",
+        "Capital city": "N'Djamena",
+        "Continent": "Africa",
+        "Chinese name": "乍得",
+        "Official nameipa": "ɹɪpˈʌblɪk ʌv t‍ʃˈæd",
+        "Capital cityipa": "ˈɛnd‍ʒˈe‍ɪmnə",
+        "Capital city in chinese": "恩贾梅纳"
+    },
+    "TF": {
+        "Independent": "No",
+        "Official name": "Territory of the French Southern and Antarctic Lands",
+        "Capital city": "Port-aux-Français",
+        "Chinese name": "法属南部领地",
+        "Official nameipa": "tˈɛɹɪtˌoːɹi ʌvðə fɹˈɛnt‍ʃ sˈʌðɚn ænd æntˈɑː‍ɹktɪk lˈændz",
+        "Capital cityipa": "pˈoː‍ɹtˈɔːksfɹˈænsa‍ɪz",
+        "Capital city in chinese": "法兰西港"
+    },
+    "TG": {
+        "Independent": "Yes",
+        "Official name": "Togolese Republic",
+        "Capital city": "Lomé",
+        "Continent": "Africa",
+        "Chinese name": "多哥",
+        "Official nameipa": "tˌɑːɡo‍ʊlˈiːz ɹɪpˈʌblɪk",
+        "Capital cityipa": "ləmˈe‍ɪ",
+        "Capital city in chinese": "洛美"
+    },
+    "TH": {
+        "Independent": "Yes",
+        "Official name": "Kingdom of Thailand",
+        "Capital city": "Bangkok",
+        "Continent": "Asia",
+        "Chinese name": "泰国",
+        "Official nameipa": "kˈɪŋdəm ʌv tˈa‍ɪlənd",
+        "Capital cityipa": "bˈæŋkɑːk",
+        "Capital city in chinese": "曼谷"
+    },
+    "TJ": {
+        "Independent": "Yes",
+        "Official name": "Republic of Tajikistan",
+        "Capital city": "Dushanbe",
+        "Continent": "Asia",
+        "Chinese name": "塔吉克斯坦",
+        "Official nameipa": "ɹɪpˈʌblɪk ʌv tæd‍ʒˈɪkɪstˌæn",
+        "Capital cityipa": "dˈʌʃænb",
+        "Capital city in chinese": "杜尚别"
+    },
+    "TK": {
+        "Independent": "No",
+        "Official name": "Tokelau",
+        "Capital city": "Fakaofo",
+        "Continent": "Oceania",
+        "Chinese name": "托克劳",
+        "Official nameipa": "tˈo‍ʊkla‍ʊ",
+        "Capital cityipa": "fˌæke‍ɪˈɑːfo‍ʊ",
+        "Capital city in chinese": "法考福"
+    },
+    "TL": {
+        "Independent": "Yes",
+        "Official name": "Democratic Republic of Timor-Leste",
+        "Capital city": "Dili",
+        "Continent": "Asia",
+        "Chinese name": "东帝汶",
+        "Official nameipa": "dˌɛməkɹˈæɾɪk ɹɪpˈʌblɪk ʌv tˈiːmoː‍ɹlˈɛst",
+        "Capital cityipa": "dˈɪli",
+        "Capital city in chinese": "帝力"
+    },
+    "TM": {
+        "Independent": "Yes",
+        "Official name": "Turkmenistan",
+        "Capital city": "Ashgabat",
+        "Continent": "Asia",
+        "Chinese name": "土库曼斯坦",
+        "Official nameipa": "tˈɜːkmənˌɪstæn",
+        "Capital cityipa": "ˈæʃɡɐbˌæt",
+        "Capital city in chinese": "阿什哈巴德"
+    },
+    "TN": {
+        "Independent": "Yes",
+        "Official name": "Tunisian Republic",
+        "Capital city": "Tunis",
+        "Continent": "Africa",
+        "Chinese name": "突尼斯",
+        "Official nameipa": "tuːnˈiːʒən ɹɪpˈʌblɪk",
+        "Capital cityipa": "tˈuːniz",
+        "Capital city in chinese": "突尼斯"
+    },
+    "TO": {
+        "Independent": "Yes",
+        "Official name": "Kingdom of Tonga",
+        "Capital city": "Nuku'alofa",
+        "Continent": "Oceania",
+        "Chinese name": "汤加",
+        "Official nameipa": "kˈɪŋdəm ʌv tˈɑːŋɡə",
+        "Capital cityipa": "nˌuːkəɐlˈo‍ʊfə",
+        "Capital city in chinese": "努库阿洛法"
+    },
+    "TR": {
+        "Independent": "Yes",
+        "Official name": "Republic of Turkey",
+        "Capital city": "Ankara",
+        "Continent": "Asia, Europe",
+        "Chinese name": "土耳其",
+        "Official nameipa": "ɹɪpˈʌblɪk ʌv tˈɜːki",
+        "Capital cityipa": "ˈæŋkɑː‍ɹɹə",
+        "Capital city in chinese": "安卡拉"
+    },
+    "TT": {
+        "Independent": "Yes",
+        "Official name": "Republic of Trinidad and Tobago",
+        "Capital city": "Port of Spain",
+        "Continent": "South America",
+        "Chinese name": "特立尼达和多巴哥",
+        "Official nameipa": "ɹɪpˈʌblɪk ʌv tɹˈɪnɪdˌæd ænd to‍ʊbˈe‍ɪɡo‍ʊ",
+        "Capital cityipa": "pˈoː‍ɹt ʌv spˈe‍ɪn",
+        "Capital city in chinese": "西班牙港"
+    },
+    "TV": {
+        "Independent": "Yes",
+        "Official name": "Tuvalu",
+        "Capital city": "Funafuti",
+        "Continent": "Oceania",
+        "Chinese name": "图瓦卢",
+        "Official nameipa": "tuːvˈɑːljuː",
+        "Capital cityipa": "fˈʌnɐfjˌuːɾi",
+        "Capital city in chinese": "富纳富提"
+    },
+    "TW": {
+        "Independent": "No",
+        "Official name": "Republic of China (Taiwan)",
+        "Capital city": "Taipei",
+        "Continent": "Asia",
+        "Chinese name": "台湾",
+        "Official nameipa": "ɹɪpˈʌblɪk ʌv t‍ʃˈa‍ɪnə ta‍ɪwˈɑːn",
+        "Capital cityipa": "tˌa‍ɪpˈe‍ɪ",
+        "Capital city in chinese": "台北"
+    },
+    "TZ": {
+        "Independent": "Yes",
+        "Official name": "United Republic of Tanzania",
+        "Capital city": "Dodoma",
+        "Continent": "Africa",
+        "Chinese name": "坦桑尼亚",
+        "Official nameipa": "juːnˈa‍ɪɾᵻd ɹɪpˈʌblɪk ʌv tˈænzɐnˈi‍ə",
+        "Capital cityipa": "dədˈo‍ʊmə",
+        "Capital city in chinese": "多多马"
+    },
+    "UA": {
+        "Independent": "Yes",
+        "Official name": "Ukraine",
+        "Capital city": "Kyiv",
+        "Continent": "Europe",
+        "Chinese name": "乌克兰",
+        "Official nameipa": "juːkɹˈe‍ɪn",
+        "Capital cityipa": "kjˈɪv",
+        "Capital city in chinese": "基辅"
+    },
+    "UG": {
+        "Independent": "Yes",
+        "Official name": "Republic of Uganda",
+        "Capital city": "Kampala",
+        "Continent": "Africa",
+        "Chinese name": "乌干达",
+        "Official nameipa": "ɹɪpˈʌblɪk ʌv juːɡˈændə",
+        "Capital cityipa": "kæmpˈɑːlə",
+        "Capital city in chinese": "坎帕拉"
+    },
+    "UM": {
+        "Independent": "No",
+        "Official name": "United States Minor Outlying Islands",
+        "Continent": "North America",
+        "Chinese name": "美国本土外小岛屿",
+        "Official nameipa": "juːnˈa‍ɪɾᵻd stˈe‍ɪts mˈa‍ɪnɚɹ a‍ʊtlˈa‍ɪɪŋ ˈa‍ɪləndz"
+    },
+    "US": {
+        "Independent": "Yes",
+        "Official name": "United States of America",
+        "Capital city": "Washington D.C.",
+        "Continent": "North America",
+        "Chinese name": "美国",
+        "Official nameipa": "juːnˈa‍ɪɾᵻd stˈe‍ɪts ʌv ɐmˈɛɹɪkə",
+        "Capital cityipa": "wˈɑːʃɪŋtən dˌiːsˈiː",
+        "Capital city in chinese": "华盛顿哥伦比亚特区"
+    },
+    "UY": {
+        "Independent": "Yes",
+        "Official name": "Oriental Republic of Uruguay",
+        "Capital city": "Montevideo",
+        "Continent": "South America",
+        "Chinese name": "乌拉圭",
+        "Official nameipa": "ˌoːɹɪˈɛntə‍l ɹɪpˈʌblɪk ʌv jˈʊɹuːɡwˌa‍ɪ",
+        "Capital cityipa": "mˈɑːntɪvˌɪdɪo‍ʊ",
+        "Capital city in chinese": "蒙得维的亚"
+    },
+    "UZ": {
+        "Independent": "Yes",
+        "Official name": "Republic of Uzbekistan",
+        "Capital city": "Tashkent",
+        "Continent": "Asia",
+        "Chinese name": "乌兹别克斯坦",
+        "Official nameipa": "ɹɪpˈʌblɪk ʌv ʌzbˈɛkɪstˌæn",
+        "Capital cityipa": "tˈæʃkənt",
+        "Capital city in chinese": "塔什干"
+    },
+    "VA": {
+        "Independent": "Yes",
+        "Official name": "Vatican City State",
+        "Capital city": "Vatican City",
+        "Continent": "Europe",
+        "Chinese name": "梵蒂冈",
+        "Official nameipa": "vˈæɾɪkən sˈɪɾi stˈe‍ɪt",
+        "Capital cityipa": "vˈæɾɪkən sˈɪɾi",
+        "Capital city in chinese": "梵蒂冈城"
+    },
+    "VC": {
+        "Independent": "Yes",
+        "Official name": "Saint Vincent and the Grenadines",
+        "Capital city": "Kingstown",
+        "Continent": "North America",
+        "Chinese name": "圣文森特和格林纳丁斯",
+        "Official nameipa": "sˈe‍ɪnt vˈɪnsənt ænd ðə ɡɹˈɛnɐdˌiːnz",
+        "Capital cityipa": "kˈɪŋzta‍ʊn",
+        "Capital city in chinese": "金斯敦"
+    },
+    "VE": {
+        "Independent": "Yes",
+        "Official name": "Bolivarian Republic of Venezuela",
+        "Capital city": "Caracas",
+        "Continent": "South America",
+        "Chinese name": "委内瑞拉",
+        "Official nameipa": "bˌɑːlɪvˈɛɹi‍ən ɹɪpˈʌblɪk ʌv vˌɛnɪzwˈe‍ɪlə",
+        "Capital cityipa": "kæɹˈækəz",
+        "Capital city in chinese": "加拉加斯"
+    },
+    "VG": {
+        "Independent": "No",
+        "Official name": "Virgin Islands",
+        "Capital city": "Road Town",
+        "Continent": "North America",
+        "Chinese name": "英属维尔京群岛",
+        "Official nameipa": "vˈɜːd‍ʒɪn ˈa‍ɪləndz",
+        "Capital cityipa": "ɹˈo‍ʊd tˈa‍ʊn",
+        "Capital city in chinese": "罗德城"
+    },
+    "VI": {
+        "Independent": "No",
+        "Official name": "Virgin Islands of the United States",
+        "Capital city": "Charlotte Amalie",
+        "Continent": "North America",
+        "Chinese name": "美属维尔京群岛",
+        "Official nameipa": "vˈɜːd‍ʒɪn ˈa‍ɪləndz ʌvðə juːnˈa‍ɪɾᵻd stˈe‍ɪts",
+        "Capital cityipa": "ʃˈɑː‍ɹlət ɐmˈæli",
+        "Capital city in chinese": "夏洛特阿马利亚"
+    },
+    "VN": {
+        "Independent": "Yes",
+        "Official name": "Socialist Republic of Vietnam",
+        "Capital city": "Hanoi",
+        "Continent": "Asia",
+        "Chinese name": "越南",
+        "Official nameipa": "sˈo‍ʊʃə‍lˌɪst ɹɪpˈʌblɪk ʌv vˌiːətnˈɑːm",
+        "Capital cityipa": "hænˈɔ‍ɪ",
+        "Capital city in chinese": "河内"
+    },
+    "VU": {
+        "Independent": "Yes",
+        "Official name": "Republic of Vanuatu",
+        "Capital city": "Port Vila",
+        "Continent": "Oceania",
+        "Chinese name": "瓦努阿图",
+        "Official nameipa": "ɹɪpˈʌblɪk ʌv vˌænjuːˈɑːɾuː",
+        "Capital cityipa": "pˈoː‍ɹt vˈiːlə",
+        "Capital city in chinese": "维拉港"
+    },
+    "WF": {
+        "Independent": "No",
+        "Official name": "Territory of the Wallis and Futuna Islands",
+        "Capital city": "Mata-Utu",
+        "Continent": "Oceania",
+        "Chinese name": "瓦利斯和富图纳",
+        "Official nameipa": "tˈɛɹɪtˌoːɹi ʌvðə wˈɑːliz ænd fjˈuːtuːnə ˈa‍ɪləndz",
+        "Capital cityipa": "mˈɑːɾəˈuːɾuː",
+        "Capital city in chinese": "马塔乌图"
+    },
+    "WS": {
+        "Independent": "Yes",
+        "Official name": "Independent State of Samoa",
+        "Capital city": "Apia",
+        "Continent": "Oceania",
+        "Chinese name": "萨摩亚",
+        "Official nameipa": "ˌɪndɪpˈɛndənt stˈe‍ɪt ʌv sæmˈo‍ʊə",
+        "Capital cityipa": "ˈe‍ɪpiə",
+        "Capital city in chinese": "阿皮亚"
+    },
+    "XK": {
+        "Independent": "No",
+        "Official name": "Republic of Kosovo",
+        "Capital city": "Pristina",
+        "Continent": "Europe",
+        "Chinese name": "科索沃",
+        "Official nameipa": "ɹɪpˈʌblɪk ʌv kˈɑːsəvˌo‍ʊ",
+        "Capital cityipa": "pɹɪstˈiːnə",
+        "Capital city in chinese": "普里什蒂纳"
+    },
+    "YE": {
+        "Independent": "Yes",
+        "Official name": "Republic of Yemen",
+        "Capital city": "Sana'a",
+        "Continent": "Asia",
+        "Chinese name": "也门",
+        "Official nameipa": "ɹɪpˈʌblɪk ʌv jˈɛmən",
+        "Capital cityipa": "sˈænæə",
+        "Capital city in chinese": "萨那"
+    },
+    "YT": {
+        "Independent": "No",
+        "Official name": "Department of Mayotte",
+        "Capital city": "Mamoudzou",
+        "Continent": "Africa",
+        "Chinese name": "马约特",
+        "Official nameipa": "dɪpˈɑː‍ɹtmənt ʌv mˈe‍ɪɑːt",
+        "Capital cityipa": "mˈæma‍ʊdzˌuː",
+        "Capital city in chinese": "马穆楚"
+    },
+    "ZA": {
+        "Independent": "Yes",
+        "Official name": "Republic of South Africa",
+        "Capital city": "Pretoria, Bloemfontein, Cape Town",
+        "Continent": "Africa",
+        "Chinese name": "南非",
+        "Official nameipa": "ɹɪpˈʌblɪk ʌv sˈa‍ʊθ ˈæfɹɪkə",
+        "Capital cityipa": "pɹɪtˈoːɹi‍əblˈo‍ʊmfəntˌiːnkˈe‍ɪp tˈa‍ʊn",
+        "Capital city in chinese": "比勒陀利亚"
+    },
+    "ZM": {
+        "Independent": "Yes",
+        "Official name": "Republic of Zambia",
+        "Capital city": "Lusaka",
+        "Continent": "Africa",
+        "Chinese name": "赞比亚",
+        "Official nameipa": "ɹɪpˈʌblɪk ʌv zˈæmbiə",
+        "Capital cityipa": "luːsˈɑːkə",
+        "Capital city in chinese": "卢萨卡"
+    },
+    "ZW": {
+        "Independent": "Yes",
+        "Official name": "Republic of Zimbabwe",
+        "Capital city": "Harare",
+        "Continent": "Africa",
+        "Chinese name": "津巴布韦",
+        "Official nameipa": "ɹɪpˈʌblɪk ʌv zɪmbˈɑːbwi",
+        "Capital cityipa": "hɐɹˈɑːɹi",
+        "Capital city in chinese": "哈拉雷"
+    }
+}
