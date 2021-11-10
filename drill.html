@@ -73,24 +73,27 @@ html, body { height: 100%; width: 100%; }
 
 <div style="height:20%;position: relative;">
     <form name="myForm" onclick="saveRadioIndex(getRadioValue());" >
-        <input type="radio" name="number" value="pinyin" checked="checked"/> pinyin
-        <input type="radio" name="number" value="pinyin_ln"/> pinyin ln
-        <input type="radio" name="number" value="pinyin_zcs"/> pinyin zcs
-        <input type="radio" name="number" value="2" /> 2
-        <input type="radio" name="number" value="3" /> 3
-        <input type="radio" name="number" value="4" /> 4
-        <input type="radio" name="number" value="5" /> 5
-        <input type="radio" name="number" value="6" /> 6
-        <input type="radio" name="number" value="7" /> 7
-        <input type="radio" name="number" value="8" /> 8
-        <input type="radio" name="number" value="9" /> 9
-        <input type="radio" name="number" value="r" /> random
-        <input type="radio" name="number" value="f" /> french
-        <input type="radio" name="number" value="c" /> conjugate
+        <label><input type="radio" name="number" value="pinyin" checked="checked"/> pinyin</label>
+        <label><input type="radio" name="number" value="pinyin_ln"/> pinyin ln</label>
+        <label><input type="radio" name="number" value="pinyin_zcs"/> pinyin zcs</label>
+        <label><input type="radio" name="number" value="2" /> 2</label>
+        <label><input type="radio" name="number" value="3" /> 3</label>
+        <label><input type="radio" name="number" value="4" /> 4</label>
+        <label><input type="radio" name="number" value="5" /> 5</label>
+        <label><input type="radio" name="number" value="6" /> 6</label>
+        <label><input type="radio" name="number" value="7" /> 7</label>
+        <label><input type="radio" name="number" value="8" /> 8</label>
+        <label><input type="radio" name="number" value="9" /> 9</label>
+        <label><input type="radio" name="number" value="r" /> random</label>
+        <label><input type="radio" name="number" value="f" /> french</label>
+        <label><input type="radio" name="number" value="c" /> conjugate</label>
         <br />
-        <input type="radio" name="number" value="d" /> Date
-        <input type="radio" name="number" value="w" /> Week
-        <input type="radio" name="number" value="t" /> Time
+        <label><input type="radio" name="number" value="d" /> Date</label>
+        <label><input type="radio" name="number" value="w" /> Week</label>
+        <label><input type="radio" name="number" value="t" /> Time</label>
+        <label><input type="radio" name="number" value="mul" /> MUL</label>
+        <label><input type="radio" name="number" value="div" /> DIV</label>
+
     </form>
 </div>
 <div class="outer" id="myDivOuter" onclick="">
@@ -299,6 +302,28 @@ function buildDrillText() {
         Text1 = value['w'];
         Text2 = value['p'];
 
+    } else if (val == 'mul') {
+
+        x = getRandomInt(2, 9);
+        y = getRandomInt(2, 9);
+
+        var dd=document.getElementById("myText1");
+        e =  x.toString().concat(' &times; ').concat(y).concat(' = ?');
+
+        Text1 = e;
+        Text2 = x*y;
+
+    } else if (val = 'div') {
+
+        x = getRandomInt(2, 9);
+        y = getRandomInt(2, 9);
+        z = x*y;
+
+        var dd=document.getElementById("myText1");
+        e =  z.toString().concat(' &divide; ').concat(x).concat(' = ?');
+        
+        Text1 = e;
+        Text2 = y;
     }
 
     if (isNaN(val) == false) {
