@@ -4,37 +4,57 @@ import plotly.express as px
 import numpy as np
 import json
 import logging
+import math
 
 logging.basicConfig(level = logging.INFO,format = '%(asctime)s - %(name)s - %(levelname)s - %(message)s')
 logger = logging.getLogger(__name__)
 
-flist = ('98-401-X2016059_English_CSV_data.csv',  # Canada, provinces and territories
-        '98-401-X2016066_English_CSV_data.csv', # Census subdivisions (CSD) - Ontario only
-        )
-
-flist = ('98-401-X2016055_English_CSV_data.csv',)
 class CensusData:
-    def __init__(self, threshold):
+    def __init__(self, year, threshold):
         
+        self.year = year
         self.threshold = threshold
         self.data_frame = None
-        self.update_data_file = 'canada.csv'
-        self.update_map_file = 'canada.json'
-        self.choroplethmap_file = 'lcsd000a16a_e.json'
+        self.update_data_file = 'tmp.canada.csv'
+        #self.update_map_file = 'canada.json'
+        #self.choroplethmap_file = 'lcsd000a16a_e.json'
         self.visible_name_mapping = {
             "Total - Visible minority for the population in private households - 25% sample data": "Total",
             "Total visible minority population": "Total Minority"
         }
 
+        if self.year == 2016:
+            self.flist = (
+                '98-401-X2016059_English_CSV_data.csv',  # Canada, provinces and territories
+                '98-401-X2016066_English_CSV_data.csv', # Census subdivisions (CSD) - Ontario only
+            )
+
+            self.choroplethmap_file = 'lcsd000a16a_e.json'
+        else:
+            self.flist = (
+                '98-401-X2021001_English_CSV_data.csv',
+                '98-401-X2021005_eng_CSV/98-401-X2021005_English_CSV_data.csv'
+            )
+            self.choroplethmap_file = 'lcsd000a21a_e.json'
+
+        print(self.year)
+        print(self.choroplethmap_file)
+        print(self.flist)
+
     def load_data_from_file(self, file_name):
         
-        self.data_frame = pd.read_csv(file_name, dtype='unicode')
+        #self.data_frame = pd.read_csv(file_name, encoding = "utf-8", dtype='unicode')
+        self.data_frame = pd.read_csv(file_name, encoding = "ISO-8859-1")
         for col in self.data_frame.columns:
-            if col[:3] == 'DIM':
+
+            if col[:3] == 'DIM' or col == 'CHARACTERISTIC_NAME':
                 self.data_frame.rename(columns={col:'PROFILE_NAME'}, inplace=True)
-            if col == 'Dim: Sex (3): Member ID: [1]: Total - Sex':
+            
+            if col == 'Dim: Sex (3): Member ID: [1]: Total - Sex' or col == 'C1_COUNT_TOTAL':
                 self.data_frame.rename(columns={col:'TOTAL'}, inplace=True)
-            if col == 'GEO_CODE (POR)':
+
+            #if col == 'GEO_CODE (POR)' or col == 'ALT_GEO_CODE':
+            if col == 'ALT_GEO_CODE':
                 self.data_frame.rename(columns={col:'GEO_CODE'}, inplace=True)
 
     def read_visible_minority_population(self, geo_name=''):
@@ -62,7 +82,7 @@ class CensusData:
     def update_data(self):
         
         population_by_category = {}
-        for f in flist:
+        for f in self.flist:
             self.load_data_from_file(f)
             visibles = self.read_visible_minority_population()
             for visible in visibles:
@@ -79,12 +99,14 @@ class CensusData:
                     name = row.PROFILE_NAME
                     count = row.TOTAL
                     
+                    name = name.strip()
                     if name in self.visible_name_mapping:
                         name = self.visible_name_mapping[name]
+                    #name = name.strip()
                     population_by_category.setdefault(name, []).append(count)
 
         n = pd.DataFrame(population_by_category)
-        out_data = n.loc[n['Chinese'].str.replace('.','',1).str.isdigit()]
+        out_data = n.loc[n['Chinese'].astype(str).str.replace('.','',1,regex=False).str.isdigit()]
 
         out_data = out_data[out_data['Total Minority'].astype(float) != 0]
         out_data.to_csv(self.update_data_file, index=False)
@@ -176,7 +198,7 @@ class CensusData:
         mapdata_key = 'CSDUID'
         dataframe_key = 'GEO_CODE'
 
-        df, country_map = self.load_data(update=False, mapdata_key=mapdata_key, dataframe_key=dataframe_key)
+        df, country_map = self.load_data(update=True, mapdata_key=mapdata_key, dataframe_key=dataframe_key)
 
         logger.info("Generate tip data.")
         tip_data = self.generate_tip_data(df)
@@ -255,6 +277,11 @@ class CensusData:
         fig.show()
 
 
+def shp_to_geojson():
+    myshpfile = gpd.read_file('lcsd000a16a_e/lcsd000a16a_e.shp')
+    myshpfile_out = myshpfile.to_crs('EPSG:4326')
+    myshpfile_out.to_file('lcsd000a16a_e.json', driver='GeoJSON')
+    
 if __name__ == '__main__':
 
     from argparse import ArgumentParser
@@ -262,10 +289,11 @@ if __name__ == '__main__':
     parser = ArgumentParser(description='Minorities in Canada')
     parser.add_argument('-u','--update', action="store_true", help='Update data...', default=False)
     parser.add_argument('-t','--threshold', help='Threshold for minority population...', type=int, default=1000)
+    parser.add_argument('-y','--year', type=int, choices=[2016, 2021], default=2016, help='Census year...')
     args = parser.parse_args()
 
-    cd = CensusData(args.threshold)
+    cd = CensusData(args.year, args.threshold)
     if args.update:
         cd.update_data()
     else:
-        cd.show(filename='canada.html')
+        cd.show(filename='canada.{}.{}.html'.format(args.year, args.threshold))
