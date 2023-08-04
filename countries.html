@@ -995,7 +995,7 @@
 <script>
 var n = 0;
 $("div.enterleave")
-  .on("click", function() { $(this).find('audio')[0].play();});
+  .on("touchstart click", function() { $(this).find('audio')[0].play();});
 $( "div.enterleave" )
   .on( "mouseenter", function() {
     n += 1;
