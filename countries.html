@@ -22,7 +22,19 @@
     margin: 0;
     padding: 0;
   }
-  </style>
+
+div span { 
+    display: block;
+    transition: all 0.1s ease-out;
+}
+
+div span:hover {
+    transform-origin: left;
+    transform: scale(2.0);
+    transform-style: flat;
+}
+
+</style>
   <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
 </head>
 <body>
@@ -993,21 +1005,29 @@
 </div>
 
 <script>
-var n = 0;
-$("div.enterleave")
-  .on("click", function() { $(this).find('audio')[0].play();});
-$( "div.enterleave" )
-  .on( "mouseenter", function() {
-    n += 1;
-    //$( this ).find( "span" ).text( "mouse enter x " + n );
+
+function focus_on() {
     $(this).find('audio')[0].play();
-  } )
-  .on( "mouseleave", function() {
-    //$( this ).find( "span" ).text( "mouse leave" );
+    //$(this).animate({width: "50%", height: "50%"}, 'slow');
+    //$(this).animate({fontSize: "32px"}, 300)
+}
+
+function focus_off() {
     $(this).find('audio')[0].pause();
     $(this).find('audio')[0].currentTime = 0;
-    
-  } );
+}
+/*
+    $("p").hover(function(){
+       $(this).animate({fontSize: "32px"}, 300)
+   }, function() {
+      $(this).animate({fontSize: "20"}, 300)  
+   })
+*/
+$("div.enterleave")
+  .on("click", focus_on);
+$( "div.enterleave" )
+  .on( "mouseenter", focus_on)
+  .on( "mouseleave", focus_off);
 </script>
  
 </body>
